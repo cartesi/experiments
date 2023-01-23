@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: true
-title: Example title 2
+title: Another title
 description: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
 image: "https://picsum.photos/1200/720?random=6"
 gallery:

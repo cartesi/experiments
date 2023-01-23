@@ -4,6 +4,8 @@ import Link from "@docusaurus/Link";
 import Tag from "@site/src/components/Tag";
 import Gallery from "@site/src/components/Gallery";
 
+import SocialShare from "@site/src/components/SocialShare";
+
 export type PageFrontMatter = {
   id: string;
   path: string;
@@ -73,7 +75,7 @@ export default function MDXContentWrapper(props) {
       <div className="bg-blue-500 py-4 lg:py-12">
         <div className="container">
           <div>
-            <Gallery images={gallery} />
+            <Gallery images={[image, ...(gallery || [])]} />
           </div>
         </div>
       </div>
@@ -101,9 +103,9 @@ export default function MDXContentWrapper(props) {
                             className="w-6 h-6 fill-current"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             />
                           </svg>
                         </span>
@@ -130,7 +132,6 @@ export default function MDXContentWrapper(props) {
                         <span>Github</span>
                       </a>
                     )}
-
                     {links.twitter && (
                       <a
                         href={links.twitter}
@@ -146,8 +147,8 @@ export default function MDXContentWrapper(props) {
                             className="w-6 h-6 fill-current"
                           >
                             <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
                               d="M26.67 13.335C26.67 20.6997 20.6997 26.67 13.335 26.67C5.97028 26.67 0 20.6997 0 13.335C0 5.97028 5.97028 0 13.335 0C20.6997 0 26.67 5.97028 26.67 13.335ZM19.8703 8.58319C20.5806 8.49838 21.2562 8.30969 21.8852 8.03059C21.4136 8.73593 20.8201 9.35166 20.1326 9.84895C20.1399 9.99946 20.1432 10.1505 20.1432 10.3027C20.1432 14.9383 16.6145 20.2837 10.1622 20.2837C8.18109 20.2837 6.33751 19.7025 4.78481 18.7069C5.05938 18.74 5.33908 18.7569 5.62208 18.7569C7.26516 18.7569 8.77797 18.1958 9.97857 17.2547C8.44394 17.226 7.14838 16.2119 6.70197 14.8187C6.91646 14.859 7.13602 14.8804 7.36233 14.8804C7.68242 14.8804 7.99182 14.8382 8.28664 14.7574C6.68173 14.4351 5.4727 13.0177 5.4727 11.3179V11.2736C5.95984 11.5445 6.50475 11.6949 7.0619 11.7122C6.12075 11.0832 5.50136 10.0096 5.50136 8.79265C5.50136 8.14972 5.67429 7.54713 5.9764 7.02885C7.70655 9.15095 10.2914 10.5475 13.2069 10.6941C13.1475 10.4369 13.1165 10.169 13.1165 9.89441C13.1165 7.95651 14.6873 6.38642 16.624 6.38642C17.633 6.38642 18.5451 6.81205 19.1847 7.49379C19.9706 7.33943 20.7242 7.05149 21.4128 6.64248C21.1506 7.46119 20.5953 8.14909 19.8703 8.58319Z"
                             />
                           </svg>
@@ -191,8 +192,9 @@ export default function MDXContentWrapper(props) {
                           rel="noreferrer"
                           target="_blank"
                           className="hover:no-underline no-underline text-gray-900 hover:text-blue-500"
+                          key={i}
                         >
-                          <div key={i} className="flex items-center gap-4">
+                          <div className="flex items-center gap-4">
                             <div className="flex-shrink-0">
                               <img
                                 src={member.github + ".png"}
@@ -229,10 +231,14 @@ export default function MDXContentWrapper(props) {
                 <h3 className="lg:text-3xl mb-4">Technologies</h3>
                 <div className="flex flex-wrap gap-1">
                   {tags.technology.map((tag, i) => {
-                    return <Tag type="technology" tag={tag} />;
+                    return <Tag type="technology" tag={tag} key={i} />;
                   })}
                 </div>
               </div>
+              {/*  */}
+
+              {/*  */}
+              <SocialShare title={title} />
               {/*  */}
             </div>
             <div className="md:col-span-8">

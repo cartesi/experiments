@@ -12,7 +12,7 @@ const ShowcaseItem = ({ page }: Props) => {
 
   return (
     <Link
-      className="text-yellow-50 hover:text-yellow-50 hover:no-underline no-underline group h-full flex flex-col bg-gray-900"
+      className="text-yellow-50 hover:text-yellow-50 hover:no-underline no-underline group h-full flex flex-col bg-gray-900 shadow-2xl"
       to={path}
     >
       <div className="overflow-hidden">

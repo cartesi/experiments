@@ -17,7 +17,7 @@ const Gallery = ({ images }: Props) => {
   return (
     <div>
       <Swiper
-        slidesPerView={1}
+        slidesPerView={1.5}
         spaceBetween={8}
         freeMode={true}
         pagination={{
@@ -36,7 +36,11 @@ const Gallery = ({ images }: Props) => {
       >
         {images.map((image, i) => (
           <SwiperSlide key={i}>
-            <img src={image} className="aspect-video object-cover" alt={``} />
+            <img
+              src={image}
+              className="aspect-video object-cover shadow-sm"
+              alt={``}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
