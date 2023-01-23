@@ -10,7 +10,7 @@ gallery:
   - "https://picsum.photos/1200/720?random=5"
 tags:
   hackathon: true
-  winner: 2
+  winner: 2nd Place
   event: ETHBoston
   projectStage: In progress - Beta
   technology:

@@ -10,7 +10,7 @@ gallery:
   - "https://picsum.photos/1200/720?random=5"
 tags:
   hackathon: false
-  winner: 2
+  winner: 2nd Place
   event: ETHBoston
   projectStage: Stable release
   technology:

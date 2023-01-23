@@ -179,4 +179,20 @@ blockquote {
   color: var(--ifm-font-color-base-dark);
 }
 
+.btn-checkbox {
+  @apply flex items-center border border-solid border-blue-500 cursor-pointer rounded-sm px-4 py-2 relative text-blue-600 hover:bg-blue-200/20 leading-normal transition-colors;
+}
+
+.btn-checkbox--active {
+  @apply flex items-center border border-solid border-blue-500 cursor-pointer rounded-sm px-4 py-2 relative bg-blue-500 text-white leading-normal transition-colors;
+}
+
+.btn {
+  @apply flex items-center border border-solid border-blue-500 cursor-pointer rounded-sm px-4 py-2 relative bg-blue-500 text-white font-sans text-base leading-normal m-0 appearance-none transition-colors;
+}
+
+.btn-outline {
+  @apply flex items-center border border-solid border-blue-500 hover:bg-blue-200/20 text-blue-600 cursor-pointer rounded-sm px-4 py-2 relative bg-transparent font-sans text-base leading-normal m-0 appearance-none transition-colors;
+}
+
 @tailwind utilities;

@@ -7,8 +7,12 @@ import Hero from "../components/Hero";
 import ShowcaseItem from "../components/ShowcaseItem";
 import Search from "../components/Search";
 import debounce from "lodash.debounce";
+import FilterButtonCheckbox from "../components/FilterButtonCheckbox";
+import FilterButton from "../components/FilterButton";
+import FilterDropdown from "../components/FilterDropdown";
+import FilterGroup from "../components/FilterGroup";
 type Tag = {
-  label: string;
+  label: keyof PageFrontMatter["tags"];
   options: PageFrontMatter["tags"][keyof PageFrontMatter["tags"]][];
 };
 
@@ -71,6 +75,8 @@ export default function Home(): JSX.Element {
         newSelectedTags.splice(index, 1);
       }
 
+      console.log(newSelectedTags);
+
       return newSelectedTags;
     });
   };
@@ -114,124 +120,38 @@ export default function Home(): JSX.Element {
       <Hero />
       <main className="py-8 sm:py-24 bg-yellow-100">
         <div className="container">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex md:items-center flex-col sm:flex-row justify-between gap-4 mb-6 sm:mb-8">
             {/*  */}
-            <ul className="flex gap-4">
-              <li className="relative">
-                <div className="text-gray-900 flex">
-                  <input
-                    type="checkbox"
-                    id="all"
-                    onChange={handleAllClick}
-                    checked={!selectedTags.length}
-                  />
-                  <label htmlFor="all">All</label>
-                </div>
-              </li>
-              <li className="relative">
-                <div className="text-gray-900 flex">
-                  <input
-                    type="checkbox"
-                    id="hackathon"
-                    onChange={() => handleTagClick("hackathon", true)}
-                    checked={selectedTags.some((tag) => tag.hackathon === true)}
-                  />
-                  <label htmlFor="hackathon">
-                    {tagsAvailable.hackathon.label}
-                  </label>
-                </div>
-              </li>
-              <li className="relative">
-                <button onClick={() => handleDropdownClick(dropdownWinner)}>
-                  {tagsAvailable.winner.label}
-                </button>
-                <div
-                  className="absolute bg-white p-4 rounded h-64 overflow-auto z-20 shadow-sm hidden"
-                  ref={dropdownWinner}
-                >
-                  {tagsAvailable.winner["options"].map((option, i) => (
-                    <div key={i} className="text-gray-900 flex">
-                      <input
-                        type="checkbox"
-                        id={`winner-${i}`}
-                        onChange={() => handleTagClick("winner", option)}
-                        checked={selectedTags.some(
-                          (tag) => tag.winner === option
-                        )}
-                      />
-                      <label htmlFor={`winner-${i}`}>{option}</label>
-                    </div>
-                  ))}
-                </div>
-              </li>
-              <li className="relative">
-                <button onClick={() => handleDropdownClick(dropdownEvent)}>
-                  {tagsAvailable.event.label}
-                </button>
-                <div
-                  className="absolute bg-white p-4 rounded h-64 overflow-auto z-20 shadow-sm hidden"
-                  ref={dropdownEvent}
-                >
-                  {tagsAvailable.event["options"].map((option, i) => (
-                    <div key={i} className="text-gray-900 flex">
-                      <input
-                        type="checkbox"
-                        id={`event-${i}`}
-                        onChange={() => handleTagClick("event", option)}
-                        checked={selectedTags.some(
-                          (tag) => tag.event === option
-                        )}
-                      />
-                      <label htmlFor={`event-${i}`}>{option}</label>
-                    </div>
-                  ))}
-                </div>
-              </li>
-              <li className="relative">
-                <button
-                  onClick={() => handleDropdownClick(dropdownProjectStage)}
-                >
-                  {tagsAvailable.projectStage.label}
-                </button>
-                <div
-                  className="absolute bg-white p-4 rounded h-64 overflow-auto z-20 shadow-sm hidden"
-                  ref={dropdownProjectStage}
-                >
-                  {tagsAvailable.projectStage["options"].map((option, i) => (
-                    <div key={i} className="text-gray-900 flex">
-                      <input
-                        type="checkbox"
-                        id={`projectStage-${i}`}
-                        onChange={() => handleTagClick("projectStage", option)}
-                        checked={selectedTags.some(
-                          (tag) => tag.projectStage === option
-                        )}
-                      />
-                      <label htmlFor={`projectStage-${i}`}>{option}</label>
-                    </div>
-                  ))}
-                </div>
-              </li>
-
-              {/* TODO - the filter is not working with these vecause it's an arr */}
-              {/* <li className="relative">
-              <button onClick={handleDropdownClick}>
-                {tagsAvailable.technology.label}
-              </button>
-              <div className="absolute bg-white p-4 rounded h-64 overflow-auto z-20 shadow-sm hidden">
-                {tagsAvailable.technology["options"].map((option, i) => (
-                  <div key={i} className="text-gray-900 flex">
-                    <input
-                      type="checkbox"
-                      id={`technology-${i}`}
-                      onChange={() => handleTagClick("technology", option)}
-                    />
-                    <label htmlFor={`technology-${i}`}>{option}</label>
-                  </div>
-                ))}
-              </div>
-            </li> */}
-            </ul>
+            <div className="flex gap-2 flex-col flex-wrap sm:flex-row">
+              <FilterButtonCheckbox
+                label="All"
+                onChange={handleAllClick}
+                checked={!selectedTags.length}
+              />
+              <FilterButtonCheckbox
+                label={tagsAvailable.hackathon.label}
+                onChange={() => handleTagClick("hackathon", true)}
+                checked={selectedTags.some((tag) => tag.hackathon === true)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.winner}
+                filterTag="winner"
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter((tag) => tag.winner)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.event}
+                filterTag="event"
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter((tag) => tag.event)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.projectStage}
+                filterTag="projectStage"
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter((tag) => tag.projectStage)}
+              />
+            </div>
             {/*  */}
 
             {/*  */}
@@ -250,9 +170,22 @@ export default function Home(): JSX.Element {
               ))}
             </div>
           ) : (
-            <p className="text-gray-900 text-lg text-center py-24">
-              No results found
-            </p>
+            <div className="flex flex-col gap-2 items-center justify-center py-24">
+              <p className="text-gray-900 text-lg text-center m-0">
+                No results found
+              </p>
+              <p>
+                <button
+                  className="bg-gray-900 border-0 text-white px-6 py-3 rounded-sm focus:outline-none hover:bg-gray-700"
+                  onClick={() => {
+                    clearSearch();
+                    handleAllClick();
+                  }}
+                >
+                  Clear search
+                </button>
+              </p>
+            </div>
           )}
 
           {/*  */}

@@ -67,7 +67,7 @@ const config = {
       },
       winner: {
         label: "Winner",
-        options: [1, 2, 3],
+        options: ["1st Place", "2nd Place", "3rd Place"],
       },
       event: {
         label: "Event",

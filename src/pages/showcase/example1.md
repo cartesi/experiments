@@ -13,7 +13,7 @@ gallery:
   - "https://picsum.photos/1200/720?random=55"
 tags:
   hackathon: true
-  winner: 1
+  winner: 1st Place
   event: ETHIndia
   projectStage: One time project
   technology:

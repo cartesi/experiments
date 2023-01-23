@@ -13,6 +13,7 @@ const ShowcaseItem = ({ page }: Props) => {
   return (
     <Link
       className="text-yellow-50 hover:text-yellow-50 hover:no-underline no-underline group h-full flex flex-col bg-gray-900 shadow-2xl"
+      style={{ boxShadow: "0 0 10px rgba(14, 14, 41, 0.5)" }}
       to={path}
     >
       <div className="overflow-hidden">

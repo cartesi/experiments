@@ -12,7 +12,7 @@ const Tag = ({ tag, type }: Props) => {
       {type === "hackathon" && "Hackathon"}
       {type === "event" && tag}
       {type === "projectStage" && tag}
-      {type === "winner" && `Winner ${tag} place`}
+      {type === "winner" && `Winner ${tag}`}
       {type === "technology" && tag}
     </span>
   );
