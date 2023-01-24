@@ -1,4 +1,6 @@
 import React from "react";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+
 import {
   EmailShareButton,
   FacebookShareButton,
@@ -17,7 +19,7 @@ type Props = {
 };
 
 const SocialShare = ({ title }: Props) => {
-  const url = window.location.href;
+  const url = ExecutionEnvironment.canUseDOM ? window.location.href : "";
   return (
     <>
       <h4 className="mb-0 mt-4">Share project</h4>

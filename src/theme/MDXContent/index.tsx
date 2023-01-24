@@ -59,12 +59,13 @@ export default function MDXContentWrapper(props) {
           </div>
           <div className="mt-8 flex flex-col justify-center gap-4 text-center sm:flex-row sm:items-center lg:mt-16">
             <div className="flex flex-wrap gap-1 mt-auto">
-              {tags.hackathon && <Tag type="hackathon" tag={tags.hackathon} />}
-              {tags.winner && <Tag type="winner" tag={tags.winner} />}
-              {tags.event && <Tag type="event" tag={tags.event} />}
-              {tags.projectStage && (
-                <Tag type="projectStage" tag={tags.projectStage} />
-              )}
+              {Object.keys(tags)
+                .filter((key) => key !== "technology")
+                .map((key: keyof PageFrontMatter["tags"]) => {
+                  if (tags[key]) {
+                    return <Tag type={key} tag={tags[key]} isLink key={key} />;
+                  }
+                })}
             </div>
           </div>
         </div>

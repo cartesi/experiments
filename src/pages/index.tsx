@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { PageFrontMatter } from "../theme/MDXContent";
@@ -8,9 +7,11 @@ import ShowcaseItem from "../components/ShowcaseItem";
 import Search from "../components/Search";
 import debounce from "lodash.debounce";
 import FilterButtonCheckbox from "../components/FilterButtonCheckbox";
-import FilterButton from "../components/FilterButton";
-import FilterDropdown from "../components/FilterDropdown";
+
 import FilterGroup from "../components/FilterGroup";
+import { useLocation } from "@docusaurus/router";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+
 type Tag = {
   label: keyof PageFrontMatter["tags"];
   options: PageFrontMatter["tags"][keyof PageFrontMatter["tags"]][];
@@ -22,6 +23,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const [selectedTags, setSelectedTags] = React.useState([]);
   const [searchTerm, setSearchTerm] = React.useState("");
+
+  const location = useLocation();
 
   const { pageList, tagsAvailable } = siteConfig.customFields as {
     pageList: PageFrontMatter[];
@@ -75,7 +78,7 @@ export default function Home(): JSX.Element {
         newSelectedTags.splice(index, 1);
       }
 
-      console.log(newSelectedTags);
+      // console.log(newSelectedTags);
 
       return newSelectedTags;
     });
@@ -83,14 +86,9 @@ export default function Home(): JSX.Element {
 
   const handleAllClick = () => {
     setSelectedTags([]);
-  };
-
-  const dropdownWinner = React.useRef<HTMLDivElement>(null);
-  const dropdownEvent = React.useRef<HTMLDivElement>(null);
-  const dropdownProjectStage = React.useRef<HTMLDivElement>(null);
-
-  const handleDropdownClick = (dropdownRef) => {
-    dropdownRef.current.classList.toggle("hidden");
+    if (ExecutionEnvironment.canUseDOM) {
+      window.history.replaceState({}, "", window.location.pathname);
+    }
   };
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -111,6 +109,31 @@ export default function Home(): JSX.Element {
       debouncedSearchResults.cancel();
     };
   });
+
+  // handle ?tag=...
+
+  React.useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+    const searchParams = new URLSearchParams(location.search);
+    const tags = searchParams.get("tag");
+    // console.log(tags);
+
+    if (tags) {
+      const tagsArray = tags.split(":::");
+      let value =
+        tagsArray[1] as PageFrontMatter["tags"][keyof PageFrontMatter["tags"]];
+
+      if (!isNaN(Number(value))) {
+        value = Number(value);
+      } else if (value === "true") {
+        value = true;
+      } else if (value === "false") {
+        value = false;
+      }
+
+      handleTagClick(tagsArray[0] as keyof TagsAvailable, value);
+    }
+  }, [location.search]);
 
   return (
     <Layout
