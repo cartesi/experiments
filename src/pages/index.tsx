@@ -56,6 +56,10 @@ export default function Home(): JSX.Element {
 
         // console.log(tags[key]);
         // console.log(value);
+        if (Array.isArray(tags[key])) {
+          // @ts-ignore
+          return tags[key].includes(value);
+        }
         return tags[key] === value;
       });
     });
@@ -141,7 +145,7 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <Hero />
-      <main className="py-8 sm:py-24 bg-yellow-100">
+      <main className="py-8 sm:py-24 bg-yellow-100" id="dapps">
         <div className="container">
           <div className="flex md:items-center flex-col sm:flex-row justify-between gap-4 mb-6 sm:mb-8">
             {/*  */}
@@ -151,6 +155,7 @@ export default function Home(): JSX.Element {
                 onChange={handleAllClick}
                 checked={!selectedTags.length}
               />
+              {/* TODO: make these dynamic */}
               <FilterButtonCheckbox
                 label={tagsAvailable.hackathon.label}
                 onChange={() => handleTagClick("hackathon", true)}
@@ -173,6 +178,12 @@ export default function Home(): JSX.Element {
                 filterTag="projectStage"
                 handleClick={handleTagClick}
                 selectedTags={selectedTags.filter((tag) => tag.projectStage)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.technology}
+                filterTag="technology"
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter((tag) => tag.technology)}
               />
             </div>
             {/*  */}

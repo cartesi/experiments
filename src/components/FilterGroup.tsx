@@ -1,6 +1,7 @@
 import React from "react";
-import { TagsAvailable } from "../pages";
-import { PageFrontMatter } from "../theme/MDXContent";
+import { TagsAvailable } from "../pages/index";
+import { PageFrontMatter } from "../theme/MDXContent/index";
+
 import FilterButton from "./FilterButton";
 
 type Props = {
@@ -77,7 +78,7 @@ const FilterGroup = ({ tags, filterTag, selectedTags, handleClick }: Props) => {
         active={show}
       />
       {show && (
-        <div className="absolute top-full left-0  bg-white shadow-lg rounded-md p-4 flex flex-col gap-3">
+        <div className="absolute top-full left-0  bg-white shadow-lg rounded-md p-4 flex flex-col gap-3 max-h-[260px] overflow-auto">
           {tags.options.map((option, i) => (
             <div
               key={i}

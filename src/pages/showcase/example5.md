@@ -18,16 +18,20 @@ tags:
     - Django
     - Push Protocol
 links:
+  website: "http://site.com"
   github: "https://github.com/cartesi"
   discord: "http://discord.com/username"
   twitter: "http://twitter.com/username"
 team:
   - name: Member 1
-    github: "https://github.com/dimitarangelkov"
+    linkedin: "https://linkedin.com/dimitarangelkov"
+    image: "https://picsum.photos/500/500?random=1"
   - name: Member 2
-    github: "https://github.com/jorka"
+    linkedin: "https://linkedin.com/jorka"
+    image: "https://picsum.photos/500/500?random=2"
   - name: Member 3
-    github: "https://github.com/cartesi"
+    linkedin: "https://linkedin.com/cartesi"
+    image: "https://picsum.photos/500/500?random=3"
 ---
 
 # Heading 1
