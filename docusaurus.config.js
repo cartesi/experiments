@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Blockchain OS Documentation - Cartesi",
+  title: "DApps Showcase - Cartesi",
   tagline: "The Blockchain OS",
   url: "https://showcase.cartesi.io",
   baseUrl: "/",
@@ -166,23 +166,13 @@ const config = {
         },
         items: [
           {
-            to: "https://docs.cartesi.io/cartesi-rollups/api",
-            position: "right",
-            label: "Rollups APIs",
-          },
-          {
-            to: "https://youtu.be/8kEBwJt2YLM",
-            label: "Blockchain Course",
+            to: "https://cartesi.io/",
+            label: "Go to Cartesi.io",
             position: "right",
           },
           {
-            to: "https://cartesi.io/en/labs",
-            label: "Cartesi Labs",
-            position: "right",
-          },
-          {
-            to: "https://github.com/cartesi/rollups-examples",
-            label: "DApp Examples",
+            to: "https://docs.cartesi.io/",
+            label: "Developers",
             position: "right",
           },
           {
@@ -192,7 +182,7 @@ const config = {
             "aria-label": "Discord",
           },
           {
-            to: "https://github.com/cartesi/docs/",
+            to: "https://github.com/cartesi",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",
