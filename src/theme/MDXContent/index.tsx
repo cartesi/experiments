@@ -11,7 +11,8 @@ export type PageFrontMatter = {
   path: string;
   title: string;
   description: string;
-  image: string;
+  logo: string;
+  thumbnail: string;
   gallery?: string[];
   tags: {
     hackathon?: boolean;
@@ -36,7 +37,7 @@ export type PageFrontMatter = {
 export default function MDXContentWrapper(props) {
   const { type } = props.children;
   const { frontMatter } = type;
-  const { title, description, image, tags, gallery, links, team } =
+  const { title, description, logo, tags, gallery, links, team } =
     frontMatter as PageFrontMatter;
 
   return (
@@ -47,13 +48,13 @@ export default function MDXContentWrapper(props) {
           <div className="text-center text-yellow-50">
             <p className="mb-4">
               <img
-                src={links.github + ".png"}
+                src={logo}
                 width="100"
                 alt={title}
                 className="aspect-square w-24 h-24 object-cover rounded-full"
               />
             </p>
-            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-8">
+            <h1 className="font-serif text-4xl sm:text-6xl lg:text-6xl xl:text-7xl mb-8">
               {title}
             </h1>
             <div className="font-serif text-lg lg:text-xl">{description}</div>
@@ -77,7 +78,7 @@ export default function MDXContentWrapper(props) {
       <div className="bg-blue-500 py-4 lg:py-12">
         <div className="container">
           <div>
-            <Gallery images={[image, ...(gallery || [])]} />
+            <Gallery images={[...(gallery || [])]} />
           </div>
         </div>
       </div>

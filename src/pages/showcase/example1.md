@@ -1,7 +1,8 @@
 ---
 title: Example title
 description: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
-image: "https://picsum.photos/1200/720?random=1"
+logo: "https://picsum.photos/500/500?random=1"
+thumbnail: "https://picsum.photos/1200/720?random=1"
 gallery:
   - "https://picsum.photos/1200/720?random=2"
   - "https://picsum.photos/1200/720?random=3"

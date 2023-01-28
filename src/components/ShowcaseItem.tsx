@@ -8,7 +8,7 @@ type Props = {
 };
 
 const ShowcaseItem = ({ page }: Props) => {
-  const { title, description, tags, path, image } = page;
+  const { title, description, tags, path, thumbnail } = page;
 
   return (
     <Link
@@ -18,7 +18,7 @@ const ShowcaseItem = ({ page }: Props) => {
     >
       <div className="overflow-hidden">
         <img
-          src={image}
+          src={thumbnail}
           alt={title}
           className="w-full object-cover block transition-transform group-hover:scale-105 aspect-video"
           loading="lazy"

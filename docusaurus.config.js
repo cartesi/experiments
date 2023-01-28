@@ -53,7 +53,7 @@ const config = {
             path: `/${SHOWCASES_PATH}/${fileName}`,
             title: data.title,
             description: data.description,
-            image: data.image,
+            thumbnail: data.thumbnail,
             tags: data.tags,
           };
         });
