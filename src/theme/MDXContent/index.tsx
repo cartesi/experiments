@@ -29,12 +29,10 @@ export type PageFrontMatter = {
     technology?: string[];
   };
   links: {
-    github: {
-      url: string;
-    }[];
-    website?: string;
-    twitter?: string;
-    discord?: string;
+    github?: string[];
+    website?: string[];
+    twitter?: string[];
+    discord?: string[];
     demo?: string;
   };
   team?: {
@@ -109,52 +107,62 @@ export default function MDXContentWrapper(props) {
                 <h3 className="lg:text-3xl mb-4">Links</h3>
                 <div>
                   <div className="flex flex-col gap-2">
-                    {links.website && (
-                      <a
-                        href={links.website}
-                        className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                      >
-                        <span className="flex items-center">
-                          <BiLink className="w-6 h-6 fill-current" />
-                        </span>
-                        <span className="truncate">{links.website}</span>
-                      </a>
-                    )}
-                    {links.github.map((link, i) => {
-                      return (
-                        <a
-                          href={link.url}
-                          className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                        >
-                          <span className="flex items-center">
-                            <AiFillGithub className="w-6 h-6 fill-current" />
-                          </span>
-                          <span className="truncate">{link.url}</span>
-                        </a>
-                      );
-                    })}
-                    {links.twitter && (
-                      <a
-                        href={links.twitter}
-                        className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                      >
-                        <span className="flex items-center">
-                          <AiFillTwitterCircle className="w-6 h-6 fill-current" />
-                        </span>
-                        <span className="truncate">{links.twitter}</span>
-                      </a>
-                    )}
-                    {links.discord && (
-                      <a
-                        href={links.discord}
-                        className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                      >
-                        <span className="flex items-center">
-                          <RiDiscordFill className="w-6 h-6 fill-current" />
-                        </span>
-                        <span className="truncate">{links.discord}</span>
-                      </a>
-                    )}
+                    {links.website &&
+                      links.website.map((url, i) => {
+                        return (
+                          <a
+                            href={url}
+                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                          >
+                            <span className="flex items-center">
+                              <BiLink className="w-6 h-6 fill-current" />
+                            </span>
+                            <span className="truncate">{url}</span>
+                          </a>
+                        );
+                      })}
+                    {links.github &&
+                      links.github.map((url, i) => {
+                        return (
+                          <a
+                            href={url}
+                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                          >
+                            <span className="flex items-center">
+                              <AiFillGithub className="w-6 h-6 fill-current" />
+                            </span>
+                            <span className="truncate">{url}</span>
+                          </a>
+                        );
+                      })}
+                    {links.twitter &&
+                      links.twitter.map((url, i) => {
+                        return (
+                          <a
+                            href={url}
+                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                          >
+                            <span className="flex items-center">
+                              <AiFillTwitterCircle className="w-6 h-6 fill-current" />
+                            </span>
+                            <span className="truncate">{url}</span>
+                          </a>
+                        );
+                      })}
+                    {links.discord &&
+                      links.discord.map((url, i) => {
+                        return (
+                          <a
+                            href={url}
+                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                          >
+                            <span className="flex items-center">
+                              <RiDiscordFill className="w-6 h-6 fill-current" />
+                            </span>
+                            <span className="truncate">{url}</span>
+                          </a>
+                        );
+                      })}
                   </div>
                 </div>
                 {links.demo && (
