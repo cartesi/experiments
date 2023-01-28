@@ -18,7 +18,7 @@ export type PageFrontMatter = {
   path: string;
   title: string;
   description: string;
-  logo: string;
+  logo?: string;
   thumbnail: string;
   gallery?: string[];
   tags: {
@@ -56,14 +56,16 @@ export default function MDXContentWrapper(props) {
       <div className="flex flex-col justify-center py-12 lg:py-24 xl:min-h-[50vh]">
         <div className="container max-w-4xl">
           <div className="text-center text-yellow-50">
-            <p className="mb-4">
-              <img
-                src={logo}
-                width="100"
-                alt={title}
-                className="aspect-square w-24 h-24 object-cover rounded-full"
-              />
-            </p>
+            {logo && (
+              <p className="mb-4">
+                <img
+                  src={logo}
+                  width="100"
+                  alt={title}
+                  className="aspect-square w-24 h-24 object-cover rounded-full"
+                />
+              </p>
+            )}
             <h1 className="font-serif text-4xl sm:text-6xl lg:text-6xl xl:text-7xl mb-8">
               {title}
             </h1>
