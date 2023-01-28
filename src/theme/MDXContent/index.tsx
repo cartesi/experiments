@@ -87,13 +87,15 @@ export default function MDXContentWrapper(props) {
       {/*  */}
 
       {/*  */}
-      <div className="bg-blue-500 py-4 lg:py-12">
-        <div className="container">
-          <div>
-            <Gallery images={[...(gallery || [])]} />
+      {gallery && (
+        <div className="bg-blue-500 py-4 lg:py-12">
+          <div className="container">
+            <div>
+              <Gallery images={[...(gallery || [])]} />
+            </div>
           </div>
         </div>
-      </div>
+      )}
       {/*  */}
 
       <div className="bg-yellow-50 py-12 lg:py-24 text-gray-900">
