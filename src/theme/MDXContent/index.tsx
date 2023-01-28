@@ -29,7 +29,9 @@ export type PageFrontMatter = {
     technology?: string[];
   };
   links: {
-    github: string;
+    github: {
+      url: string;
+    }[];
     website?: string;
     twitter?: string;
     discord?: string;
@@ -118,17 +120,19 @@ export default function MDXContentWrapper(props) {
                         <span className="truncate">{links.website}</span>
                       </a>
                     )}
-                    {links.github && (
-                      <a
-                        href={links.github}
-                        className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                      >
-                        <span className="flex items-center">
-                          <AiFillGithub className="w-6 h-6 fill-current" />
-                        </span>
-                        <span className="truncate">{links.github}</span>
-                      </a>
-                    )}
+                    {links.github.map((link, i) => {
+                      return (
+                        <a
+                          href={link.url}
+                          className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                        >
+                          <span className="flex items-center">
+                            <AiFillGithub className="w-6 h-6 fill-current" />
+                          </span>
+                          <span className="truncate">{link.url}</span>
+                        </a>
+                      );
+                    })}
                     {links.twitter && (
                       <a
                         href={links.twitter}
