@@ -141,8 +141,8 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title={`Hello ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={``}
+      description="Cartesi is the first blockchain OS allowing developers to build decentralized logic preserving the decentralization and security of blockchains."
     >
       <Hero />
       <main className="py-8 sm:py-24 bg-yellow-100" id="dapps">
