@@ -27,10 +27,12 @@ links:
   github: "https://github.com/dimitarangelkov"
   discord: "http://discord.com/username"
   twitter: "http://twitter.com/username"
+  demo: "http://site.com"
 team:
   - name: Member 1
     linkedin: "https://linkedin.com/dimitarangelkov"
-    image: "https://picsum.photos/500/500?random=1"
+    discord: "http://discord.com/username"
+    twitter: "http://twitter.com/username"
   - name: Member 2
     linkedin: "https://linkedin.com/jorka"
     image: "https://picsum.photos/500/500?random=2"

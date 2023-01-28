@@ -71,11 +71,12 @@ const config = {
       },
       event: {
         label: "Event",
-        options: ["ETHIndia", "ETHBoston", "ETHDenver"],
+        options: ["ETH San Francisco", "ETHIndia", "ETHBoston", "ETHDenver"],
       },
       projectStage: {
         label: "Project Stage",
         options: [
+          "Hackathon Project",
           "One time project",
           "In progress - Pre-Alpha",
           "In progress - Alpha",
