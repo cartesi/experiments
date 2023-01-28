@@ -77,7 +77,12 @@ const config = {
       },
       event: {
         label: "Event",
-        options: ["ETH San Francisco", "Hack Boston", "ETH India", "ETHDenver"],
+        options: [
+          "ETH San Francisco",
+          "Hack Boston",
+          "ETH India",
+          "ETH Bogota",
+        ],
       },
       projectStage: {
         label: "Project Stage",
@@ -109,6 +114,7 @@ const config = {
           "Lua",
           "Polygon",
           "Push",
+          "Rust",
           "StackOS",
           "Solidity",
           "TailwindCSS",

@@ -197,7 +197,7 @@ export default function MDXContentWrapper(props) {
                               />
                             </div>
                           )}
-                          <div className="flex gap-2 items-center">
+                          <div className="flex flex-wrap gap-2 items-center">
                             <div className="font-bold">{member.name}</div>
                             {member.linkedin && (
                               <div className="flex-shrink-0">
@@ -226,16 +226,9 @@ export default function MDXContentWrapper(props) {
                               </div>
                             )}
                             {member.discord && (
-                              <div className="flex-shrink-0">
-                                <a
-                                  href={member.discord}
-                                  rel="noreferrer"
-                                  target="_blank"
-                                  className="flex hover:no-underline no-underline text-gray-900 hover:text-blue-500 align-middle"
-                                  key={i}
-                                >
-                                  <RiDiscordFill className="w-6 h-6 fill-current" />
-                                </a>
+                              <div className="flex flex-shrink-0 items-center bg-blue-900 text-xs text-white p-1 rounded-lg">
+                                <RiDiscordFill className="w-6 h-6 fill-current" />
+                                {member.discord}
                               </div>
                             )}
                           </div>
