@@ -17,12 +17,14 @@ const ShowcaseItem = ({ page }: Props) => {
       to={path}
     >
       <div className="overflow-hidden">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="w-full object-cover block transition-transform group-hover:scale-105 aspect-video"
-          loading="lazy"
-        />
+        {thumbnail && (
+          <img
+            src={thumbnail}
+            alt={title}
+            className="w-full object-cover block transition-transform group-hover:scale-105 aspect-video"
+            loading="lazy"
+          />
+        )}
       </div>
       <div className="flex flex-col gap-3 p-6 sm:p-8 grow">
         <h3 className="font-serif text-lg sm:text-xl lg:text-2xl">{title}</h3>
