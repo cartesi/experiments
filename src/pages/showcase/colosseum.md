@@ -1,12 +1,12 @@
 ---
 title: Colosseum
 description: Fully on-chain fighting game that pits bots against each other and allows viewers to place bets.
+logo: "https://iili.io/H0ysdGf.png"
 thumbnail: "https://iili.io/H0LuWFI.jpg"
 tags:
-  hackathon: true
-  winner: 1st Place
-  event: Hack Boston
   projectStage: Hackathon Project
+  event: Hack Boston
+  winner: 1st Place
   technology:
     - Python
     - ReactJS

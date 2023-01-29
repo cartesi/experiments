@@ -8,10 +8,9 @@ gallery:
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/284646b9544b4d57a1353232795a0bc7/f0c8c5e9-88b1-4c73-a126-139b6aa64f5f.jpeg"
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/284646b9544b4d57a1353232795a0bc7/40a5cf16-ece0-4d65-8c9f-d6f6d1d134f9.jpeg"
 tags:
-  hackathon: true
-  winner: 3rd Place
-  event: ETH India
   projectStage: Hackathon Project
+  event: ETH India
+  winner: 3rd Place
   technology:
     - Cartesi Rollups
     - ReactJS

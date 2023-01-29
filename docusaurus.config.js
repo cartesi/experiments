@@ -61,18 +61,16 @@ const config = {
       return data;
     })(),
     tagsAvailable: {
-      hackathon: {
-        label: "Hackathon",
-        options: [0, 1],
-      },
-      winner: {
-        label: "Winner",
+      projectStage: {
+        label: "Project Stage",
         options: [
-          "1st Place",
-          "2nd Place",
-          "3rd Place",
-          "4th Place",
-          "5th Place",
+          "Hackathon Project",
+          "Proof of concept",
+          "In progress - Pre-Alpha",
+          "In progress - Alpha",
+          "In progress - Beta",
+          "Release Candidate",
+          "Stable release",
         ],
       },
       event: {
@@ -85,23 +83,16 @@ const config = {
           "ETH Sao Paulo",
         ],
       },
-      projectStage: {
-        label: "Project Stage",
-        options: [
-          "Hackathon Project",
-          "One time project",
-          "In progress - Pre-Alpha",
-          "In progress - Alpha",
-          "In progress - Beta",
-          "Release Candidate",
-          "Stable release",
-        ],
+      winner: {
+        label: "Winner",
+        options: ["1st Place", "2nd Place", "3rd Place", "4th Place"],
       },
       technology: {
         label: "Technology",
         options: [
           "Cartesi Rollups",
           "Covalent",
+          "C++",
           "Ethers.js",
           "ENPS",
           "Python",
@@ -120,12 +111,16 @@ const config = {
           "Rust",
           "StackOS",
           "Solidity",
+          "SQLite",
           "TailwindCSS",
           "Tellor",
+          "Vue",
           "TypeScript",
           "NFTPort",
           "Hardhat",
           "XMTP",
+          "mc2gen",
+          "Sci-kit learn",
         ].sort(),
       },
     },

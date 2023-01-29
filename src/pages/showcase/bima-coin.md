@@ -2,16 +2,15 @@
 title: Bima Coin
 description: Bima for the people, Bima by the people
 logo: "https://iili.io/H0LloBa.webp"
-thumbnail: "https://iili.io/H0LloBa.webp"
+thumbnail: "https://iili.io/H0y4xgS.png"
 gallery:
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/e5c86c1cc7cc4855b27a8fdf60bbd56a/d1cf5e09-d400-42b3-b9a8-41c0f1296147.png"
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/e5c86c1cc7cc4855b27a8fdf60bbd56a/39bd8b26-ac93-450e-aa25-5f281d41cc1c.png"
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/e5c86c1cc7cc4855b27a8fdf60bbd56a/e1bca157-d7d7-46f5-b22a-c21d5d3115da.jpeg"
 tags:
-  hackathon: true
-  winner: 1st Place
-  event: ETH India
   projectStage: Hackathon Project
+  event: ETH India
+  winner: 1st Place
   technology:
     - Solidity
     - Python

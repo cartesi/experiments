@@ -1,7 +1,7 @@
 ---
 title: zaP!
 description: Make blockchain anon, private and fun again! Hiding easter eggs and logic bombs across blockchains in autonomous Smart Contracts
-thumbnail: "https://iili.io/H0bfRMN.png"
+thumbnail: "https://iili.io/H19xvWX.png"
 logo: "https://iili.io/H0bfRMN.png"
 gallery:
   - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2Fzap-dev-triggers-dark-mode.png"
@@ -11,10 +11,9 @@ gallery:
   - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2FzaP_main_function.drawio.png"
   - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2FzaP_read_queries.drawio.png"
 tags:
-  hackathon: true
-  winner: 3rd Place
-  event: ETH San Francisco
   projectStage: Hackathon Project
+  event: ETH San Francisco
+  winner: 3rd Place
   technology:
     - Cartesi Rollups
     - Python

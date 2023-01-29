@@ -7,10 +7,9 @@ gallery:
   - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fv1gr8%2Fimages%2Fcli-example-1.jpg"
   - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fv1gr8%2Fimages%2FScreenshot%20from%202022-10-09%2014-34-24.png"
 tags:
-  hackathon: true
-  winner: 1st Place
-  event: ETH Bogota
   projectStage: Hackathon Project
+  event: ETH Bogota
+  winner: 1st Place
   technology:
     - Cartesi Rollups
     - Rust

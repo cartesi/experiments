@@ -31,12 +31,11 @@ const ShowcaseItem = ({ page }: Props) => {
         <p className="text-yellow-50/75">{description}</p>
         <div className="flex flex-wrap gap-1 mt-auto">
           {/* {JSON.stringify(tags)} */}
-          {tags.hackathon && <Tag type="hackathon" tag={tags.hackathon} />}
-          {tags.winner && <Tag type="winner" tag={tags.winner} />}
-          {tags.event && <Tag type="event" tag={tags.event} />}
           {tags.projectStage && (
             <Tag type="projectStage" tag={tags.projectStage} />
           )}
+          {tags.event && <Tag type="event" tag={tags.event} />}
+          {tags.winner && <Tag type="winner" tag={tags.winner} />}
         </div>
       </div>
     </Link>

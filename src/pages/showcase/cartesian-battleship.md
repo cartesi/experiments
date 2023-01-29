@@ -1,25 +1,24 @@
 ---
 title: Cartesian Battleship
 description: Fully on-chain battleships game
-logo: "https://iili.io/H0D4hej.jpg"
-thumbnail: "https://iili.io/H0DUczB.jpg"
+logo: "https://iili.io/H0D4hej.md.jpg"
+thumbnail: "https://iili.io/H0DUczB.md.jpg"
 gallery:
   - "https://iili.io/H0DUczB.jpg"
-  - "https://iili.io/H0bd9Kg.png"
-  - "https://iili.io/H0b3acu.png"
-  - "https://iili.io/H0b3c8b.png"
-  - "https://iili.io/H0b3Pln.png"
-  - "https://iili.io/H0bFCiP.png"
-  - "https://iili.io/H0bKHLN.png"
-  - "https://iili.io/H0bK3rX.png"
-  - "https://iili.io/H0bKf7s.png"
-  - "https://iili.io/H0bKIBS.png"
-  - "https://iili.io/H0bKYpj.png"
-  - "https://iili.io/H0bKM41.png"
-  - "https://iili.io/H0bKNTv.png"
-  - "https://iili.io/H0bKran.png"
+  - "https://iili.io/H0pyNmQ.jpg"
+  - "https://iili.io/H0y9ujV.jpg"
+  - "https://iili.io/H0yJHzl.jpg"
+  - "https://iili.io/H0yJeI4.jpg"
+  - "https://iili.io/H0yd6PI.jpg"
+  - "https://iili.io/H0ydpol.jpg"
+  - "https://iili.io/H0y22Se.jpg"
+  - "https://iili.io/H0y3nmG.jpg"
+  - "https://iili.io/H0y3cmb.jpg"
+  - "https://iili.io/H0y3ELQ.jpg"
+  - "https://iili.io/H0y3h21.jpg"
+  - "https://iili.io/H0y3ips.jpg"
+  - "https://iili.io/H0yFlat.jpg"
 tags:
-  hackathon: false
   projectStage: In progress - Pre-Alpha
   technology:
     - Cartesi Rollups

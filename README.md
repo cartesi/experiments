@@ -58,10 +58,9 @@ gallery:
   - "https://picsum.photos/1200/720?random=14"
   - "https://picsum.photos/1200/720?random=55"
 tags:
-  hackathon: true
-  winner: 1st Place
-  event: ETH India
   projectStage: Hackathon Project
+  event: ETH India
+  winner: 1st Place
   technology:
     - Solidity
     - Python

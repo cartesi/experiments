@@ -129,10 +129,6 @@ export default function Home(): JSX.Element {
 
       if (!isNaN(Number(value))) {
         value = Number(value);
-      } else if (value === "true") {
-        value = true;
-      } else if (value === "false") {
-        value = false;
       }
 
       handleTagClick(tagsArray[0] as keyof TagsAvailable, value);
@@ -156,16 +152,11 @@ export default function Home(): JSX.Element {
                 checked={!selectedTags.length}
               />
               {/* TODO: make these dynamic */}
-              <FilterButtonCheckbox
-                label={tagsAvailable.hackathon.label}
-                onChange={() => handleTagClick("hackathon", true)}
-                checked={selectedTags.some((tag) => tag.hackathon === true)}
-              />
               <FilterGroup
-                tags={tagsAvailable.winner}
-                filterTag="winner"
+                tags={tagsAvailable.projectStage}
+                filterTag="projectStage"
                 handleClick={handleTagClick}
-                selectedTags={selectedTags.filter((tag) => tag.winner)}
+                selectedTags={selectedTags.filter((tag) => tag.projectStage)}
               />
               <FilterGroup
                 tags={tagsAvailable.event}
@@ -174,10 +165,10 @@ export default function Home(): JSX.Element {
                 selectedTags={selectedTags.filter((tag) => tag.event)}
               />
               <FilterGroup
-                tags={tagsAvailable.projectStage}
-                filterTag="projectStage"
+                tags={tagsAvailable.winner}
+                filterTag="winner"
                 handleClick={handleTagClick}
-                selectedTags={selectedTags.filter((tag) => tag.projectStage)}
+                selectedTags={selectedTags.filter((tag) => tag.winner)}
               />
               <FilterGroup
                 tags={tagsAvailable.technology}

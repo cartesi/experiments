@@ -2,7 +2,7 @@
 title: Ghar On Chain
 description: Easy Buy, Easy Sell
 logo: "https://iili.io/H0LgL3x.webp"
-thumbnail: "https://iili.io/H0LgL3x.webp"
+thumbnail: "https://iili.io/H193FFS.png"
 gallery:
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/f79b3dbd01634aa0a2955c5a385d7974/60ed1527-685d-488f-af8b-b4181e68b427.png"
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/f79b3dbd01634aa0a2955c5a385d7974/f27a4862-66c5-4118-957b-71de636dd74f.png"
@@ -11,10 +11,9 @@ gallery:
   - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/f79b3dbd01634aa0a2955c5a385d7974/7b42328d-a069-4885-82fe-2922d5cfc4e8.jpeg"
   - ""
 tags:
-  hackathon: true
-  winner: 2nd Place
-  event: ETH India
   projectStage: Hackathon Project
+  event: ETH India
+  winner: 2nd Place
   technology:
     - Cartesi Rollups
     - ReactJS

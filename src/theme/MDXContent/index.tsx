@@ -22,10 +22,9 @@ export type PageFrontMatter = {
   thumbnail: string;
   gallery?: string[];
   tags: {
-    hackathon?: boolean;
-    winner?: number;
-    event?: string;
     projectStage?: string;
+    event?: string;
+    winner?: number;
     technology?: string[];
   };
   links: {
