@@ -44,4 +44,4 @@ The first approach was to classify the iris flower dataset using KNN (k-nearest 
 
 # Read More
 
-[Groundbreaking Blockchain OS Projects — Biometrics & Machine Learning](https://medium.com/cartesi/groundbreaking-blockchain-os-projects-biometrics-machine-learning-2bd9fad7dcf2)
+- [Groundbreaking Blockchain OS Projects — Biometrics & Machine Learning](https://medium.com/cartesi/groundbreaking-blockchain-os-projects-biometrics-machine-learning-2bd9fad7dcf2)
