@@ -30,10 +30,7 @@ const config = {
       const fs = require("fs");
       const path = require("path");
 
-      const SHOWCASES_PATH = "showcase";
-      const pages = fs.readdirSync(
-        path.resolve(__dirname, `src/pages/${SHOWCASES_PATH}`)
-      );
+      const pages = fs.readdirSync(path.resolve(__dirname, `src/pages`));
       const fileType = ".md";
       const matter = require("gray-matter");
 
@@ -43,14 +40,14 @@ const config = {
           const fileName = page.replace(fileType, "");
 
           const file = fs.readFileSync(
-            path.resolve(__dirname, `src/pages/${SHOWCASES_PATH}/${page}`)
+            path.resolve(__dirname, `src/pages/${page}`)
           );
 
           const { data } = matter(file);
           // console.log(data);
           return {
             id: fileName,
-            path: `/${SHOWCASES_PATH}/${fileName}`,
+            path: `/${fileName}`,
             title: data.title,
             description: data.description,
             thumbnail: data.thumbnail,
@@ -185,7 +182,7 @@ const config = {
             position: "right",
           },
           {
-            to: "https://discord.gg/Pt2NrnS",
+            to: "https://discord.gg/94YbzVhbsY",
             position: "right",
             className: "header-discord-link",
             "aria-label": "Discord",
@@ -272,7 +269,7 @@ const config = {
               },
               {
                 label: "Discord",
-                to: "https://discord.gg/Pt2NrnS",
+                to: "https://discord.gg/94YbzVhbsY",
               },
               {
                 label: "Medium",

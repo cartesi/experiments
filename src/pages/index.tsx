@@ -19,6 +19,10 @@ type Tag = {
 
 export type TagsAvailable = Record<keyof PageFrontMatter["tags"], Tag>;
 
+export enum TagPathSeperator {
+  value = "|",
+}
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const [selectedTags, setSelectedTags] = React.useState([]);
@@ -123,7 +127,7 @@ export default function Home(): JSX.Element {
     // console.log(tags);
 
     if (tags) {
-      const tagsArray = tags.split(":::");
+      const tagsArray = tags.split(TagPathSeperator.value);
       let value =
         tagsArray[1] as PageFrontMatter["tags"][keyof PageFrontMatter["tags"]];
 
