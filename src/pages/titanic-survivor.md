@@ -45,4 +45,4 @@ The Titanic Survivor DApp uses Logistic Regression from Scikit-Learn and the m2c
 
 # Read More
 
-[Groundbreaking Blockchain OS Projects — Biometrics & Machine Learning](https://medium.com/cartesi/groundbreaking-blockchain-os-projects-biometrics-machine-learning-2bd9fad7dcf2)
+- [Groundbreaking Blockchain OS Projects — Biometrics & Machine Learning](https://medium.com/cartesi/groundbreaking-blockchain-os-projects-biometrics-machine-learning-2bd9fad7dcf2)
