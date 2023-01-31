@@ -1,5 +1,6 @@
 import Link from "@docusaurus/Link";
 import React from "react";
+import { TagPathSeperator } from "../pages";
 import { PageFrontMatter } from "../theme/MDXContent";
 
 type Props = {
@@ -23,7 +24,7 @@ const TagContent = ({ tag, type }: Props) => {
 const Tag = ({ tag, type, isLink }: Props) => {
   return isLink ? (
     <Link
-      to={`/?tag=${type}:::${tag}`}
+      to={`/?tag=${type}${TagPathSeperator.value}${tag}`}
       className="no-underline hover:no-underline group"
     >
       <TagContent tag={tag} type={type} />
