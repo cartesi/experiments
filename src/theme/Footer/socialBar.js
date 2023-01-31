@@ -42,7 +42,7 @@ const IconTelegram = (props) => (
 const socialLinksWithIcons = [
   {
     name: "Discord",
-    url: "https://discord.gg/Pt2NrnS",
+    url: "https://discord.gg/94YbzVhbsY",
     icon: <IconDiscord className="h-8 w-8 fill-current" />,
   },
   {

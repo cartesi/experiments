@@ -185,7 +185,7 @@ const config = {
             position: "right",
           },
           {
-            to: "https://discord.gg/Pt2NrnS",
+            to: "https://discord.gg/94YbzVhbsY",
             position: "right",
             className: "header-discord-link",
             "aria-label": "Discord",
@@ -272,7 +272,7 @@ const config = {
               },
               {
                 label: "Discord",
-                to: "https://discord.gg/Pt2NrnS",
+                to: "https://discord.gg/94YbzVhbsY",
               },
               {
                 label: "Medium",
