@@ -195,4 +195,17 @@ blockquote {
   @apply flex items-center border border-solid border-blue-500 hover:bg-blue-200/20 text-blue-600 cursor-pointer rounded-sm px-4 py-2 relative bg-transparent font-sans text-base leading-normal m-0 appearance-none transition-colors;
 }
 
+.showcase-content ul:has(a) {
+  @apply pl-0;
+}
+
+.showcase-content ul li:has(a) {
+  @apply list-none border-gray-900 py-4 lg:py-6 flex items-center;
+  border-bottom: 1px solid;
+}
+
+.showcase-content ul li a {
+  @apply font-serif no-underline text-lg transition-colors text-gray-900 hover:text-blue-500;
+}
+
 @tailwind utilities;

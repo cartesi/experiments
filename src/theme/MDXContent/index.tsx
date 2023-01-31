@@ -253,7 +253,7 @@ export default function MDXContentWrapper(props) {
               <SocialShare title={title} />
               {/*  */}
             </div>
-            <div className="md:col-span-8">
+            <div className="md:col-span-8 showcase-content">
               <MDXContent {...props} />
             </div>
           </div>
