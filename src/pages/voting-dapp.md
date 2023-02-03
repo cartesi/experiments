@@ -1,5 +1,5 @@
 ---
-title: Voting Dapp
+title: Voting DApp
 description: This simple POC voting DApp allows you to vote on campaigns and create campaigns of your own.
 logo: "https://iili.io/H0yl0ua.png"
 thumbnail: "https://iili.io/H0yl0ua.png"
@@ -24,7 +24,7 @@ team:
   - name: Sonny Vu
 ---
 
-# About Sotatek’s Voting Dapp
+# About Sotatek’s Voting DApp
 
 This voting DApp was developed on top of Cartesi Rollups and showcases voting functionality. It enables users to vote on candidates in listed campaigns. Furthermore, users can create their own campaigns and add candidate options to vote on. This showcase/module can be used to build more complex DApps and can be utilized for voting in DAOs.
 
