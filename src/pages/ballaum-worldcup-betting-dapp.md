@@ -1,5 +1,5 @@
 ---
-title: Ballaum worldcup betting dapp
+title: Ballaum worldcup betting DApp
 description: Betting system for prediction of the world cup matches
 logo: "https://iili.io/H0yrMxf.png"
 thumbnail: "https://iili.io/H0yrMxf.png"

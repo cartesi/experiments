@@ -43,7 +43,7 @@ team:
 
 The project uses Cartesi OS at its core, Cartesi OS is used to make the network of executors.
 
-We are making a network of nodes using Cartesi OS that provides a wide array of services to facilitate dapp development, services include, Oracle, Smart Contract Automation, Gas Station, Webhooks, and Indexing.
+We are making a network of nodes using Cartesi OS that provides a wide array of services to facilitate DApp development, services include, Oracle, Smart Contract Automation, Gas Station, Webhooks, and Indexing.
 
 # Video
 

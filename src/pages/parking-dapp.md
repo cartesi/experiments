@@ -1,5 +1,5 @@
 ---
-title: Parking Dapp
+title: Parking DApp
 description: Public parking DApp using ETH transaction
 logo: "https://iili.io/H0yEnyX.png"
 thumbnail: "https://iili.io/H0yEnyX.png"
