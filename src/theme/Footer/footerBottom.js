@@ -27,10 +27,10 @@ const FooterBottom = () => {
                 </div>
                 <div>
                   <a
-                    href={`//cartesi.io/labs`}
+                    href={`//governance.cartesi.io`}
                     className="hover:text-yellow-50 text-gray-200"
                   >
-                    Labs
+                    Governance and Grants
                   </a>
                 </div>
                 <div>
