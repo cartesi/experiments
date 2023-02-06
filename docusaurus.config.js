@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "DApps Showcase - Cartesi",
+  title: "Project Showcase - Cartesi",
   tagline: "The Blockchain OS",
   url: "https://showcase.cartesi.io",
   baseUrl: "/",
