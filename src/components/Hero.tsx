@@ -12,9 +12,10 @@ const Hero = (props: Props) => {
             Hello, builders.
           </h1>
           <p className="font-serif text-lg lg:text-xl">
-            From exciting proof of concepts, hackathon projects and DApps, check
-            out what’s being built with Cartesi tech, the teams behind the
-            projects and get inspired to build something awesome together.
+            From exciting proof of concepts, hackathon projects and experimental
+            DApps, check out what’s being built on Cartesi testnet alpha, meet
+            the teams behind the projects and get inspired to build something
+            awesome together.
           </p>
         </div>
         <div className="mt-8 flex flex-col justify-center gap-4 text-center sm:flex-row sm:items-center lg:mt-16">
