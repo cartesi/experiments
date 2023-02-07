@@ -1,8 +1,8 @@
 ---
 title: Ultrachess
 description: "Fully on-chain chess DApp. Wager real money and play against other chess pros. Or deploy your own chess bots to compete in AI chess battles"
-logo: "https://pbs.twimg.com/profile_images/1514346881278787585/mrXYVJdt_400x400.jpg"
-thumbnail: "https://iili.io/H19C1xn.md.png"
+logo: "mrXYVJdt_400x400.jpg"
+thumbnail: "H19C1xn.md.png"
 tags:
   projectStage: In progress - Pre-Alpha
   technology:

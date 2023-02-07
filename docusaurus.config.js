@@ -26,6 +26,7 @@ const config = {
   },
 
   customFields: {
+    projectsImagesPath: "/projects",
     pageList: (function () {
       const fs = require("fs");
       const path = require("path");
@@ -38,13 +39,10 @@ const config = {
         .filter((page) => page.endsWith(fileType))
         .map((page) => {
           const fileName = page.replace(fileType, "");
-
           const file = fs.readFileSync(
             path.resolve(__dirname, `src/pages/${page}`)
           );
-
           const { data } = matter(file);
-          // console.log(data);
           return {
             id: fileName,
             path: `/${fileName}`,

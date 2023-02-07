@@ -1,8 +1,8 @@
 ---
 title: Titanic survivor
 description: The Titanic DApp collects input data to predict if a person would survive something as epic as the sinking of the Titanic.
-logo: "https://iili.io/H0yho92.png"
-thumbnail: "https://iili.io/H0yho92.png"
+logo: "H0yho92.png"
+thumbnail: "H0yho92.png"
 tags:
   projectStage: Proof of concept
   technology:

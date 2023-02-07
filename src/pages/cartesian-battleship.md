@@ -1,23 +1,23 @@
 ---
 title: Cartesian Battleship
 description: Fully on-chain battleships game
-logo: "https://iili.io/H0D4hej.md.jpg"
-thumbnail: "https://iili.io/H0DUczB.md.jpg"
+logo: "H0D4hej.md.jpg"
+thumbnail: "H0DUczB.md.jpg"
 gallery:
-  - "https://iili.io/H0DUczB.jpg"
-  - "https://iili.io/H0pyNmQ.jpg"
-  - "https://iili.io/H0y9ujV.jpg"
-  - "https://iili.io/H0yJHzl.jpg"
-  - "https://iili.io/H0yJeI4.jpg"
-  - "https://iili.io/H0yd6PI.jpg"
-  - "https://iili.io/H0ydpol.jpg"
-  - "https://iili.io/H0y22Se.jpg"
-  - "https://iili.io/H0y3nmG.jpg"
-  - "https://iili.io/H0y3cmb.jpg"
-  - "https://iili.io/H0y3ELQ.jpg"
-  - "https://iili.io/H0y3h21.jpg"
-  - "https://iili.io/H0y3ips.jpg"
-  - "https://iili.io/H0yFlat.jpg"
+  - "H0DUczB.jpg"
+  - "H0pyNmQ.jpg"
+  - "H0y9ujV.jpg"
+  - "H0yJHzl.jpg"
+  - "H0yJeI4.jpg"
+  - "H0yd6PI.jpg"
+  - "H0ydpol.jpg"
+  - "H0y22Se.jpg"
+  - "H0y3nmG.jpg"
+  - "H0y3cmb.jpg"
+  - "H0y3ELQ.jpg"
+  - "H0y3h21.jpg"
+  - "H0y3ips.jpg"
+  - "H0yFlat.jpg"
 tags:
   projectStage: In progress - Pre-Alpha
   technology:
@@ -60,7 +60,7 @@ This is a fully decentralized / on-chain version of Battleships. The goal is to 
 - Games continues until one players fleet is fully guessed (shot down)
 - When game ends the result is updated and the winner is announced
 
-![Game Play](https://iili.io/H0bqu5u.jpg)
+![Game Play](/projects/cartesian-battleship/H0bqu5u.jpg)
 
 <iframe width="100%" height="440" src="https://www.youtube.com/embed/l6TMQuJB53E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
@@ -68,7 +68,7 @@ This is a fully decentralized / on-chain version of Battleships. The goal is to 
 
 # Technical Details
 
-![Architecture](https://iili.io/H0bqD7e.jpg)
+![Architecture](/projects/cartesian-battleship/H0bqD7e.jpg)
 
 ### Instant Server
 
@@ -80,7 +80,7 @@ The Instant server has the following purposes:
 2. To organize the communication in containers so the players may send messages between themselves only in the context of a certain game (in similar projects this could be called channel, room, group, etc.)
 3. To apply additional custom business logic to validate the player messages; in this case it is programmed to enforce the rules of the Battleship game but it might be repurposed for other applications
 
-![Instant Server](https://iili.io/H0bBBpa.jpg)
+![Instant Server](/projects/cartesian-battleship/H0bBBpa.jpg)
 
 <iframe width="100%" height="440" src="https://www.youtube.com/embed/MjHe7jyyxvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>

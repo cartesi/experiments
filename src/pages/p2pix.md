@@ -1,8 +1,8 @@
 ---
 title: p2pix
 description: A trustless p2p solution for exchanging FIAT to ERC20 layer 2 tokens
-logo: "https://iili.io/H0DalV9.png"
-thumbnail: "https://iili.io/H0ybpUJ.png"
+logo: "H0DalV9.png"
+thumbnail: "H0ybpUJ.png"
 tags:
   projectStage: Hackathon Project
   event: ETH Sao Paulo

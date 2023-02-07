@@ -1,8 +1,8 @@
 ---
 title: Iris Classifier
 description: The Iris classifier uses KNN supervised learning to predict what flower the user is inputing to the DApp. The prediction and computation take place on-chain using the Cartesi API.
-logo: "https://iili.io/H0yho92.png"
-thumbnail: "https://iili.io/H0yho92.png"
+logo: "H0yho92.png"
+thumbnail: "H0yho92.png"
 tags:
   projectStage: Proof of concept
   technology:

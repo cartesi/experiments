@@ -1,8 +1,8 @@
 ---
 title: LIFE
 description: Massively-multiplayer-on-chain Conway's game of life where user's fight for dominance of a 1000X1000 grid.
-thumbnail: "https://iili.io/H0y6JCx.png"
-logo: "https://iili.io/H0Da4Np.png"
+thumbnail: "H0y6JCx.png"
+logo: "H0Da4Np.png"
 tags:
   projectStage: Hackathon Project
   event: ETH San Francisco

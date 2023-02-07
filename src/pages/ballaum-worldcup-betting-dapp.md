@@ -1,8 +1,8 @@
 ---
 title: Ballaum worldcup betting DApp
 description: Betting system for prediction of the world cup matches
-logo: "https://iili.io/H0yrMxf.png"
-thumbnail: "https://iili.io/H0yrMxf.png"
+logo: "H0yrMxf.png"
+thumbnail: "H0yrMxf.png"
 tags:
   projectStage: Proof of concept
   technology:

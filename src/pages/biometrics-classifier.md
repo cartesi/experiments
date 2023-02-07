@@ -1,8 +1,8 @@
 ---
 title: Biometrics classifier
 description: This DApp uses machine learning, computer vision, and feature extraction to perform a decentralized biometrics spoof detection on-chain. Beyond verifying who’s fingerprints were used, this program checks for spoofing.
-logo: "https://iili.io/H0yho92.png"
-thumbnail: "https://iili.io/H0yho92.png"
+logo: "H0yho92.png"
+thumbnail: "H0yho92.png"
 tags:
   projectStage: Proof of concept
   technology:

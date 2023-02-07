@@ -1,8 +1,8 @@
 ---
 title: Dinder
 description: A strategic, competitive online game that blends the aesthetics of puzzle game with RPG elements.
-logo: "https://pbs.twimg.com/profile_images/1144100415601958912/xnk08D3d_400x400.png"
-thumbnail: "https://iili.io/H0yY4F1.md.png"
+logo: "xnk08D3d_400x400.png"
+thumbnail: "H0yY4F1.md.png"
 tags:
   projectStage: In progress - Pre-Alpha
   technology:

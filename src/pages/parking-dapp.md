@@ -1,12 +1,12 @@
 ---
 title: Parking DApp
 description: Public parking DApp using ETH transaction
-logo: "https://iili.io/H0yEnyX.png"
-thumbnail: "https://iili.io/H0yEnyX.png"
+logo: "H0yEnyX.png"
+thumbnail: "H0yEnyX.png"
 gallery:
-  - "https://parking-dapp-goerli.webchefs.tech/images/prtscn_geojson.png"
-  - "https://parking-dapp-goerli.webchefs.tech/images/prtscn_blockchain_verification.png"
-  - "https://parking-dapp-goerli.webchefs.tech/images/prtscn_withdraw.png"
+  - "prtscn_geojson.png"
+  - "prtscn_blockchain_verification.png"
+  - "prtscn_withdraw.png"
 tags:
   projectStage: Proof of concept
   technology:

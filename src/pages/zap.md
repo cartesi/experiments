@@ -1,15 +1,15 @@
 ---
 title: zaP!
 description: Make blockchain anon, private and fun again! Hiding easter eggs and logic bombs across blockchains in autonomous Smart Contracts
-thumbnail: "https://iili.io/H19xvWX.png"
-logo: "https://iili.io/H0bfRMN.png"
+thumbnail: "H19xvWX.png"
+logo: "H0bfRMN.png"
 gallery:
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2Fzap-dev-triggers-dark-mode.png"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2Fzap-mockup-01.png"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2Fzap-mockup-02.png"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2Fzap-mockup-03.png"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2FzaP_main_function.drawio.png"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fyxuj7%2Fimages%2FzaP_read_queries.drawio.png"
+  - "projects%2Fyxuj7%2Fimages%2Fzap-dev-triggers-dark-mode.png"
+  - "projects%2Fyxuj7%2Fimages%2Fzap-mockup-01.png"
+  - "projects%2Fyxuj7%2Fimages%2Fzap-mockup-02.png"
+  - "projects%2Fyxuj7%2Fimages%2Fzap-mockup-03.png"
+  - "projects%2Fyxuj7%2Fimages%2FzaP_main_function.drawio.png"
+  - "projects%2Fyxuj7%2Fimages%2FzaP_read_queries.drawio.png"
 tags:
   projectStage: Hackathon Project
   event: ETH San Francisco
