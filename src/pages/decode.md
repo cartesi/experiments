@@ -1,14 +1,14 @@
 ---
 title: DeCode
 description: Decentralised Coding Platform
-thumbnail: "https://iili.io/H0y6JCx.png"
-logo: "https://iili.io/H0Da4Np.png"
+thumbnail: "H0y6JCx.png"
+logo: "H0Da4Np.png"
 gallery:
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/fefe7c58a84a44d7a4448286208193eb/3f64d2be-5dc6-4613-be1a-24fda1b7f675.png"
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/fefe7c58a84a44d7a4448286208193eb/1d2324fb-6af1-41ff-bfe3-352f9cd469f4.jpeg"
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/fefe7c58a84a44d7a4448286208193eb/0c5e417b-6702-4bb4-a3c7-a914b1bcc546.jpeg"
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/fefe7c58a84a44d7a4448286208193eb/79588968-4e19-402f-988f-452aae843007.jpeg"
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/fefe7c58a84a44d7a4448286208193eb/9117cf22-b71c-4fb7-814c-7d7d1c067b28.jpeg"
+  - "3f64d2be-5dc6-4613-be1a-24fda1b7f675.png"
+  - "1d2324fb-6af1-41ff-bfe3-352f9cd469f4.jpeg"
+  - "0c5e417b-6702-4bb4-a3c7-a914b1bcc546.jpeg"
+  - "79588968-4e19-402f-988f-452aae843007.jpeg"
+  - "9117cf22-b71c-4fb7-814c-7d7d1c067b28.jpeg"
 tags:
   projectStage: Hackathon Project
   event: ETH India

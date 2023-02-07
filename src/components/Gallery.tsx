@@ -9,6 +9,10 @@ import "swiper/css/pagination";
 
 import { FreeMode, Pagination } from "swiper";
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useLocation } from "@docusaurus/router";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+
 type Props = {
   images: string[];
 };
@@ -17,10 +21,14 @@ const Gallery = ({ images }: Props) => {
   const [showLightbox, setShowLightbox] = React.useState(false);
   const [lightboxImage, setLightboxImage] = React.useState("");
 
+  const { siteConfig } = useDocusaurusContext();
+
   const handleImageClick = (image: string) => {
     setLightboxImage(image);
     setShowLightbox(true);
   };
+
+  const location = useLocation();
 
   React.useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
@@ -72,10 +80,17 @@ const Gallery = ({ images }: Props) => {
           <SwiperSlide key={i}>
             <div className="pb-8">
               <img
-                src={image}
+                src={useBaseUrl(
+                  `${siteConfig.customFields.projectsImagesPath}${location.pathname}${image}`
+                )}
                 className="aspect-video object-cover shadow-sm cursor-zoom-in"
                 alt={``}
-                onClick={() => handleImageClick(image)}
+                onClick={() =>
+                  handleImageClick(
+                    require(`@site/static/projects${location.pathname}${image}`)
+                      .default
+                  )
+                }
               />
             </div>
           </SwiperSlide>

@@ -1,15 +1,15 @@
 ---
 title: Nucleus
 description: DeFi lending protocol with real-time dynamic risk management
-thumbnail: "https://iili.io/H0y6JCx.png"
-logo: "https://iili.io/H0Da4Np.png"
+thumbnail: "H0y6JCx.png"
+logo: "H0Da4Np.png"
 gallery:
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.13%20AM.jpg"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.21%20AM.jpg"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.33%20AM.jpg"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.52%20AM.jpg"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.48.06%20AM.jpg"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.48.34%20AM.jpg"
+  - "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.13%20AM.jpg"
+  - "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.21%20AM.jpg"
+  - "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.33%20AM.jpg"
+  - "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.52%20AM.jpg"
+  - "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.48.06%20AM.jpg"
+  - "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.48.34%20AM.jpg"
 tags:
   projectStage: Hackathon Project
   event: ETH San Francisco

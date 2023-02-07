@@ -2,6 +2,8 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import { PageFrontMatter } from "../theme/MDXContent";
 import Tag from "./Tag";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type Props = {
   page: PageFrontMatter;
@@ -9,6 +11,7 @@ type Props = {
 
 const ShowcaseItem = ({ page }: Props) => {
   const { title, description, tags, path, thumbnail } = page;
+  const { siteConfig } = useDocusaurusContext();
 
   return (
     <Link
@@ -19,7 +22,9 @@ const ShowcaseItem = ({ page }: Props) => {
       <div className="overflow-hidden">
         {thumbnail && (
           <img
-            src={thumbnail}
+            src={useBaseUrl(
+              `${siteConfig.customFields.projectsImagesPath}${path}/${thumbnail}`
+            )}
             alt={title}
             className="w-full object-cover block transition-transform group-hover:scale-105 aspect-video"
             loading="lazy"

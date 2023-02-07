@@ -13,6 +13,10 @@ import Gallery from "@site/src/components/Gallery";
 
 import SocialShare from "@site/src/components/SocialShare";
 
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useLocation } from "@docusaurus/router";
+
 export type PageFrontMatter = {
   id: string;
   path: string;
@@ -49,6 +53,9 @@ export default function MDXContentWrapper(props) {
   const { title, description, logo, tags, gallery, links, team } =
     frontMatter as PageFrontMatter;
 
+  const location = useLocation();
+  const { siteConfig } = useDocusaurusContext();
+
   return (
     <>
       {/*  */}
@@ -58,7 +65,9 @@ export default function MDXContentWrapper(props) {
             {logo && (
               <p className="mb-4">
                 <img
-                  src={logo}
+                  src={useBaseUrl(
+                    `${siteConfig.customFields.projectsImagesPath}${location.pathname}${logo}`
+                  )}
                   width="100"
                   alt={title}
                   className="aspect-square w-24 h-24 object-cover rounded-full"

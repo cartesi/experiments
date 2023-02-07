@@ -1,12 +1,12 @@
 ---
 title: Automati
 description: Making services decentralized
-logo: "https://iili.io/H0ZVcGI.webp"
-thumbnail: "https://iili.io/H0ZVcGI.webp"
+logo: "H0ZVcGI.webp"
+thumbnail: "H0ZVcGI.webp"
 gallery:
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/284646b9544b4d57a1353232795a0bc7/719529ba-05a1-418e-af4b-8a9b195c32a1.jpeg"
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/284646b9544b4d57a1353232795a0bc7/f0c8c5e9-88b1-4c73-a126-139b6aa64f5f.jpeg"
-  - "https://assets.devfolio.co/hackathons/477fc44df3b94017b8b4bef44fca3cd7/projects/284646b9544b4d57a1353232795a0bc7/40a5cf16-ece0-4d65-8c9f-d6f6d1d134f9.jpeg"
+  - "719529ba-05a1-418e-af4b-8a9b195c32a1.jpeg"
+  - "f0c8c5e9-88b1-4c73-a126-139b6aa64f5f.jpeg"
+  - "40a5cf16-ece0-4d65-8c9f-d6f6d1d134f9.jpeg"
 tags:
   projectStage: Hackathon Project
   event: ETH India

@@ -1,11 +1,11 @@
 ---
 title: Frmandy
 description: A fully on-chain NFT mint using Cartesi and Ethereum smart contracts
-logo: "https://iili.io/H0t7nyB.jpg"
-thumbnail: "https://iili.io/H0t7nyB.jpg"
+logo: "H0t7nyB.jpg"
+thumbnail: "H0t7nyB.jpg"
 gallery:
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fv1gr8%2Fimages%2Fcli-example-1.jpg"
-  - "https://storage.googleapis.com/ethglobal-api-production/projects%2Fv1gr8%2Fimages%2FScreenshot%20from%202022-10-09%2014-34-24.png"
+  - "projects%2Fv1gr8%2Fimages%2Fcli-example-1.jpg"
+  - "projects%2Fv1gr8%2Fimages%2FScreenshot%20from%202022-10-09%2014-34-24.png"
 tags:
   projectStage: Hackathon Project
   event: ETH Bogota
