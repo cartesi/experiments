@@ -33,7 +33,6 @@ tags:
 links:
   github:
     - "https://github.com/WeAreProductive/CartesianBattleships"
-    - "https://github.com/WeAreProductive/CartesianBattleshipsUI"
     - "https://github.com/WeAreProductive/CartesiAutomation"
   demo: "https://play.cartesianbattleship.com/"
 team:

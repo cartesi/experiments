@@ -22,8 +22,6 @@ tags:
 links:
   website:
     - "https://ethglobal.com/showcase/zap-yxuj7"
-  github:
-    - "https://github.com/ffdfyjkgkgfork/zero-awareness-protocol"
   demo: "https://zero-awareness-protocol.vercel.app/"
 team:
   - name: German Abal
