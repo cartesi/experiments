@@ -14,7 +14,6 @@ links:
     - "https://ethglobal.com/showcase/life-81m99"
   github:
     - "https://github.com/TheExpandingPolytope/life"
-    - "https://github.com/TheExpandingPolytope/lifeEntire"
 team:
   - name: Jesse Engerman
     twitter: "http://twitter.com/gwapchain"
