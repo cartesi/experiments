@@ -49,14 +49,18 @@ description: Lorem Ipsum has been the industry's standard dummy text ever since 
 logo: "https://picsum.photos/500/500?random=1"
 thumbnail: "https://picsum.photos/1200/720?random=1"
 gallery:
-  - "https://picsum.photos/1200/720?random=2"
-  - "https://picsum.photos/1200/720?random=3"
-  - "https://picsum.photos/1200/720?random=4"
-  - "https://picsum.photos/1200/720?random=5"
-  - "https://picsum.photos/1200/720?random=12"
-  - "https://picsum.photos/1200/720?random=13"
-  - "https://picsum.photos/1200/720?random=14"
-  - "https://picsum.photos/1200/720?random=55"
+  - image: "https://picsum.photos/1200/720?random=2"
+    alt: some text
+  - image: "https://picsum.photos/1200/720?random=3"
+    alt: some text
+  - image: "https://picsum.photos/1200/720?random=4"
+    alt: some text
+  - image: "https://picsum.photos/1200/720?random=5"
+    alt: some text
+  - image: "https://picsum.photos/1200/720?random=12"
+  - image: "https://picsum.photos/1200/720?random=13"
+  - image: "https://picsum.photos/1200/720?random=14"
+  - image: "https://picsum.photos/1200/720?random=55"
 tags:
   projectStage: Hackathon Project
   event: ETH India

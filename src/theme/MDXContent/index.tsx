@@ -24,7 +24,10 @@ export type PageFrontMatter = {
   description: string;
   logo?: string;
   thumbnail: string;
-  gallery?: string[];
+  gallery?: {
+    image: string;
+    alt?: string;
+  }[];
   tags: {
     projectStage?: string;
     event?: string;
