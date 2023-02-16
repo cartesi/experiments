@@ -4,8 +4,10 @@ description: A fully on-chain NFT mint using Cartesi and Ethereum smart contract
 logo: "H0t7nyB.jpg"
 thumbnail: "H0t7nyB.jpg"
 gallery:
-  - "projects%2Fv1gr8%2Fimages%2Fcli-example-1.jpg"
-  - "projects%2Fv1gr8%2Fimages%2FScreenshot%20from%202022-10-09%2014-34-24.png"
+  - image: "projects%2Fv1gr8%2Fimages%2Fcli-example-1.jpg"
+    alt: Frmandy code snippet | Built with Cartesi Rollups
+  - image: "projects%2Fv1gr8%2Fimages%2FScreenshot%20from%202022-10-09%2014-34-24.png"
+    alt: Frmandy mint configuration | Built with Cartesi Rollups
 tags:
   projectStage: Hackathon Project
   event: ETH Bogota

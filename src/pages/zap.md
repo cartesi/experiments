@@ -4,12 +4,18 @@ description: Make blockchain anon, private and fun again! Hiding easter eggs and
 thumbnail: "H19xvWX.png"
 logo: "H0bfRMN.png"
 gallery:
-  - "projects%2Fyxuj7%2Fimages%2Fzap-dev-triggers-dark-mode.png"
-  - "projects%2Fyxuj7%2Fimages%2Fzap-mockup-01.png"
-  - "projects%2Fyxuj7%2Fimages%2Fzap-mockup-02.png"
-  - "projects%2Fyxuj7%2Fimages%2Fzap-mockup-03.png"
-  - "projects%2Fyxuj7%2Fimages%2FzaP_main_function.drawio.png"
-  - "projects%2Fyxuj7%2Fimages%2FzaP_read_queries.drawio.png"
+  - image: "projects%2Fyxuj7%2Fimages%2Fzap-dev-triggers-dark-mode.png"
+    alt: zaP! Triggers | Built with Cartesi Rollups
+  - image: "projects%2Fyxuj7%2Fimages%2Fzap-mockup-01.png"
+    alt: zaP! Homepage | Built with Cartesi Rollups
+  - image: "projects%2Fyxuj7%2Fimages%2Fzap-mockup-02.png"
+    alt: zaP! Send Tokens | Built with Cartesi Rollups
+  - image: "projects%2Fyxuj7%2Fimages%2Fzap-mockup-03.png"
+    alt: zaP! Private Triggers | Built with Cartesi Rollups
+  - image: "projects%2Fyxuj7%2Fimages%2FzaP_main_function.drawio.png"
+    alt: zaP! Framework | Built with Cartesi Rollups
+  - image: "projects%2Fyxuj7%2Fimages%2FzaP_read_queries.drawio.png"
+    alt: zaP! Functions | Built with Cartesi Rollups
 tags:
   projectStage: Hackathon Project
   event: ETH San Francisco

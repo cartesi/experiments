@@ -4,9 +4,9 @@ description: Making services decentralized
 logo: "H0ZVcGI.webp"
 thumbnail: "H0ZVcGI.webp"
 gallery:
-  - "719529ba-05a1-418e-af4b-8a9b195c32a1.jpeg"
-  - "f0c8c5e9-88b1-4c73-a126-139b6aa64f5f.jpeg"
-  - "40a5cf16-ece0-4d65-8c9f-d6f6d1d134f9.jpeg"
+  - image: "719529ba-05a1-418e-af4b-8a9b195c32a1.jpeg"
+  - image: "f0c8c5e9-88b1-4c73-a126-139b6aa64f5f.jpeg"
+  - image: "40a5cf16-ece0-4d65-8c9f-d6f6d1d134f9.jpeg"
 tags:
   projectStage: Hackathon Project
   event: ETH India

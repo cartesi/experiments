@@ -4,9 +4,9 @@ description: Bima for the people, Bima by the people
 logo: "H0LloBa.webp"
 thumbnail: "H0y4xgS.png"
 gallery:
-  - "d1cf5e09-d400-42b3-b9a8-41c0f1296147.png"
-  - "39bd8b26-ac93-450e-aa25-5f281d41cc1c.png"
-  - "e1bca157-d7d7-46f5-b22a-c21d5d3115da.jpeg"
+  - image: "d1cf5e09-d400-42b3-b9a8-41c0f1296147.png"
+  - image: "39bd8b26-ac93-450e-aa25-5f281d41cc1c.png"
+  - image: "e1bca157-d7d7-46f5-b22a-c21d5d3115da.jpeg"
 tags:
   projectStage: Hackathon Project
   event: ETH India

@@ -4,9 +4,12 @@ description: Public parking DApp using ETH transaction
 logo: "H0yEnyX.png"
 thumbnail: "H0yEnyX.png"
 gallery:
-  - "prtscn_geojson.png"
-  - "prtscn_blockchain_verification.png"
-  - "prtscn_withdraw.png"
+  - image: "prtscn_geojson.png"
+    alt: Webchefs Parking DApp - Create parking zone | Built with Cartesi Rollups
+  - image: "prtscn_blockchain_verification.png"
+    alt: Webchefs Parking DApp - Connect wallet | Built with Cartesi Rollups
+  - image: "prtscn_withdraw.png"
+    alt: Webchefs Parking DApp - Parking zone details | Built with Cartesi Rollups
 tags:
   projectStage: Proof of concept
   technology:

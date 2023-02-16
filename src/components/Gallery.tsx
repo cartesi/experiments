@@ -14,7 +14,10 @@ import { useLocation } from "@docusaurus/router";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type Props = {
-  images: string[];
+  images: {
+    image: string;
+    alt?: string;
+  }[];
 };
 
 const Gallery = ({ images }: Props) => {
@@ -81,13 +84,13 @@ const Gallery = ({ images }: Props) => {
             <div className="pb-8">
               <img
                 src={useBaseUrl(
-                  `${siteConfig.customFields.projectsImagesPath}${location.pathname}${image}`
+                  `${siteConfig.customFields.projectsImagesPath}${location.pathname}${image.image}`
                 )}
                 className="aspect-video object-cover shadow-sm cursor-zoom-in"
-                alt={``}
+                alt={image.alt}
                 onClick={() =>
                   handleImageClick(
-                    require(`@site/static/projects${location.pathname}${image}`)
+                    require(`@site/static/projects${location.pathname}${image.image}`)
                       .default
                   )
                 }

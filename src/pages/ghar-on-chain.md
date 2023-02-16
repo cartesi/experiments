@@ -4,11 +4,11 @@ description: Easy Buy, Easy Sell
 logo: "H0LgL3x.webp"
 thumbnail: "H193FFS.png"
 gallery:
-  - "60ed1527-685d-488f-af8b-b4181e68b427.png"
-  - "f27a4862-66c5-4118-957b-71de636dd74f.png"
-  - "1420d879-3961-4c06-be74-2ba6f86847ab.png"
-  - "0900bfbc-e3a8-47c6-be9a-3e014719b0ef.png"
-  - "7b42328d-a069-4885-82fe-2922d5cfc4e8.jpeg"
+  - image: "60ed1527-685d-488f-af8b-b4181e68b427.png"
+  - image: "f27a4862-66c5-4118-957b-71de636dd74f.png"
+  - image: "1420d879-3961-4c06-be74-2ba6f86847ab.png"
+  - image: "0900bfbc-e3a8-47c6-be9a-3e014719b0ef.png"
+  - image: "7b42328d-a069-4885-82fe-2922d5cfc4e8.jpeg"
 tags:
   projectStage: Hackathon Project
   event: ETH India

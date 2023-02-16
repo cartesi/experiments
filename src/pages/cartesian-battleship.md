@@ -4,20 +4,34 @@ description: Fully on-chain battleships game
 logo: "H0D4hej.md.jpg"
 thumbnail: "H0DUczB.md.jpg"
 gallery:
-  - "H0DUczB.jpg"
-  - "H0pyNmQ.jpg"
-  - "H0y9ujV.jpg"
-  - "H0yJHzl.jpg"
-  - "H0yJeI4.jpg"
-  - "H0yd6PI.jpg"
-  - "H0ydpol.jpg"
-  - "H0y22Se.jpg"
-  - "H0y3nmG.jpg"
-  - "H0y3cmb.jpg"
-  - "H0y3ELQ.jpg"
-  - "H0y3h21.jpg"
-  - "H0y3ips.jpg"
-  - "H0yFlat.jpg"
+  - image: "H0DUczB.jpg"
+    alt: Productive Decentralized Battleship Logo | Built with Cartesi Rollups
+  - image: "H0pyNmQ.jpg"
+    alt:
+  - image: "H0y9ujV.jpg"
+    alt: Productive Decentralized Battleship - Join or create new game screen | Built with Cartesi Rollups
+  - image: "H0yJHzl.jpg"
+    alt: Productive Decentralized Battleship - Create game screen | Built with Cartesi Rollups
+  - image: "H0yJeI4.jpg"
+    alt:
+  - image: "H0yd6PI.jpg"
+    alt: Productive Decentralized Battleship - Place your ships screen | Built with Cartesi Rollups
+  - image: "H0ydpol.jpg"
+    alt: Productive Decentralized Battleship - Waiting for player move | Built with Cartesi Rollups
+  - image: "H0y22Se.jpg"
+    alt: Productive Decentralized Battleship - Gameplay Miss | Built with Cartesi Rollups
+  - image: "H0y3nmG.jpg"
+    alt: Productive Decentralized Battleship - Gameplay Logs | Built with Cartesi Rollups
+  - image: "H0y3cmb.jpg"
+    alt: Productive Decentralized Battleship - Enemy Hit | Built with Cartesi Rollups
+  - image: "H0y3ELQ.jpg"
+    alt: Productive Decentralized Battleship - Gameplay Hit 2 | Built with Cartesi Rollups
+  - image: "H0y3h21.jpg"
+    alt: Productive Decentralized Battleship - Gameplay Hit | Built with Cartesi Rollups
+  - image: "H0y3ips.jpg"
+    alt: Productive Decentralized Battleship - Verify gameplay | Built with Cartesi Rollups
+  - image: "H0yFlat.jpg"
+    alt: Productive Decentralized Battleship - Winner screen | Built with Cartesi Rollups
 tags:
   projectStage: In progress - Pre-Alpha
   technology:
