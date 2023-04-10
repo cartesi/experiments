@@ -119,4 +119,4 @@ In the near future, we imagine seeing multi-player versions, or versions with a 
 
 # Read more
 
-- [Groundbreaking Blockchain OS Projects — Decentralized Battleship Game.](https://medium.com/cartesi/groundbreaking-blockchain-os-projects-decentralized-battleship-game-ba1b81a52e61)
+- [Groundbreaking Blockchain Cartesi Rollups — Decentralized Battleship Game.](https://medium.com/cartesi/groundbreaking-blockchain-os-projects-decentralized-battleship-game-ba1b81a52e61)
