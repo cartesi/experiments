@@ -37,10 +37,14 @@ team:
 
 # About Nucleus
 
-This project creates (1) a DeFi lending protocol that allows deposits into a deposit pool on a Cartesi Rollup, borrowing against deposits, repaying them, and settling net interest.
+Nucleus is a DeFi lending platform that allows users to deposit funds into a deposit pool using [Cartesi Rollups](https://docs.cartesi.io/cartesi-rollups/), borrow against their deposits, repay loans, and settle net interest. The platform also features sophisticated financial analytics that computes collateral risk limits based on on-chain data represented within Cartesi.
 
-It also creates (2) sophisticated financial analytics that computes collateral risk limits based on on-chain data represented within Cartesi.
+Nucleus aims to provide a seamless lending experience powered by [Cartesi Rollups technology](https://docs.cartesi.io/cartesi-rollups/overview/).
 
 # Technical Details
 
-The (1) DeFi lending protocol and (2) financial analytics were coded in Python and run on a Linux virtual machine on Cartesi. Deposits, withdrawals, and settlements are transacted on a Cartesi Hardhat roll up. Onchain data feeds are fed from representations on Cartesi of major cryptocurrencies (ETH, stablecoins).
+Nucleus is built on top of Cartesi Rollups, which enables the implementation of the lending protocol and financial analytics in Python on a [Linux virtual machine](https://docs.cartesi.io/machine/intro/). The platform manages the lending process and various actions, such as handling deposits, withdrawals, borrowings, and price updates, through a smart contract.
+
+The lending protocol employs collateral risk limits, which are calculated based on the volatility index of major cryptocurrencies (ETH, stablecoins) represented within Cartesi. These risk limits ensure that borrowers can only borrow up to a certain amount based on their collateral, thus maintaining a secure lending environment.
+
+Nucleus's financial analytics component computes the risk parameters for each asset, enabling the platform to manage risk effectively. This combination of DeFi lending protocol and financial analytics offers users a powerful and secure way to participate in decentralized lending activities.
