@@ -37,12 +37,24 @@ team:
 
 # About Bima Coin
 
-In a decentralized world, insuring physical products gets challenging due to the lack of interfacing. With "Bima Coin", we provide an interface between the hardware sensors and the blockchain, to provide insurance to real-world things such as a car, and eventually something like even a vacuum cleaner (i.e. consumer goods insurance).
+Bima Coin is an innovative decentralized insurance solution designed to provide coverage for physical products, such as automobiles and consumer goods, by bridging the gap between hardware sensors and blockchain technology.
+
+In today’s increasingly decentralized world, insuring physical products presents unique challenges, as interfacing between real-world assets and blockchain networks is often difficult. Bima Coin addresses this issue by integrating hardware sensors with the blockchain, enabling users to insure their real-world assets in a decentralized manner.
 
 # Technical Details
 
-Cartesi is used to verify compute.
+Bima Coin leverages [Cartesi](https://cartesi.io/) to verify computations, ensuring the integrity and security of the platform. The project utilizes a variety of technologies, including Solidity, Python, ethers.js, Node.js, Hardhat, Polygon, Polygon Mumbai Testnet, and StackOS.
 
-# Video
+By combining these technologies, Bima Coin creates a decentralized ecosystem that efficiently handles sensor data, performs computations on IoT devices, and securely transfers data from the mote to the blockchain network.
+
+The core of Bima Coin’s functionality is its Insurance Logger Contract Factory, which demonstrates a basic Hardhat use case. It includes a sample contract, a test for that contract, and a script that deploys the contract. The Factory Address is on the [Polygon Mumbai testnet](https://www.alchemy.com/overviews/mumbai-testnet), and the platform is hosted on StackOS.
+
+One of the unique features of Bima Coin is the Motor Driving Index (MOTEX), which runs the driverBehaviorIndex algorithm on the Cartesi network and publishes the hash of the result onto the blockchain. This feature ensures the accurate assessment of risk and facilitates the decentralized insurance of real-world assets.
+
+Challenges faced during the development of Bima Coin included maintaining decentralization while processing sensor data, integrating multiple decentralized technologies, working with early-stage technologies with limited community support, and learning about wallet operations for deployment on Web3 platforms.
+
+Future improvements for Bima Coin may involve expanding the range of insurable products, refining the user interface, enhancing data security and privacy, and optimizing the platform’s performance for greater efficiency. By addressing these areas, Bima Coin can continue to evolve as a leading decentralized insurance solution for real-world assets.
+
+In summary, Bima Coin offers a novel approach to insuring physical products in a decentralized world. By combining cutting-edge technologies and seamlessly integrating hardware sensors with blockchain networks, the platform paves the way for accessible, secure, and efficient insurance coverage for a wide range of real-world assets.
 
 <iframe width="100%" height="440" src="https://www.youtube.com/embed/5KOQfOznwYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
