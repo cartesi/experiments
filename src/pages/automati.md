@@ -12,7 +12,6 @@ tags:
   event: ETH India
   winner: 3rd Place
   technology:
-    - Cartesi Rollups
     - ReactJS
     - Hardhat
 links:

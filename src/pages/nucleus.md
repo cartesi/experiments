@@ -21,7 +21,6 @@ tags:
   event: ETH San Francisco
   winner: 1st Place
   technology:
-    - Cartesi Rollups
     - Python
     - Linux
 links:

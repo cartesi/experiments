@@ -14,7 +14,6 @@ tags:
   event: ETH India
   winner: 4th Place
   technology:
-    - Cartesi Rollups
     - Solidity
     - MongoDB
     - DigitalOcean

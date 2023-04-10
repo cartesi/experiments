@@ -19,7 +19,6 @@ tags:
     - Hardhat
     - Polygon
     - StackOS
-    - Cartesi Rollups
 links:
   website:
     - "https://devfolio.co/submissions/bima-coin-b728"

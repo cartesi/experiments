@@ -35,7 +35,6 @@ gallery:
 tags:
   projectStage: In progress - Pre-Alpha
   technology:
-    - Cartesi Rollups
     - Python
     - Node.js
     - ReactJS

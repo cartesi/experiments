@@ -85,7 +85,6 @@ const config = {
       technology: {
         label: "Technology",
         options: [
-          "Cartesi Rollups",
           "Covalent",
           "C++",
           "Ethers.js",

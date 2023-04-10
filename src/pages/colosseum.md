@@ -12,7 +12,6 @@ tags:
     - ReactJS
     - Go
     - Lua
-    - Cartesi Rollups
 links:
   github:
     - "https://github.com/Ultrachess/BOSTON_HACKATHON"

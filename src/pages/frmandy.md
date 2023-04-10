@@ -13,7 +13,6 @@ tags:
   event: ETH Bogota
   winner: 1st Place
   technology:
-    - Cartesi Rollups
     - Rust
 links:
   website:

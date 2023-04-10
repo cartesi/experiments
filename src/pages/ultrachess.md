@@ -6,7 +6,6 @@ thumbnail: "H19C1xn.md.png"
 tags:
   projectStage: In progress - Pre-Alpha
   technology:
-    - Cartesi Rollups
 links:
   website:
     - "https://ultrachess.gitbook.io/product-docs/"
