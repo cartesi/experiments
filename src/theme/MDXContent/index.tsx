@@ -114,151 +114,157 @@ export default function MDXContentWrapper(props) {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
             <div className="md:col-span-4 flex flex-col gap-4 order-last md:order-first">
               {/*  */}
-              <div className="p-4 md:p-6 lg:p-8 bg-blue-100">
-                <h3 className="lg:text-3xl mb-4">Links</h3>
-                <div>
-                  <div className="flex flex-col gap-2">
-                    {links.website &&
-                      links.website.map((url, i) => {
+              {links && (
+                <div className="p-4 md:p-6 lg:p-8 bg-blue-100">
+                  <h3 className="lg:text-3xl mb-4">Links</h3>
+                  <div>
+                    <div className="flex flex-col gap-2">
+                      {links.website &&
+                        links.website.map((url, i) => {
+                          return (
+                            <a
+                              href={url}
+                              className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                            >
+                              <span className="flex items-center">
+                                <BiLink className="w-6 h-6 fill-current" />
+                              </span>
+                              <span className="truncate">{url}</span>
+                            </a>
+                          );
+                        })}
+                      {links.github &&
+                        links.github.map((url, i) => {
+                          return (
+                            <a
+                              href={url}
+                              className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                            >
+                              <span className="flex items-center">
+                                <AiFillGithub className="w-6 h-6 fill-current" />
+                              </span>
+                              <span className="truncate">{url}</span>
+                            </a>
+                          );
+                        })}
+                      {links.twitter &&
+                        links.twitter.map((url, i) => {
+                          return (
+                            <a
+                              href={url}
+                              className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                            >
+                              <span className="flex items-center">
+                                <AiFillTwitterCircle className="w-6 h-6 fill-current" />
+                              </span>
+                              <span className="truncate">{url}</span>
+                            </a>
+                          );
+                        })}
+                      {links.discord &&
+                        links.discord.map((url, i) => {
+                          return (
+                            <a
+                              href={url}
+                              className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
+                            >
+                              <span className="flex items-center">
+                                <RiDiscordFill className="w-6 h-6 fill-current" />
+                              </span>
+                              <span className="truncate">{url}</span>
+                            </a>
+                          );
+                        })}
+                    </div>
+                  </div>
+                  {links.demo && (
+                    <div className="mt-6">
+                      <a
+                        href={links.demo}
+                        rel="noreferrer"
+                        target="_blank"
+                        className="btn no-underline hover:no-underline py-3  hover:text-white hover:bg-blue-600 transition-colors justify-center"
+                      >
+                        Give it a try
+                      </a>
+                    </div>
+                  )}
+                </div>
+              )}
+              {/*  */}
+              {/*  */}
+              {team && (
+                <div className="p-4 md:p-6 lg:p-8 bg-blue-100">
+                  <h3 className="lg:text-3xl mb-4">Team</h3>
+                  <div>
+                    <div className="flex flex-col gap-2">
+                      {team.map((member, i) => {
                         return (
-                          <a
-                            href={url}
-                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                          >
-                            <span className="flex items-center">
-                              <BiLink className="w-6 h-6 fill-current" />
-                            </span>
-                            <span className="truncate">{url}</span>
-                          </a>
+                          <div className="flex items-center gap-4">
+                            {member.image && (
+                              <div className="flex-shrink-0">
+                                <img
+                                  src={member.image}
+                                  width="100"
+                                  alt={member.name}
+                                  className="aspect-square w-12 h-12 object-cover rounded-full"
+                                />
+                              </div>
+                            )}
+                            <div className="flex flex-wrap gap-2 items-center">
+                              <div className="font-bold">{member.name}</div>
+                              {member.linkedin && (
+                                <div className="flex-shrink-0">
+                                  <a
+                                    href={member.linkedin}
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    className="flex hover:no-underline no-underline text-gray-900 hover:text-blue-500 align-middle"
+                                    key={i}
+                                  >
+                                    <AiFillLinkedin className="w-6 h-6 fill-current" />
+                                  </a>
+                                </div>
+                              )}
+                              {member.twitter && (
+                                <div className="flex-shrink-0">
+                                  <a
+                                    href={member.twitter}
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    className="flex hover:no-underline no-underline text-gray-900 hover:text-blue-500 align-middle"
+                                    key={i}
+                                  >
+                                    <AiFillTwitterCircle className="w-6 h-6 fill-current" />
+                                  </a>
+                                </div>
+                              )}
+                              {member.discord && (
+                                <div className="flex flex-shrink-0 items-center bg-blue-900 text-xs text-white p-1 rounded-lg">
+                                  <RiDiscordFill className="w-6 h-6 fill-current" />
+                                  {member.discord}
+                                </div>
+                              )}
+                            </div>
+                          </div>
                         );
                       })}
-                    {links.github &&
-                      links.github.map((url, i) => {
-                        return (
-                          <a
-                            href={url}
-                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                          >
-                            <span className="flex items-center">
-                              <AiFillGithub className="w-6 h-6 fill-current" />
-                            </span>
-                            <span className="truncate">{url}</span>
-                          </a>
-                        );
-                      })}
-                    {links.twitter &&
-                      links.twitter.map((url, i) => {
-                        return (
-                          <a
-                            href={url}
-                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                          >
-                            <span className="flex items-center">
-                              <AiFillTwitterCircle className="w-6 h-6 fill-current" />
-                            </span>
-                            <span className="truncate">{url}</span>
-                          </a>
-                        );
-                      })}
-                    {links.discord &&
-                      links.discord.map((url, i) => {
-                        return (
-                          <a
-                            href={url}
-                            className="text-gray-900 no-underline hover:no-underline flex gap-2 items-center hover:text-blue-500"
-                          >
-                            <span className="flex items-center">
-                              <RiDiscordFill className="w-6 h-6 fill-current" />
-                            </span>
-                            <span className="truncate">{url}</span>
-                          </a>
-                        );
-                      })}
+                    </div>
                   </div>
                 </div>
-                {links.demo && (
-                  <div className="mt-6">
-                    <a
-                      href={links.demo}
-                      rel="noreferrer"
-                      target="_blank"
-                      className="btn no-underline hover:no-underline py-3  hover:text-white hover:bg-blue-600 transition-colors justify-center"
-                    >
-                      Give it a try
-                    </a>
-                  </div>
-                )}
-              </div>
+              )}
               {/*  */}
               {/*  */}
-              <div className="p-4 md:p-6 lg:p-8 bg-blue-100">
-                <h3 className="lg:text-3xl mb-4">Team</h3>
-                <div>
-                  <div className="flex flex-col gap-2">
-                    {team.map((member, i) => {
-                      return (
-                        <div className="flex items-center gap-4">
-                          {member.image && (
-                            <div className="flex-shrink-0">
-                              <img
-                                src={member.image}
-                                width="100"
-                                alt={member.name}
-                                className="aspect-square w-12 h-12 object-cover rounded-full"
-                              />
-                            </div>
-                          )}
-                          <div className="flex flex-wrap gap-2 items-center">
-                            <div className="font-bold">{member.name}</div>
-                            {member.linkedin && (
-                              <div className="flex-shrink-0">
-                                <a
-                                  href={member.linkedin}
-                                  rel="noreferrer"
-                                  target="_blank"
-                                  className="flex hover:no-underline no-underline text-gray-900 hover:text-blue-500 align-middle"
-                                  key={i}
-                                >
-                                  <AiFillLinkedin className="w-6 h-6 fill-current" />
-                                </a>
-                              </div>
-                            )}
-                            {member.twitter && (
-                              <div className="flex-shrink-0">
-                                <a
-                                  href={member.twitter}
-                                  rel="noreferrer"
-                                  target="_blank"
-                                  className="flex hover:no-underline no-underline text-gray-900 hover:text-blue-500 align-middle"
-                                  key={i}
-                                >
-                                  <AiFillTwitterCircle className="w-6 h-6 fill-current" />
-                                </a>
-                              </div>
-                            )}
-                            {member.discord && (
-                              <div className="flex flex-shrink-0 items-center bg-blue-900 text-xs text-white p-1 rounded-lg">
-                                <RiDiscordFill className="w-6 h-6 fill-current" />
-                                {member.discord}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      );
+              {tags.technology && (
+                <div className="p-4 md:p-6 lg:p-8 bg-blue-100">
+                  <h3 className="lg:text-3xl mb-4">Technologies</h3>
+                  <div className="flex flex-wrap gap-1">
+                    {tags.technology.map((tag, i) => {
+                      return <Tag type="technology" tag={tag} key={i} isLink />;
                     })}
                   </div>
                 </div>
-              </div>
-              {/*  */}
-              {/*  */}
-              <div className="p-4 md:p-6 lg:p-8 bg-blue-100">
-                <h3 className="lg:text-3xl mb-4">Technologies</h3>
-                <div className="flex flex-wrap gap-1">
-                  {tags.technology.map((tag, i) => {
-                    return <Tag type="technology" tag={tag} key={i} isLink />;
-                  })}
-                </div>
-              </div>
+              )}
               {/*  */}
 
               {/*  */}
