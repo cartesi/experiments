@@ -6,7 +6,6 @@ thumbnail: "H0yho92.png"
 tags:
   projectStage: Proof of concept
   technology:
-    - Cartesi Rollups
     - Python
     - C++
 links:

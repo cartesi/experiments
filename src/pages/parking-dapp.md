@@ -13,7 +13,6 @@ gallery:
 tags:
   projectStage: Proof of concept
   technology:
-    - Cartesi Rollups
     - Rust
     - Vue
     - TypeScript

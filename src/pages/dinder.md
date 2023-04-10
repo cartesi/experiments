@@ -6,7 +6,6 @@ thumbnail: "H0yY4F1.md.png"
 tags:
   projectStage: In progress - Pre-Alpha
   technology:
-    - Cartesi Rollups
 links:
   website:
     - "https://www.aetheras.io/"

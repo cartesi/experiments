@@ -21,7 +21,6 @@ tags:
   event: ETH San Francisco
   winner: 3rd Place
   technology:
-    - Cartesi Rollups
     - Python
     - Tellor
     - XMTP

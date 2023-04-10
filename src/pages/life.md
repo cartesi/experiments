@@ -8,7 +8,6 @@ tags:
   event: ETH San Francisco
   winner: 2nd Place
   technology:
-    - Cartesi Rollups
 links:
   website:
     - "https://ethglobal.com/showcase/life-81m99"

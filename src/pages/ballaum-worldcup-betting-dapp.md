@@ -6,7 +6,6 @@ thumbnail: "H0yrMxf.png"
 tags:
   projectStage: Proof of concept
   technology:
-    - Cartesi Rollups
     - TypeScript
 links:
   github:

@@ -14,7 +14,6 @@ tags:
   event: ETH India
   winner: 2nd Place
   technology:
-    - Cartesi Rollups
     - ReactJS
     - ReactBootstrap
     - NFTPort

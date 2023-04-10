@@ -8,7 +8,6 @@ tags:
   event: ETH Sao Paulo
   winner: 1st Place
   technology:
-    - Cartesi Rollups
     - Polygon
 links:
   website:
