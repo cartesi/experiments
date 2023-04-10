@@ -11,14 +11,6 @@ const FooterBottom = () => {
               <div className="mb-6 flex flex-col gap-2">
                 <div>
                   <a
-                    href={`//cartesi.io/blockchain-os`}
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
-                  >
-                    Blockchain OS
-                  </a>
-                </div>
-                <div>
-                  <a
                     href={`//cartesi.io/ctsi-token`}
                     className="text-yellow-50 hover:text-gray-200 hover:no-underline"
                   >
@@ -43,10 +35,10 @@ const FooterBottom = () => {
                 </div>
                 <div>
                   <a
-                    href={`//cartesi.io/people`}
+                    href={`//medium.com/@cartesi`}
                     className="text-yellow-50 hover:text-gray-200 hover:no-underline"
                   >
-                    People
+                    Blog
                   </a>
                 </div>
                 <div>
@@ -84,29 +76,6 @@ const FooterBottom = () => {
                   </a>
                 </div>
               </div>
-              <div itemScope itemType="https://schema.org/Organization">
-                <p
-                  itemProp="address"
-                  itemScope
-                  itemType="https://schema.org/PostalAddress"
-                >
-                  Contacts:
-                  <br />
-                  <span itemProp="streetAddress">
-                    3 Fraser Street, #05-25, Duo Tower
-                  </span>
-                  , <span itemProp="addressLocality">Singapore</span>,{" "}
-                  <span itemProp="postalCode">189352</span>
-                  <br />
-                  <a
-                    href="mailto:hello@cartesi.io"
-                    itemProp="email"
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
-                  >
-                    hello@cartesi.io
-                  </a>
-                </p>
-              </div>
             </div>
           </div>
           <div className="mb-6 flex justify-center sm:mb-0">
@@ -116,8 +85,7 @@ const FooterBottom = () => {
         <p className="mt-4 text-[.75rem] text-gray-400">
           All rights reserved © Cartesi Foundation Ltd.
           <br />
-          The Cartesi Project is commissioned by the Cartesi Foundation. The
-          Blockchain OS is a trademark of the Cartesi Foundation.
+          The Cartesi Project is commissioned by the Cartesi Foundation.
         </p>
       </div>
     </footer>

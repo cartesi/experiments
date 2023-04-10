@@ -6,8 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Project Showcase - Cartesi",
-  tagline: "The Blockchain OS",
+  title: "Rollup Lab - Projects Powered by Cartesi",
+  tagline:
+    "Application-specific rollups with a Linux runtime and Ethereum's security guarantees.",
   url: "https://showcase.cartesi.io",
   baseUrl: "/",
   trailingSlash: true,
