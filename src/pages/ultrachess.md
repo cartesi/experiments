@@ -5,7 +5,6 @@ logo: "mrXYVJdt_400x400.jpg"
 thumbnail: "H19C1xn.md.png"
 tags:
   projectStage: In progress - Pre-Alpha
-  technology:
 links:
   website:
     - "https://ultrachess.gitbook.io/product-docs/"
@@ -23,17 +22,17 @@ team:
 
 # About Ultrachess
 
-Backed by Cartesi’s Rollup technology, Ultrachess.org is the first Layer-2 DApp that allows its users to compete in fully on-chain chess matches with more than just their elos at stake.
+Ultrachess.org is the first Layer-2 decentralized application (DApp) that enables users to engage in fully on-chain chess matches, wagering real value on the outcomes. Built on [Cartesi Rollups technology](https://docs.cartesi.io/cartesi-rollups/), Ultrachess allows players to compete against other humans, as seen on traditional chess platforms, or deploy their own chess engines as NFTs to compete on their behalf. These chess engines can challenge opponents autonomously, offering potential passive value accrual for skilled chess engine programmers.
 
-With Ultrachess, users can choose to battle other humans, as seen in traditional chess platforms, or they can deploy their own chess engines to the blockchain to compete on their behalf.
-
-Chess engines, along with their bytecodes, are stored completely on-chain as NFTs and their ownership can be transferred, fractionalized, and traded between different addresses as a result.
-
-Chess engines can also challenge opponents autonomously and win battles for their owners as they sleep. Meaning that if you're a great chess engine programmer, you can generate a lot of passive value accrual for yourself as well as others.
-
-Along with on-chain chess engine deployment, Ultrachess allows users to wager real value on all chess matches. Meaning that, match participants along with 3rd-party observers can place ERC-20 token bets on certain game outcomes. And as a result, a pot is built up and distributed proportionally between the match winner, 3rd party wagerers, and the Ultrachess platform itself, upon game end.
+In addition to on-chain chess engine deployment, Ultrachess enables users to wager real value on all chess matches using ERC-20 tokens. As a result, a pot is created and distributed proportionally between the match winner, third-party wagerers, and the Ultrachess platform upon the game's conclusion.
 
 # Technical Details
 
-- [Hello, fully decentralized chess on The Blockchain OS](https://medium.com/cartesi/hello-fully-decentralized-chess-on-the-blockchain-os-6b656293c751)
+Ultrachess aims to create a transparent and innovative online chess ecosystem by encouraging users to openly deploy and use chess bots. By leveraging [Cartesi’s Optimistic Rollup technology](https://docs.cartesi.io/cartesi-rollups/overview/), Ultrachess not only allows players to wager on chess games, but also offers them the opportunity to earn money by playing.
+
+This platform provides an alternative to traditional fraud detection methods in online chess, fostering a new world of online chess where chess engines can have their own Elo ratings, match history, cash flow from wagered matches, and even fanbases. Companies like [Stockfish](https://stockfishchess.org/about/), which are dedicated to building open-source chess engines, can now monetize their efforts by deploying their engines on Ultrachess.
+
+# Learn More
+
+- [Hello, fully decentralized chess on Cartesi Rollups](https://medium.com/cartesi/hello-fully-decentralized-chess-on-the-blockchain-os-6b656293c751)
 - [Hello, Ultrachess milestone updates](https://medium.com/cartesi/hello-ultrachess-milestone-updates-5ed3ef52d265)
