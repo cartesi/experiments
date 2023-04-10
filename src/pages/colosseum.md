@@ -36,4 +36,4 @@ The Colosseum project was built using Python, React, Go, Lua scripts, JSON files
 
 The backend of Colosseum is almost entirely completed. However, there wasn't enough time to fully integrate the frontend interface due to challenges in setting up Ikemen GO on the developers' Mac laptops. The planned frontend included a timer to count down between fights, an MP4 player to broadcast the fights, and a table displaying a live feed of bets made on the platform.
 
-Despite the incomplete frontend, Colosseum's developers learned valuable insights into blockchain development, L2 chain functionality, and how to build DApps in familiar languages using Cartesi's unique capabilities as an app-specific, optimistic rollup solution.
+Despite the incomplete frontend, Colosseum's developers learned valuable insights into blockchain development, L2 chain functionality, and how to build DApps in familiar languages using [Cartesi's unique capabilities as an app-specific, optimistic rollup solution](https://medium.com/cartesi/application-specific-rollups-e12ed5d9de01).
