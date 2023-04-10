@@ -39,35 +39,34 @@ team:
 
 # About DeCode
 
-We are bringing the Decentralized Coding Contest “De-Code” as an alternative to existing coding platforms such as codechef.com and codeforces.com, where the judging and ranking process is not transparent and cannot be trusted.
+DeCode is an experimental decentralized coding contest platform designed to bring an alternative to existing coding platforms like codechef.com and codeforces.com.
 
-Since running a competitive coding platform involves high traffic and huge compute, it cannot be simply run on a smart contract. To overcome this and to get higher processing power at lower expenses we make use of the Cartesi Machine that provides the same level of security as the underlying blockchain but without compromising on the speed and languages supported (in fact, we used Javascript for writing the Cartesi code )
+Traditional platforms often lack transparency and trust in their judging and ranking processes. DeCode aims to address these issues while providing a secure, decentralized environment for competitive coding contests.
 
-We also make use of Covalent for creating a leaderboard of people owning our token and push protocol for sending important notifications.
+Since running a competitive coding platform involves high traffic and extensive computation, it's not feasible to simply run it on a smart contract. To overcome these limitations, DeCode makes use of Cartesi, a Layer 2 solution for Ethereum and other L1 blockchains based on the EVM.
+
+[Cartesi's Optimistic Rollups](https://docs.cartesi.io/cartesi-rollups/) provide higher processing power at lower expenses without compromising on speed and languages supported. In fact, DeCode's Cartesi code is written in JavaScript.
+
+DeCode also utilizes Covalent for creating a leaderboard of people owning their token and the Push Protocol for sending important notifications.
 
 # Technical Details
 
-Our platform uses the ELO Rating System for updating the ratings of the users after the contest ends. This can be compute intensive and expensive to run on a Solidity Smart Contract
+DeCode uses the [ELO Rating System](https://en.wikipedia.org/wiki/Elo_rating_system) to update user ratings after a contest ends. Implementing this system on a [Solidity](https://soliditylang.org/about/) smart contract can be computationally intensive and expensive. To tackle this, the team uses the "calc-u-rating" npm package for ELO Rating logic, which is compiled using webpack to create a single entry point (dist/main.js) for execution on the Cartesi Machine.
 
-We use the calc-u-rating npm package for the ELO Rating logic and then compile the code using webpack to create a single entry point (dist/main.js) to execute the app using tjs provided in the Cartesi Machine
+Key Technologies:
 
-### Cartesi Smart Contract
+1. Cartesi: providing computational power on Linux VMs for better performance and concurrent job processing
+2. [Covalent:](https://www.covalenthq.com/about/) A unified API for increased visibility across Web3 data points
+3. [Push Protocol:](https://push.org/faq) A Web3 communication network enabling cross-chain notifications and messaging for DApps, wallets, and services
 
-(deployed using echo-js demo in the rollups examples repository)
+DeCode's platform also integrates Web2 technologies, such as Next.js with Tailwind CSS, DigitalOcean, and MongoDB.
 
-```
-0x42f28Cbcd84c9Bc0aC9909e2AfC1fFcCeC27c39A
-```
+### Challenges Faced
 
-### Cartesi graphql api
+The team faced a few challenges during the development process:
 
-(deployed on digitalocean droplet)
+1. Bulk transfer of ERC20 tokens failing frequently.
+2. Setting up the environment for the Cartesi Machine and deploying it.
+3. Implementing push notifications when the user is still active on the website.
 
-```
-http://128.199.22.239:4000/graphql
-```
-
-# Videos
-
-<iframe width="100%" height="440" src="https://www.youtube.com/embed/__f2-6bWnQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="100%" height="440" src="https://www.youtube.com/embed/-ddgjx9QC_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Despite these challenges, DeCode's experimental and decentralized coding contest platform demonstrates a promising use case for Cartesi's Optimistic Rollups and other Web3 technologies in the competitive coding space.
