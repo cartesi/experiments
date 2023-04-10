@@ -4,17 +4,17 @@ description: DeFi lending protocol with real-time dynamic risk management
 thumbnail: "H0y6JCx.png"
 logo: "H0Da4Np.png"
 gallery:
-  - image: "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.13%20AM.jpg"
+  - image: "1.jpg"
     alt: Nucleus DeFi Lending Protocol - Homepage | Built with Cartesi Rollups
-  - image: "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.21%20AM.jpg"
+  - image: "2.jpg"
     alt: Nucleus DeFi Lending Protocol - Connect MetaMask | Built with Cartesi Rollups
-  - image: "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.33%20AM.jpg"
+  - image: "3.jpg"
     alt: Nucleus DeFi Lending Protocol - Your Balance | Built with Cartesi Rollups
-  - image: "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.47.52%20AM.jpg"
+  - image: "4.jpg"
     alt: Nucleus DeFi Lending Protocol - Deposit Screen | Built with Cartesi Rollups
-  - image: "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.48.06%20AM.jpg"
+  - image: "5.jpg"
     alt: Nucleus DeFi Lending Protocol - Confirm Transaction | Built with Cartesi Rollups
-  - image: "projects%2Fsztuz%2Fimages%2FScreen%20Shot%202022-11-06%20at%208.48.34%20AM.jpg"
+  - image: "6.jpg"
     alt: Nucleus DeFi Lending Protocol - Lending Pools | Built with Cartesi Rollups
 tags:
   projectStage: Hackathon Project
