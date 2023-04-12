@@ -39,8 +39,12 @@ const ShowcaseItem = ({ page }: Props) => {
           {tags.projectStage && (
             <Tag type="projectStage" tag={tags.projectStage} />
           )}
-          {tags.event && <Tag type="event" tag={tags.event} />}
-          {tags.winner && <Tag type="winner" tag={tags.winner} />}
+          {/*tags.event && <Tag type="event" tag={tags.event} />*/}
+          {/*tags.winner && <Tag type="winner" tag={tags.winner} />*/}
+          {tags.technology &&
+            tags.technology.map((tag, i) => {
+              return <Tag type="technology" tag={tag} key={i} isLink />;
+            })}
         </div>
       </div>
     </Link>
