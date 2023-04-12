@@ -60,13 +60,13 @@ const config = {
       projectStage: {
         label: "Project Stage",
         options: [
-          "Hackathon Project",
-          "Proof of concept",
-          "In progress - Pre-Alpha",
-          "In progress - Alpha",
-          "In progress - Beta",
-          "Release Candidate",
           "Stable release",
+          "Release Candidate",
+          "In progress - Beta",
+          "In progress - Alpha",
+          "In progress - Pre-Alpha",
+          "Proof of concept",
+          "Hackathon Project",
         ],
       },
       event: {
