@@ -35,6 +35,27 @@ export default function Home(): JSX.Element {
     tagsAvailable: TagsAvailable;
   };
 
+  const sortList = (list: PageFrontMatter[]) => {
+    const sortIndexes = tagsAvailable.projectStage.options.reduce(
+      (acc, option: number, index) => {
+        acc[option] = index;
+        return acc;
+      },
+      {}
+    );
+
+    // console.log(sortIndexes);
+
+    list.sort((a, b) => {
+      const aIndex = sortIndexes[a.tags.projectStage];
+      const bIndex = sortIndexes[b.tags.projectStage];
+
+      return aIndex - bIndex;
+    });
+
+    return list;
+  };
+
   const filteredPageList = React.useMemo(() => {
     // search
     if (searchTerm) {
@@ -48,18 +69,36 @@ export default function Home(): JSX.Element {
     }
 
     // tags
-    if (!selectedTags.length) return pageList;
+    if (!selectedTags.length) return sortList(pageList);
 
+    // AND logic
+    //   const filteredPageList = pageList.filter((page) => {
+    //     const { tags } = page;
+
+    //     return selectedTags.every((tag) => {
+    //       const [key] = Object.keys(tag) as (keyof PageFrontMatter["tags"])[];
+    //       const value = tag[key];
+
+    //       // console.log(tags[key]);
+    //       // console.log(value);
+    //       if (Array.isArray(tags[key])) {
+    //         // @ts-ignore
+    //         return tags[key].includes(value);
+    //       }
+    //       return tags[key] === value;
+    //     });
+    //   });
+    //   return filteredPageList;
+    // }, [pageList, selectedTags, searchTerm]);
+
+    // OR logic
     const filteredPageList = pageList.filter((page) => {
       const { tags } = page;
-      // console.log(tags);
 
-      return selectedTags.every((tag) => {
+      return selectedTags.some((tag) => {
         const [key] = Object.keys(tag) as (keyof PageFrontMatter["tags"])[];
         const value = tag[key];
 
-        // console.log(tags[key]);
-        // console.log(value);
         if (Array.isArray(tags[key])) {
           // @ts-ignore
           return tags[key].includes(value);
@@ -68,7 +107,7 @@ export default function Home(): JSX.Element {
       });
     });
 
-    return filteredPageList;
+    return sortList(filteredPageList);
   }, [pageList, selectedTags, searchTerm]);
 
   const handleTagClick = (
