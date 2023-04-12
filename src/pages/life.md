@@ -8,6 +8,12 @@ tags:
   event: ETH San Francisco
   winner: 2nd Place
   technology:
+    - Python
+    - JavaScript
+    - Docker
+    - HTML
+    - HCL
+    - CSS
 links:
   website:
     - "https://ethglobal.com/showcase/life-81m99"

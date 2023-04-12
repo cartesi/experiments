@@ -5,6 +5,11 @@ logo: "mrXYVJdt_400x400.jpg"
 thumbnail: "H19C1xn.md.png"
 tags:
   projectStage: In progress - Pre-Alpha
+  technology:
+    - TypeScript
+    - Python
+    - CSS
+    - Docker
 links:
   website:
     - "https://ultrachess.gitbook.io/product-docs/"
