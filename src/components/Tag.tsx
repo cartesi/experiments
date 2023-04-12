@@ -11,8 +11,12 @@ type Props = {
 
 const TagContent = ({ tag, type }: Props) => {
   return (
-    <span className="inline-flex py-2 px-4 text-yellow-50 bg-blue-500 rounded-full text-sm group-hover:bg-blue-600 transition-colors">
-      {type === "hackathon" && "Hackathon"}
+    <span
+      className={`inline-flex py-2 px-4 text-yellow-50 ${
+        (type === "technology" && "bg-blue-300 hover:bg-blue-400") ||
+        "bg-blue-500 hover:bg-blue-600"
+      } rounded-full text-sm transition-colors`}
+    >
       {type === "event" && tag}
       {type === "projectStage" && tag}
       {type === "winner" && `Winner ${tag}`}
