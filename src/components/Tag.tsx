@@ -9,10 +9,12 @@ type Props = {
   isLink?: boolean;
 };
 
-const TagContent = ({ tag, type }: Props) => {
+const TagContent = ({ tag, type, isLink }: Props) => {
   return (
     <span
       className={`inline-flex py-2 px-4 text-yellow-50 ${
+        isLink ? "cursor-pointer" : "cursor-default"
+      } ${
         (type === "technology" && "bg-blue-300 hover:bg-blue-400") ||
         "bg-blue-500 hover:bg-blue-600"
       } rounded-full text-sm transition-colors`}
@@ -29,12 +31,12 @@ const Tag = ({ tag, type, isLink }: Props) => {
   return isLink ? (
     <Link
       to={`/?tag=${type}${TagPathSeperator.value}${tag}`}
-      className="no-underline hover:no-underline group"
+      className="no-underline hover:no-underline group cursor-pointer"
     >
-      <TagContent tag={tag} type={type} />
+      <TagContent tag={tag} type={type} isLink={isLink} />
     </Link>
   ) : (
-    <TagContent tag={tag} type={type} />
+    <TagContent tag={tag} type={type} isLink={isLink} />
   );
 };
 
