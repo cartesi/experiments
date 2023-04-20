@@ -40,7 +40,7 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
-# Create add a new project
+# Add a new project
 
 1. Create a new markdown file and add project details, tags and descriptions here `experiments/src/pages/your-project-name.md`
 
