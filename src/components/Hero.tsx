@@ -25,12 +25,12 @@ const Hero = (props: Props) => {
           >
             Start Building
           </Link>
-          <a
-            href="#dapps"
+          <Link
+            href="https://github.com/cartesi/experiments/discussions/17"
             className="px-6 py-3 border-solid hover:no-underline no-underline   border border-yellow-50 text-yellow-50 hover:bg-gray-800/50 transition-colors hover:text-white"
           >
             Submit your project
-          </a>
+          </Link>
         </div>
       </div>
     </div>

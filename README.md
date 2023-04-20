@@ -40,27 +40,33 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
-# Project Showcase Template
+# Create add a new project
+
+1. Create a new markdown file and add project details, tags and descriptions here `experiments/src/pages/your-project-name.md`
+
+2. Create a new folder and add project assets(ex. logo, screenshots) here `experiments/static/projects/your-project-name`. Make sure you are using well optimised image files.
+
+# Project Template
 
 ```
 ---
 title: Example title
 description: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
-logo: "https://picsum.photos/500/500?random=1"
-thumbnail: "https://picsum.photos/1200/720?random=1"
+logo: "some_image_file.jpg"
+thumbnail: "some_image_file.jpg"
 gallery:
-  - image: "https://picsum.photos/1200/720?random=2"
+  - image: "some_image_file.jpg"
     alt: some text
-  - image: "https://picsum.photos/1200/720?random=3"
+  - image: "some_image_file.jpg"
     alt: some text
-  - image: "https://picsum.photos/1200/720?random=4"
+  - image: "some_image_file.jpg"
     alt: some text
-  - image: "https://picsum.photos/1200/720?random=5"
+  - image: "some_image_file.jpg"
     alt: some text
-  - image: "https://picsum.photos/1200/720?random=12"
-  - image: "https://picsum.photos/1200/720?random=13"
-  - image: "https://picsum.photos/1200/720?random=14"
-  - image: "https://picsum.photos/1200/720?random=55"
+  - image: "some_image_file.jpg"
+  - image: "some_image_file.jpg"
+  - image: "some_image_file.jpg"
+  - image: "some_image_file.jpg"
 tags:
   projectStage: Hackathon Project
   event: ETH India
