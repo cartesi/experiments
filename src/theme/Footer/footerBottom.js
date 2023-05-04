@@ -82,11 +82,6 @@ const FooterBottom = () => {
             <Logo width="164" />
           </div>
         </div>
-        <p className="mt-4 text-sm text-slate-400">
-          All rights reserved © Cartesi Foundation Ltd.
-          <br />
-          The Cartesi Project is commissioned by the Cartesi Foundation.
-        </p>
       </div>
     </footer>
   );
