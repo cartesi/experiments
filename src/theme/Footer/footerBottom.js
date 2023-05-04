@@ -3,8 +3,8 @@ import Logo from "/img/logo_dark.svg";
 
 const FooterBottom = () => {
   return (
-    <footer className="bg-gray-900 py-8 text-sm  text-yellow-50 lg:py-12 xl:py-16">
-      <div className="container">
+    <footer className="bg-slate-800 py-8 text-sm  text-white lg:py-12 xl:py-16">
+      <div className="container max-w-screen-lg">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row ">
           <div className="flex justify-between gap-12 lg:gap-24">
             <div>
@@ -12,7 +12,7 @@ const FooterBottom = () => {
                 <div>
                   <a
                     href={`//cartesi.io/ctsi-token`}
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
+                    className="text-white hover:text-slate-200 hover:no-underline"
                   >
                     CTSI Token
                   </a>
@@ -20,7 +20,7 @@ const FooterBottom = () => {
                 <div>
                   <a
                     href={`//governance.cartesi.io`}
-                    className="hover:text-yellow-50 text-gray-200"
+                    className="hover:text-white text-slate-200"
                   >
                     Governance and Grants
                   </a>
@@ -28,7 +28,7 @@ const FooterBottom = () => {
                 <div>
                   <a
                     href={`//cartesi.io/about`}
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
+                    className="text-white hover:text-slate-200 hover:no-underline"
                   >
                     About
                   </a>
@@ -36,7 +36,7 @@ const FooterBottom = () => {
                 <div>
                   <a
                     href={`//medium.com/@cartesi`}
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
+                    className="text-white hover:text-slate-200 hover:no-underline"
                   >
                     Blog
                   </a>
@@ -46,7 +46,7 @@ const FooterBottom = () => {
                     href={`//docs.cartesi.io`}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
+                    className="text-white hover:text-slate-200 hover:no-underline"
                   >
                     Docs
                   </a>
@@ -60,7 +60,7 @@ const FooterBottom = () => {
                     href="//cartesi.io/cartesi_whitepaper.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
+                    className="text-white hover:text-slate-200 hover:no-underline"
                   >
                     Our whitepaper
                   </a>
@@ -70,7 +70,7 @@ const FooterBottom = () => {
                     href="//cartesi.io/foundation_notice.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-yellow-50 hover:text-gray-200 hover:no-underline"
+                    className="text-white hover:text-slate-200 hover:no-underline"
                   >
                     Foundation Notice
                   </a>
@@ -79,10 +79,10 @@ const FooterBottom = () => {
             </div>
           </div>
           <div className="mb-6 flex justify-center sm:mb-0">
-            <Logo width="213" height="73" />
+            <Logo width="164" />
           </div>
         </div>
-        <p className="mt-4 text-[.75rem] text-gray-400">
+        <p className="mt-4 text-sm text-slate-400">
           All rights reserved © Cartesi Foundation Ltd.
           <br />
           The Cartesi Project is commissioned by the Cartesi Foundation.

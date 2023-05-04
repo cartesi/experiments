@@ -11,6 +11,7 @@ import FilterButtonCheckbox from "../components/FilterButtonCheckbox";
 import FilterGroup from "../components/FilterGroup";
 import { useLocation } from "@docusaurus/router";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import BgGradient from "../components/BgGradient";
 
 type Tag = {
   label: keyof PageFrontMatter["tags"];
@@ -184,8 +185,9 @@ export default function Home(): JSX.Element {
       description="Cartesi is the first blockchain OS allowing developers to build decentralized logic preserving the decentralization and security of blockchains."
     >
       <Hero />
-      <main className="py-8 sm:py-24 bg-yellow-100" id="dapps">
-        <div className="container">
+      <BgGradient />
+      <main className="pb-8 sm:pb-24" id="dapps">
+        <div className="container max-w-screen-lg">
           <div className="flex md:items-center flex-col sm:flex-row justify-between gap-4 mb-6 sm:mb-8">
             {/*  */}
             <div className="flex gap-2 flex-col flex-wrap sm:flex-row">
@@ -232,19 +234,17 @@ export default function Home(): JSX.Element {
 
           {/*  */}
           {filteredPageList.length ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex flex-col gap-4">
               {filteredPageList.map((page) => (
                 <ShowcaseItem page={page} key={page.id} />
               ))}
             </div>
           ) : (
             <div className="flex flex-col gap-2 items-center justify-center py-24">
-              <p className="text-gray-900 text-lg text-center m-0">
-                No results found
-              </p>
+              <p className="text-gray-600 text-center m-0">No results found</p>
               <p>
                 <button
-                  className="bg-gray-900 border-0 text-white px-6 py-3 rounded-sm focus:outline-none hover:bg-gray-700"
+                  className="bg-gray-700 border-0 rounded-md text-white text-base px-6 py-3 focus:outline-none hover:bg-gray-700 cursor-pointer"
                   onClick={() => {
                     clearSearch();
                     handleAllClick();

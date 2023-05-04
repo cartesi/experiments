@@ -25,6 +25,9 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;900&display=swap",
+  ],
 
   customFields: {
     projectsImagesPath: "/projects",
@@ -160,15 +163,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "dark",
+        defaultMode: "light",
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
       navbar: {
         logo: {
           alt: "Cartesi Logo",
-          src: "img/logo.svg",
-          srcDark: "img/logo_dark.svg",
+          src: "img/logo_dark.svg",
+          srcDark: "img/logo.svg",
           height: "52px",
         },
         items: [

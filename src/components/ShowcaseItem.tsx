@@ -14,23 +14,25 @@ const ShowcaseItem = ({ page }: Props) => {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <div className="text-yellow-50 hover:text-yellow-50 hover:no-underline no-underline group h-full flex flex-col bg-gray-900 relative shadow-[0_0_10px_#0e0e297f]">
+    <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 relative p-6 sm:p-8 bg-white rounded-xl">
       <Link className="absolute inset-0 z-10" to={path} />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden w-40 relative flex-shrink-0 rounded-lg mx-auto">
         {thumbnail && (
           <img
             src={useBaseUrl(
               `${siteConfig.customFields.projectsImagesPath}${path}/${thumbnail}`
             )}
             alt={title}
-            className="w-full object-cover block transition-transform group-hover:scale-105 aspect-video"
+            className="w-full object-cover block transition-transform group-hover:scale-105 aspect-video rounded-lg"
             loading="lazy"
           />
         )}
       </div>
-      <div className="flex flex-col gap-3 p-6 sm:p-8 grow">
-        <h3 className="font-serif text-lg sm:text-xl lg:text-2xl">{title}</h3>
-        <p className="text-yellow-50/75">{description}</p>
+      <div className="flex flex-col grow">
+        <h3 className="text-lg mb-0 sm:text-xl lg:text-2xl font-bold">
+          {title}
+        </h3>
+        <p className="text-sm mb-2">{description}</p>
         <div className="flex flex-wrap gap-1 mt-auto relative z-20">
           {/* {JSON.stringify(tags)} */}
           {tags.projectStage && (

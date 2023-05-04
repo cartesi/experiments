@@ -21,14 +21,14 @@ const Search = ({ handleSearch, clearSearch, searchTerm }: Props) => {
         type="text"
         placeholder="Search projects..."
         onChange={handleSearch}
-        className="border w-full border-solid border-gray-200 rounded-sm px-4 py-2 bg-white focus:outline-none focus:ring-0 text-gray-900 min-w-[200px] pr-11 appearance-none font-sans text-base"
+        className="border w-full border-solid border-slate-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-0 text-slate-900 min-w-[200px] pr-11 appearance-none font-sans text-base"
         ref={inputRef}
       />
       {searchTerm && (
         <button
           type="button"
           onClick={clearSearch}
-          className="absolute right-1 top-1 bottom-1 flex items-center justify-center text-gray-400 hover:text-blue-500 focus:outline-none focus:ring-0 bg-white border-0 cursor-pointer"
+          className="absolute right-1 top-1 bottom-1 flex items-center justify-center text-slate-400 hover:text-blue-500 focus:outline-none focus:ring-0 bg-white border-0 cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
