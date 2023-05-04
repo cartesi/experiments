@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
     <div className="flex flex-col justify-center py-12 sm:py-24">
       <div className="container max-w-screen-lg">
         <div className="text-center flex flex-col">
-          <h1 className="text-5xl inline-block mx-auto sm:text-6xl lg:text-7xl mb-6 bg-clip-text bg-gradient-to-r text-transparent from-cyan-500  to-pink-400">
+          <h1 className="text-5xl inline-block mx-auto sm:text-6xl lg:text-7xl mb-6 bg-clip-text bg-gradient-to-r text-transparent from-cyan-500  to-emerald-400">
             Rollup Lab
           </h1>
           <p className="text-lg">
