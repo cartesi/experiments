@@ -20,7 +20,7 @@ const ButtonLabel = ({ label, count }: { label: string; count: number }) => {
       {label}
 
       {count > 0 ? (
-        <span className="w-6 h-6 flex items-center justify-center text-xs font-semibold text-white -mr-2 border border-solid border-white bg-blue-500 rounded-full">
+        <span className="w-6 h-6 flex items-center justify-center text-xs font-semibold text-white -mr-2 bg-cyan-500 rounded-full">
           {count}
         </span>
       ) : (
@@ -86,7 +86,7 @@ const FilterGroup = ({ tags, filterTag, selectedTags, handleClick }: Props) => {
             >
               <input
                 type="checkbox"
-                className="appearance-none checked:bg-blue-500 w-4 h-4 border border-solid border-gray-300 rounded-sm checked:border-transparent focus:outline-none"
+                className="appearance-none checked:bg-cyan-500 w-4 h-4 border border-solid border-gray-300 rounded-sm checked:border-transparent focus:outline-none"
                 id={`${tags.label}-${i}`}
                 onChange={() => handleClick(filterTag, option)}
                 checked={

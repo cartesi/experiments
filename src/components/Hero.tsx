@@ -5,29 +5,28 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex flex-col justify-center py-12 lg:py-24 xl:min-h-[50vh]">
-      <div className="container max-w-4xl">
-        <div className="text-center text-yellow-50">
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-8">
-            Hello, builders.
+    <div className="flex flex-col justify-center py-12 sm:py-24">
+      <div className="container max-w-screen-lg">
+        <div className="text-center flex flex-col">
+          <h1 className="text-5xl inline-block mx-auto sm:text-6xl lg:text-7xl mb-6 bg-clip-text bg-gradient-to-r text-transparent from-cyan-500  to-pink-400">
+            Rollup Lab
           </h1>
-          <p className="font-serif text-lg lg:text-xl">
-            From exciting proof of concepts, hackathon projects and experimental
-            DApps, check out what’s being built on Cartesi testnet alpha, meet
-            the teams behind the projects and get inspired to build something
-            awesome together.
+          <p className="text-lg">
+            Welcome to the Cartesi community’s repository of proof of concepts,
+            hackathon projects, and experimental DApps developed with Cartesi
+            Rollups. Get inspired to push the boundaries of Web3 tech together!
           </p>
         </div>
-        <div className="mt-8 flex flex-col justify-center gap-4 text-center sm:flex-row sm:items-center lg:mt-16">
+        <div className="mt-2 flex flex-col justify-center gap-2 text-center sm:flex-row sm:items-center">
           <Link
             to="https://docs.cartesi.io/build-dapps/"
-            className="px-6 py-3 border-solid hover:no-underline no-underline border border-yellow-50 text-yellow-50 hover:bg-gray-800/50 transition-colors hover:text-white"
+            className="lg:min-w-[15rem] px-6 py-3 border-solid hover:no-underline no-underline border hover:bg-slate-700 font-semibold rounded-lg border-slate-800 text-slate-900 hover:border-slate-700 transition-colors hover:text-white"
           >
             Start Building
           </Link>
           <Link
             href="https://github.com/cartesi/experiments/discussions/17"
-            className="px-6 py-3 border-solid hover:no-underline no-underline   border border-yellow-50 text-yellow-50 hover:bg-gray-800/50 transition-colors hover:text-white"
+            className="lg:min-w-[15rem] px-6 py-3 border-solid hover:no-underline no-underline   border hover:bg-slate-700 font-semibold rounded-lg border-slate-800 text-slate-900 hover:border-slate-700 transition-colors hover:text-white"
           >
             Submit your project
           </Link>

@@ -35,8 +35,8 @@ const FooterBar = () => {
   const isHome = path === "/" || path === "/en/" || path === "";
 
   return (
-    <div className="  bg-blue-500/95 sticky inset-x-0 bottom-0 z-50 flex flex-col py-3  text-white transition-all duration-500 ease-in-out">
-      <div className="container">
+    <div className="  bg-slate-700/80 backdrop-blur sticky inset-x-0 bottom-0 z-50 flex flex-col py-3  text-white transition-all duration-500 ease-in-out">
+      <div className="container max-w-screen-lg">
         {isScrolled || isGdprBarHidden ? (
           <SocialBar />
         ) : isGdprBarHidden ? null : (

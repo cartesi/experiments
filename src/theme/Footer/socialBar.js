@@ -80,15 +80,15 @@ const socialLinksNoIcons = [
 
 const SocialBar = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-0 md:divide-x md:divide-white ">
-      <div className="flex items-center gap-4 sm:gap-6 md:pr-16 md:pl-8">
+    <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
+      <div className="flex items-center gap-4 sm:gap-6">
         {socialLinksWithIcons.map(({ name, url, icon }) => (
           <div key={name}>
             <a
               href={url}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 font-bold text-white hover:text-white hover:no-underline cursor-pointer"
+              className="flex items-center justify-between gap-2 font-semibold text-white hover:text-white hover:no-underline cursor-pointer"
             >
               {icon}
               {name}
@@ -96,14 +96,14 @@ const SocialBar = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center gap-4 sm:gap-6 md:pl-16 md:pr-8">
+      <div className="flex items-center gap-4 sm:gap-6">
         {socialLinksNoIcons.map(({ name, url }) => (
           <div key={name}>
             <a
               href={url}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 text-white hover:text-white hover:no-underline cursor-pointer "
+              className="flex items-center justify-between gap-2 text-white hover:text-white hover:no-underline cursor-pointer "
             >
               {name}
             </a>
