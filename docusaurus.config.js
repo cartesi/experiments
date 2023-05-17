@@ -146,6 +146,13 @@ const config = {
   ],
 
   plugins: [
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "GTM-PQH24DW",
+        anonymizeIP: true,
+      },
+    ],
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
