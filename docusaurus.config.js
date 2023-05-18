@@ -147,10 +147,9 @@ const config = {
 
   plugins: [
     [
-      "@docusaurus/plugin-google-gtag",
+      "@docusaurus/plugin-google-tag-manager",
       {
-        trackingID: "GTM-PQH24DW",
-        anonymizeIP: true,
+        containerId: "GTM-PQH24DW",
       },
     ],
     async function myPlugin(context, options) {
