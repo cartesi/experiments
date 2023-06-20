@@ -21,6 +21,9 @@ team:
   - name: Marcus Souza
     linkedin: "https://www.linkedin.com/in/marcus-vini-souza/"
     discord: "Marcus Vinícius#0350"
+  - name: Osman Rodrigues
+    linkedin: "https://www.linkedin.com/in/osman-rodrigues/"
+    discord: "osmanrodrigues"
 ---
 
 # About Biometrics Classifier
