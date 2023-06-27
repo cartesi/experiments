@@ -80,6 +80,7 @@ const config = {
           "ETH India",
           "ETH Bogota",
           "ETH Sao Paulo",
+          "ETHGlobal Lisbon",
         ],
       },
       winner: {
@@ -109,6 +110,7 @@ const config = {
           "NextJS",
           //"NFTPort", // Ghar on Chain
           "Node.js",
+          "Nix",
           "Polygon",
           //"Push", // Ghar on Chain
           "Python",
@@ -121,6 +123,7 @@ const config = {
           "StackOS",
           "TailwindCSS",
           "TypeScript",
+          "Unity",
           "Vue",
         ].sort(),
       },
