@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
         </div>
         <div className="mt-2 flex flex-col justify-center gap-2 text-center sm:flex-row sm:items-center">
           <Link
-            to="https://docs.cartesi.io/build-dapps/"
+            to="https://docs.cartesi.io/cartesi-rollups/build-dapps/"
             className="lg:min-w-[15rem] px-6 py-3 border-solid hover:no-underline no-underline border hover:bg-slate-700 font-semibold rounded-lg border-slate-800 text-slate-900 hover:border-slate-700 transition-colors hover:text-white"
           >
             Start Building
