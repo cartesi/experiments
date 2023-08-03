@@ -81,6 +81,7 @@ const config = {
           "ETH Bogota",
           "ETH Sao Paulo",
           "ETHGlobal Lisbon",
+          "ETHGlobal Paris",
         ],
       },
       winner: {
