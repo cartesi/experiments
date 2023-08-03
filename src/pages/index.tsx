@@ -182,7 +182,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={``}
-      description="Cartesi is the first blockchain OS allowing developers to build decentralized logic preserving the decentralization and security of blockchains."
+      description="Cartesi Rollups offer a modular scaling solution, deployable as L2, L3, or sovereign rollups, while maintaining strong base layer security guarantees."
     >
       <Hero />
       <BgGradient />
