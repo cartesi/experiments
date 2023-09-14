@@ -40,7 +40,7 @@ team:
     discord: "Lemos.#2278"
 ---
 
-# About Bidsuad
+# About Bidsquad
 
 ## Bidsquad: Revolutionizing Carbon Credit Auctions with Advanced Tech
 
