@@ -82,6 +82,7 @@ const config = {
           "ETH Sao Paulo",
           "ETHGlobal Lisbon",
           "ETHGlobal Paris",
+          "Inteli Challenge",
         ],
       },
       winner: {
@@ -121,6 +122,7 @@ const config = {
           "Sci-kit learn",
           "Solidity",
           "SQLite",
+          "SCSS",
           "StackOS",
           "TailwindCSS",
           "TypeScript",
