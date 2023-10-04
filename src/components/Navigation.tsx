@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import NavigationItem from './ui/NavigationItem';
 import Container from './ui/Container';
 import { NavLink } from '../type/types';
+import Link from '@docusaurus/Link';
+import { RiDiscordFill, RiGithubFill } from 'react-icons/ri';
 
 type Props = {
   isOpen: boolean;
@@ -61,9 +63,9 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
   ] as NavLink[];
 
   const cta = {
-    label: 'Get Started',
-    link: '/contact',
-    isExternal: false,
+    label: 'Submit Your Project',
+    link: 'https://github.com/cartesi/experiments/discussions/17',
+    isExternal: true,
   };
 
   return (
@@ -81,9 +83,27 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
               <NavigationItem item={item} isDesktop={isDesktop} key={i} />
             ))}
           </nav>
-          <div className='lg:ml-auto lg:w-[var(--header-side-column-width)]'>
+          <div className='lg:ml-auto flex flex-col lg:flex-row items-center gap-4'>
+            <div className='flex items-center gap-2 order-last lg:order-first shrink-0'>
+              <Link
+                href='https://github.com/cartesi?_gl=1*xk7dkb*_ga*MTAyODg1OTI1LjE2ODY5MDA3NjA.*_ga_HM92STPNFJ*MTY5NjQyOTY5Mi4zNy4xLjE2OTY0MzA4MTMuNDUuMC4w'
+                target='_blank'
+                rel='noreferrer'
+                className={'shrink-0 p-1 rounded-full bg-foreground'}
+              >
+                <RiGithubFill className='w-5 h-5 fill-current text-background' />
+              </Link>
+              <Link
+                href='https://discord.gg/pfXMwXDDfW'
+                target='_blank'
+                rel='noreferrer'
+                className={'shrink-0 p-1 rounded-full bg-foreground'}
+              >
+                <RiDiscordFill className='w-5 h-5 fill-current text-background' />
+              </Link>
+            </div>
             <Button asChild className='w-full py-4 lg:py-2'>
-              <a href={cta.link}>{cta.label}</a>
+              <Link href={cta.link}>{cta.label}</Link>
             </Button>
           </div>
         </Container>

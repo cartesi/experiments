@@ -52,7 +52,7 @@ const NavigationItem = ({
       {item.path ? (
         <Link
           href={item.path}
-          className='inline-flex h-full items-center py-4 hover:opacity-90 lg:p-4 text-foreground no-underline hover:no-underline hover-text-foreground'
+          className='inline-flex h-full items-center py-4 hover:opacity-90 lg:p-4 text-foreground no-underline hover:no-underline hover:text-foreground'
         >
           {item.label}
           {item.Children && item.Children.length > 0 ? (
@@ -103,7 +103,7 @@ const NavigationItem = ({
               return (
                 <Link
                   href={child.link}
-                  className='gap-2 rounded-xl p-4 text-sm hover:bg-secondary hover:text-secondary-foreground lg:rounded-none lg:px-6 lg:py-4'
+                  className='flex items-center gap-2 rounded-xl text-foreground p-4 text-sm hover:no-underline hover:bg-secondary hover:text-secondary-foreground lg:rounded-none lg:px-6 lg:py-4'
                   key={j}
                   target={child.isExternal ? '_blank' : '_self'}
                 >
