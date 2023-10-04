@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Button from './ui/Button';
 
 type Props = {
   label: React.ReactNode;
@@ -8,13 +9,9 @@ type Props = {
 
 const FilterButton = ({ onClick, label, active }: Props) => {
   return (
-    <button
-      className={active ? "btn w-full" : "btn-outline w-full"}
-      type="button"
-      onClick={onClick}
-    >
+    <Button variant={'ghost'} type='button' onClick={onClick}>
       {label}
-    </button>
+    </Button>
   );
 };
 

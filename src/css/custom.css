@@ -1,12 +1,12 @@
 @tailwind base;
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* FROM SITE */
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root {
     /* Radix UI */
     --background: 0 0% 100%;
@@ -80,6 +80,28 @@ html {
   button * {
     @apply pointer-events-none;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-normal;
+  }
+
+  img,
+  svg {
+    @apply max-w-full h-auto block;
+  }
+
+  button {
+    @apply appearance-none text-inherit no-underline p-0 m-0 border-0 bg-transparent cursor-pointer;
+  }
+
+  button:hover {
+    @apply text-inherit no-underline;
+  }
 }
 
 .mySwiper .swiper-wrapper {
@@ -93,7 +115,7 @@ html {
 
 /* Docusaurus vars */
 :root {
-  --ifm-font-family-base: "Figtree", sans-serif;
+  --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-navbar-height: 5rem;
   --ifm-navbar-background-color: rgba(30, 41, 59, 0.95);
 
@@ -109,8 +131,8 @@ html {
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
 
-  --ifm-heading-font-family: "Figtree", sans-serif;
-  --ifm-heading-font-weight: 700;
+  --ifm-heading-font-family: 'Figtree', sans-serif;
+  --ifm-heading-font-weight: 500;
 
   --swiper-pagination-color: rgba(30, 41, 59, 0.75);
 }
@@ -142,7 +164,7 @@ html {
 }
 
 .header-discord-link::before {
-  content: "";
+  content: '';
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -155,7 +177,7 @@ html {
 }
 
 .header-github-link::before {
-  content: "";
+  content: '';
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
