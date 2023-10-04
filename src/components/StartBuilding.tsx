@@ -10,6 +10,17 @@ import Container from './ui/Container';
 import Link from '@docusaurus/Link';
 import IconExternal from './ui/IconExternal';
 
+/* @ts-ignore */
+import Image1 from '@site/static/img/start-1.png';
+/* @ts-ignore */
+import Image2 from '@site/static/img/start-2.png';
+/* @ts-ignore */
+import Image3 from '@site/static/img/start-3.png';
+/* @ts-ignore */
+import Image4 from '@site/static/img/start-4.png';
+/* @ts-ignore */
+import Image5 from '@site/static/img/start-5.png';
+
 const StartBuilding = () => {
   const data = {
     badge: '5 Simple steps',
@@ -28,8 +39,8 @@ const StartBuilding = () => {
       {
         title: 'Learn',
         _rawContent: <p>Pick up the fundamentals of Cartesi Rollups</p>,
-        number: '1',
-        image: '',
+        number: '01',
+        image: Image1,
         cta: {
           label: 'Read the basics',
           link: 'https://docs.cartesi.io/cartesi-rollups/',
@@ -44,8 +55,8 @@ const StartBuilding = () => {
             are needed for the provided DApp examples.
           </p>
         ),
-        number: '2',
-        image: '',
+        number: '02',
+        image: Image2,
         cta: {
           label: 'Install Help',
           link: 'https://cartesi.io/#:~:text=provided%20DApp%20examples.-,INSTALL%20HELP,-03',
@@ -60,8 +71,8 @@ const StartBuilding = () => {
             repo.
           </p>
         ),
-        number: '3',
-        image: '',
+        number: '03',
+        image: Image3,
         cta: {
           label: 'Rollups repo',
           link: 'https://github.com/cartesi/rollups-examples?_gl=1*1h8mt5f*_ga*MTAyODg1OTI1LjE2ODY5MDA3NjA.*_ga_HM92STPNFJ*MTY5NjQxNzQ0NS4zNC4wLjE2OTY0MTc0NDUuNjAuMC4w',
@@ -76,8 +87,8 @@ const StartBuilding = () => {
             to get creative.
           </p>
         ),
-        number: '4',
-        image: '',
+        number: '04',
+        image: Image4,
         cta: {
           label: 'Documentation',
           link: 'https://docs.cartesi.io/',
@@ -92,8 +103,8 @@ const StartBuilding = () => {
             the Community Grants Program.
           </p>
         ),
-        number: '5',
-        image: '',
+        number: '05',
+        image: Image5,
         cta: {
           label: 'Submit a proposal',
           link: 'http://governance.cartesi.io/',
@@ -149,13 +160,14 @@ const StartBuilding = () => {
                     <div className='j group flex h-full flex-col gap-8'>
                       <div className='aspect-video overflow-hidden rounded-2xl object-cover'>
                         <img
-                          src={''}
+                          src={image}
                           alt={title}
+                          loading='lazy'
                           className='aspect-video object-cover transition-transform duration-1000 group-hover:scale-105'
                         />
                       </div>
                       <div className='flex grow flex-col lg:pr-24'>
-                        <p className='font-heading text-xs text-background/50'>
+                        <p className='font-heading text-xs text-background/50 m-0'>
                           {number}
                         </p>
                         <EntryContent
