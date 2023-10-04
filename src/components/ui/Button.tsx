@@ -23,7 +23,7 @@ const buttonVariants = cva(
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'font-heading text-sm uppercase tracking-wide',
         'link-invert':
-          'text-background font-heading text-sm uppercase tracking-wide',
+          'text-background hover:text-background/80 font-heading text-sm uppercase tracking-wide',
       },
       size: {
         default: 'px-3 py-2',

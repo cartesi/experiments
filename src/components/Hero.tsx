@@ -18,12 +18,20 @@ const Hero = () => {
         </div>
         <div className='mt-4 grid grid-cols-1 max-w-md mx-auto sm:grid-cols-2 justify-center gap-4 text-center sm:flex-row sm:items-center'>
           <Button asChild variant='white' size={'lg'}>
-            <Link to='https://docs.cartesi.io/cartesi-rollups/build-dapps/'>
+            <Link
+              to='https://docs.cartesi.io/cartesi-rollups/build-dapps/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Start Building
             </Link>
           </Button>
           <Button asChild variant={'outline-invert'} size={'lg'}>
-            <Link href='https://github.com/cartesi/experiments/discussions/17'>
+            <Link
+              href='https://github.com/cartesi/experiments/discussions/17'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Submit your project
             </Link>
           </Button>
