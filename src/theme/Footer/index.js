@@ -1,15 +1,13 @@
 /* ! Note - there are small changes in the css - different from the marketing site */
 /* ! Warning - running https://docusaurus.io/docs/swizzling and selecting the footer comp - will overried this file  */
 
-import React from "react";
-import FooterBar from "./footerBar";
-import FooterBottom from "./footerBottom";
+import FooterSite from '@site/src/components/Footer';
+import React from 'react';
 
 function Footer() {
   return (
     <>
-      <FooterBar />
-      <FooterBottom />
+      <FooterSite />
     </>
   );
 }
