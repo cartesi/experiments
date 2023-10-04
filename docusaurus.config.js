@@ -1,48 +1,48 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Rollup Lab - Projects Powered by Cartesi",
+  title: 'Rollup Lab - Projects Powered by Cartesi',
   tagline:
     "Application-specific rollups with a Linux runtime and Ethereum's security guarantees.",
-  url: "https://showcase.cartesi.io",
-  baseUrl: "/",
+  url: 'https://showcase.cartesi.io',
+  baseUrl: '/',
   trailingSlash: true,
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "cartesi", // Usually your GitHub org/user name.
-  projectName: "cartesi", // Usually your repo name.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'cartesi', // Usually your GitHub org/user name.
+  projectName: 'cartesi', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
   stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;900&display=swap",
+    'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@500;600&display=swap',
   ],
 
   customFields: {
-    projectsImagesPath: "/projects",
+    projectsImagesPath: '/projects',
     pageList: (function () {
-      const fs = require("fs");
-      const path = require("path");
+      const fs = require('fs');
+      const path = require('path');
 
       const pages = fs.readdirSync(path.resolve(__dirname, `src/pages`));
-      const fileType = ".md";
-      const matter = require("gray-matter");
+      const fileType = '.md';
+      const matter = require('gray-matter');
 
       const data = pages
-        .filter((page) => page.endsWith(fileType))
-        .map((page) => {
-          const fileName = page.replace(fileType, "");
+        .filter(page => page.endsWith(fileType))
+        .map(page => {
+          const fileName = page.replace(fileType, '');
           const file = fs.readFileSync(
             path.resolve(__dirname, `src/pages/${page}`)
           );
@@ -61,73 +61,73 @@ const config = {
     })(),
     tagsAvailable: {
       projectStage: {
-        label: "Project Stage",
+        label: 'Project Stage',
         options: [
-          "Stable release",
-          "Release Candidate",
-          "In progress - Beta",
-          "In progress - Alpha",
-          "In progress - Pre-Alpha",
-          "Proof of concept",
-          "Hackathon Project",
+          'Stable release',
+          'Release Candidate',
+          'In progress - Beta',
+          'In progress - Alpha',
+          'In progress - Pre-Alpha',
+          'Proof of concept',
+          'Hackathon Project',
         ],
       },
       event: {
-        label: "Event",
+        label: 'Event',
         options: [
-          "ETH San Francisco",
-          "Hack Boston",
-          "ETH India",
-          "ETH Bogota",
-          "ETH Sao Paulo",
-          "ETHGlobal Lisbon",
-          "ETHGlobal Paris",
-          "Inteli Challenge",
+          'ETH San Francisco',
+          'Hack Boston',
+          'ETH India',
+          'ETH Bogota',
+          'ETH Sao Paulo',
+          'ETHGlobal Lisbon',
+          'ETHGlobal Paris',
+          'Inteli Challenge',
         ],
       },
       winner: {
-        label: "Winner",
-        options: ["1st Place", "2nd Place", "3rd Place", "4th Place"],
+        label: 'Winner',
+        options: ['1st Place', '2nd Place', '3rd Place', '4th Place'],
       },
       technology: {
-        label: "Technology",
+        label: 'Technology',
         options: [
-          "Covalent",
-          "C++",
-          "CSS",
-          "DigitalOcean",
-          "Docker",
-          "ENPS",
-          "Ethers.js",
-          "Go",
-          "Hardhat",
-          "HCL",
-          "HTML",
-          "JavaScript",
-          "Linux",
-          "Lua",
-          "MetaMask",
-          "mc2gen",
-          "MongoDB",
-          "NextJS",
+          'Covalent',
+          'C++',
+          'CSS',
+          'DigitalOcean',
+          'Docker',
+          'ENPS',
+          'Ethers.js',
+          'Go',
+          'Hardhat',
+          'HCL',
+          'HTML',
+          'JavaScript',
+          'Linux',
+          'Lua',
+          'MetaMask',
+          'mc2gen',
+          'MongoDB',
+          'NextJS',
           //"NFTPort", // Ghar on Chain
-          "Node.js",
-          "Nix",
-          "Polygon",
+          'Node.js',
+          'Nix',
+          'Polygon',
           //"Push", // Ghar on Chain
-          "Python",
-          "ReactJS",
+          'Python',
+          'ReactJS',
           //"ReactBootstrap", // Ghar on Chain
-          "Rust",
-          "Sci-kit learn",
-          "Solidity",
-          "SQLite",
-          "SCSS",
-          "StackOS",
-          "TailwindCSS",
-          "TypeScript",
-          "Unity",
-          "Vue",
+          'Rust',
+          'Sci-kit learn',
+          'Solidity',
+          'SQLite',
+          'SCSS',
+          'StackOS',
+          'TailwindCSS',
+          'TypeScript',
+          'Unity',
+          'Vue',
         ].sort(),
       },
     },
@@ -135,7 +135,7 @@ const config = {
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: false,
@@ -145,7 +145,7 @@ const config = {
         },
 
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -153,18 +153,18 @@ const config = {
 
   plugins: [
     [
-      "@docusaurus/plugin-google-tag-manager",
+      '@docusaurus/plugin-google-tag-manager',
       {
-        containerId: "GTM-PQH24DW",
+        containerId: 'GTM-PQH24DW',
       },
     ],
     async function myPlugin(context, options) {
       return {
-        name: "docusaurus-tailwindcss",
+        name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
           // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
           return postcssOptions;
         },
       };
@@ -175,133 +175,133 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "light",
+        defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
       navbar: {
         logo: {
-          alt: "Cartesi Logo",
-          src: "img/logo_dark.svg",
-          srcDark: "img/logo.svg",
-          height: "52px",
+          alt: 'Cartesi Logo',
+          src: 'img/logo_dark.svg',
+          srcDark: 'img/logo.svg',
+          height: '52px',
         },
         items: [
           {
-            to: "https://cartesi.io/",
-            label: "Go to Cartesi.io",
-            position: "right",
+            to: 'https://cartesi.io/',
+            label: 'Go to Cartesi.io',
+            position: 'right',
           },
           {
-            to: "https://docs.cartesi.io/",
-            label: "Developers",
-            position: "right",
+            to: 'https://docs.cartesi.io/',
+            label: 'Developers',
+            position: 'right',
           },
           {
-            to: "https://discord.gg/94YbzVhbsY",
-            position: "right",
-            className: "header-discord-link",
-            "aria-label": "Discord",
+            to: 'https://discord.gg/94YbzVhbsY',
+            position: 'right',
+            className: 'header-discord-link',
+            'aria-label': 'Discord',
           },
           {
-            to: "https://github.com/cartesi",
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
+            to: 'https://github.com/cartesi',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
       footer: {
         links: [
           {
-            title: "Ecosystem",
+            title: 'Ecosystem',
             items: [
               {
-                label: "The Blockchain OS",
-                to: "https://cartesi.io/",
+                label: 'The Blockchain OS',
+                to: 'https://cartesi.io/',
               },
               {
-                label: "Our Whitepaper",
-                to: "https://cartesi.io/cartesi_whitepaper.pdf",
+                label: 'Our Whitepaper',
+                to: 'https://cartesi.io/cartesi_whitepaper.pdf',
               },
               {
-                label: "Foundation Notice",
-                to: "https://cartesi.io/foundation_notice.pdf",
+                label: 'Foundation Notice',
+                to: 'https://cartesi.io/foundation_notice.pdf',
               },
             ],
           },
           {
-            title: "Developers",
+            title: 'Developers',
             items: [
               {
-                label: "Template DApp",
-                to: "https://github.com/cartesi/rollups-examples/tree/main/custom-dapps",
+                label: 'Template DApp',
+                to: 'https://github.com/cartesi/rollups-examples/tree/main/custom-dapps',
               },
               {
-                label: "Tech Articles",
-                to: "https://medium.com/cartesi/tagged/tech",
+                label: 'Tech Articles',
+                to: 'https://medium.com/cartesi/tagged/tech',
               },
               {
-                label: "Bug Bounty",
-                to: "https://immunefi.com/bounty/cartesi/",
+                label: 'Bug Bounty',
+                to: 'https://immunefi.com/bounty/cartesi/',
               },
               {
-                label: "Run a Node",
-                to: "https://explorer.cartesi.io/staking",
+                label: 'Run a Node',
+                to: 'https://explorer.cartesi.io/staking',
               },
               {
-                label: "CIP Process",
-                to: "https://github.com/cartesi/cips",
+                label: 'CIP Process',
+                to: 'https://github.com/cartesi/cips',
               },
             ],
           },
           {
-            title: "Github",
+            title: 'Github',
             items: [
               {
-                label: "Rollups Examples",
-                to: "https://github.com/cartesi/rollups-examples",
+                label: 'Rollups Examples',
+                to: 'https://github.com/cartesi/rollups-examples',
               },
               {
-                label: "Machine Emulator",
-                to: "https://github.com/cartesi/machine-emulator-tools",
+                label: 'Machine Emulator',
+                to: 'https://github.com/cartesi/machine-emulator-tools',
               },
               {
-                label: "Noether Node",
-                to: "https://github.com/cartesi/noether",
+                label: 'Noether Node',
+                to: 'https://github.com/cartesi/noether',
               },
               {
-                label: "Cartesi Compute Tutorials",
-                to: "https://github.com/cartesi/descartes-tutorials",
+                label: 'Cartesi Compute Tutorials',
+                to: 'https://github.com/cartesi/descartes-tutorials',
               },
             ],
           },
           {
-            title: "Community",
+            title: 'Community',
             items: [
               {
-                label: "Youtube",
-                to: "https://www.youtube.com/c/Cartesiproject/videos",
+                label: 'Youtube',
+                to: 'https://www.youtube.com/c/Cartesiproject/videos',
               },
               {
-                label: "Discord",
-                to: "https://discord.gg/94YbzVhbsY",
+                label: 'Discord',
+                to: 'https://discord.gg/94YbzVhbsY',
               },
               {
-                label: "Medium",
-                to: "https://www.medium.com/cartesi",
+                label: 'Medium',
+                to: 'https://www.medium.com/cartesi',
               },
               {
-                label: "Twitter",
-                to: "https://www.twitter.com/cartesiproject",
+                label: 'Twitter',
+                to: 'https://www.twitter.com/cartesiproject',
               },
               {
-                label: "Telegram",
-                to: "https://t.me/cartesiannouncements",
+                label: 'Telegram',
+                to: 'https://t.me/cartesiannouncements',
               },
               {
-                label: "Reddit",
-                to: "https://www.reddit.com/r/cartesi/",
+                label: 'Reddit',
+                to: 'https://www.reddit.com/r/cartesi/',
               },
             ],
           },
