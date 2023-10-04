@@ -111,14 +111,14 @@ export default function MDXContentWrapper(props) {
       )}
       {/*  */}
 
-      <div className='bg-white py-12 lg:py-24'>
+      <div className='bg-background py-12 lg:py-24'>
         <Container>
           <div className='grid grid-cols-1 md:grid-cols-12 gap-12'>
             <div className='md:col-span-4 flex flex-col gap-4 order-last md:order-first'>
               {/*  */}
               {links && (
                 <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl'>
-                  <h3 className='lg:text-3xl mb-4'>Links</h3>
+                  <h3 className='lg:text-2xl mb-6'>Links</h3>
                   <div>
                     <div className='flex flex-col gap-2'>
                       {links.website &&
@@ -126,9 +126,9 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
-                              className='text-slate-900 no-underline hover:no-underline flex gap-2 items-center'
+                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
-                              <span className='flex items-center'>
+                              <span className='flex items-center shrink-0'>
                                 <BiLink className='w-6 h-6 fill-current' />
                               </span>
                               <span className='truncate'>{url}</span>
@@ -140,7 +140,7 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
-                              className='text-slate-900 no-underline hover:no-underline flex gap-2 items-center'
+                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
                               <span className='flex items-center'>
                                 <AiFillGithub className='w-6 h-6 fill-current' />
@@ -154,7 +154,7 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
-                              className='text-slate-900 no-underline hover:no-underline flex gap-2 items-center'
+                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
                               <span className='flex items-center'>
                                 <AiFillTwitterCircle className='w-6 h-6 fill-current' />
@@ -168,7 +168,7 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
-                              className='text-slate-900 no-underline hover:no-underline flex gap-2 items-center'
+                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
                               <span className='flex items-center'>
                                 <RiDiscordFill className='w-6 h-6 fill-current' />
@@ -197,7 +197,7 @@ export default function MDXContentWrapper(props) {
               {/*  */}
               {team && (
                 <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl'>
-                  <h3 className='lg:text-3xl mb-4'>Team</h3>
+                  <h3 className='lg:text-2xl mb-6'>Team</h3>
                   <div>
                     <div className='flex flex-col gap-2'>
                       {team.map((member, i) => {
@@ -221,7 +221,7 @@ export default function MDXContentWrapper(props) {
                                     href={member.linkedin}
                                     rel='noreferrer'
                                     target='_blank'
-                                    className='flex hover:no-underline no-underline text-slate-900   align-middle'
+                                    className='flex hover:no-underline no-underline text-foreground hover:text-foreground   align-middle'
                                     key={i}
                                   >
                                     <AiFillLinkedin className='w-6 h-6 fill-current' />
@@ -234,7 +234,7 @@ export default function MDXContentWrapper(props) {
                                     href={member.twitter}
                                     rel='noreferrer'
                                     target='_blank'
-                                    className='flex hover:no-underline no-underline text-slate-900 align-middle'
+                                    className='flex hover:no-underline no-underline text-foreground hover:text-foreground align-middle'
                                     key={i}
                                   >
                                     <AiFillTwitterCircle className='w-6 h-6 fill-current' />
@@ -242,7 +242,7 @@ export default function MDXContentWrapper(props) {
                                 </div>
                               )}
                               {member.discord && (
-                                <div className='flex flex-shrink-0 items-center bg-slate-700 text-white py-2 text-sm px-3 rounded-lg'>
+                                <div className='flex flex-shrink-0 items-center bg-foreground text-background py-1 text-sm px-3 rounded-lg gap-2'>
                                   <RiDiscordFill className='w-6 h-6 fill-current' />
                                   {member.discord}
                                 </div>
@@ -259,7 +259,7 @@ export default function MDXContentWrapper(props) {
               {/*  */}
               {tags.technology && (
                 <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl'>
-                  <h3 className='lg:text-3xl mb-4'>Technologies</h3>
+                  <h3 className='lg:text-2xl mb-6'>Technologies</h3>
                   <div className='flex flex-wrap gap-1'>
                     {tags.technology.map((tag, i) => {
                       return <Tag type='technology' tag={tag} key={i} isLink />;
