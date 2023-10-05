@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   label: string;
@@ -9,10 +9,14 @@ type Props = {
 const FilterButtonCheckbox = ({ label, checked, onChange }: Props) => {
   return (
     <div>
-      <label className={checked ? "btn-checkbox--active" : "btn-checkbox"}>
+      <label
+        className={
+          checked ? 'btn-checkbox btn-checkbox--active' : 'btn-checkbox'
+        }
+      >
         <input
-          type="checkbox"
-          className="h-0 w-0 opacity-0 absolute"
+          type='checkbox'
+          className='h-0 w-0 opacity-0 absolute'
           checked={checked}
           onChange={onChange}
         />

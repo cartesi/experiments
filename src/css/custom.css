@@ -49,6 +49,8 @@
     --fs3: clamp(1.25rem, calc(0.82rem + 2.17vw), 2.5rem);
     --fs4: clamp(1.13rem, calc(0.82rem + 1.52vw), 2rem);
     --fs5: clamp(1rem, calc(0.83rem + 0.87vw), 1.5rem);
+    --fs6: clamp(0.88rem, calc(0.83rem + 0.43vw), 1.25rem);
+    --fs7: clamp(0.75rem, calc(0.83rem + 0.43vw), 1rem);
 
     /* Header */
     --header-desktop-height: 8rem;
@@ -134,6 +136,9 @@
   --ifm-heading-font-family: 'Figtree', sans-serif;
   --ifm-heading-font-weight: 500;
 
+  --ifm-link-color: hsl(var(--tertiary));
+  --ifm-link-hover-color: hsl(var(--tertiary));
+
   --swiper-pagination-color: rgba(30, 41, 59, 0.75);
 }
 
@@ -145,72 +150,12 @@
 
 @tailwind components;
 
-/* Header */
-.navbar {
-  @apply backdrop-blur bg-slate-900/90 text-white;
-}
-
-.navbar a,
-.navbar__link {
-  @apply text-white hover:text-slate-100;
-}
-
-.navbar__logo {
-  height: 2.5rem;
-}
-
-.header-discord-link:hover {
-  opacity: 0.6;
-}
-
-.header-discord-link::before {
-  content: '';
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'%3E%3C/path%3E%3Cpath fill='white' d='M10.076 11c.6 0 1.086.45 1.075 1 0 .55-.474 1-1.075 1C9.486 13 9 12.55 9 12s.475-1 1.076-1zm3.848 0c.601 0 1.076.45 1.076 1s-.475 1-1.076 1c-.59 0-1.075-.45-1.075-1s.474-1 1.075-1zm4.967-9C20.054 2 21 2.966 21 4.163V23l-2.211-1.995-1.245-1.176-1.317-1.25.546 1.943H5.109C3.946 20.522 3 19.556 3 18.359V4.163C3 2.966 3.946 2 5.109 2H18.89zm-3.97 13.713c2.273-.073 3.148-1.596 3.148-1.596 0-3.381-1.482-6.122-1.482-6.122-1.48-1.133-2.89-1.102-2.89-1.102l-.144.168c1.749.546 2.561 1.334 2.561 1.334a8.263 8.263 0 0 0-3.096-1.008 8.527 8.527 0 0 0-2.077.02c-.062 0-.114.011-.175.021-.36.032-1.235.168-2.335.662-.38.178-.607.305-.607.305s.854-.83 2.705-1.376l-.103-.126s-1.409-.031-2.89 1.103c0 0-1.481 2.74-1.481 6.121 0 0 .864 1.522 3.137 1.596 0 0 .38-.472.69-.871-1.307-.4-1.8-1.24-1.8-1.24s.102.074.287.179c.01.01.02.021.041.031.031.022.062.032.093.053.257.147.514.262.75.357.422.168.926.336 1.513.452a7.06 7.06 0 0 0 2.664.01 6.666 6.666 0 0 0 1.491-.451c.36-.137.761-.337 1.183-.62 0 0-.514.861-1.862 1.25.309.399.68.85.68.85z'%3E%3C/path%3E%3C/svg%3E")
-    no-repeat;
-}
-
-.header-github-link:hover {
-  opacity: 0.6;
-}
-
-.header-github-link::before {
-  content: '';
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
-}
-
 .btn-checkbox {
-  @apply flex items-center border border-solid border-slate-500 cursor-pointer rounded-md px-4 py-2 relative text-slate-800 hover:bg-slate-100 leading-normal transition-colors;
+  @apply flex items-center border border-solid border-foreground cursor-pointer rounded-md px-3 py-2 uppercase relative text-foreground text-sm transition-colors;
 }
 
 .btn-checkbox--active {
-  @apply flex items-center border border-solid border-slate-700 cursor-pointer rounded-md px-4 py-2 relative bg-slate-700 text-white leading-normal transition-colors;
-}
-
-.btn {
-  @apply flex font-semibold text-base items-center border border-solid border-slate-800 cursor-pointer rounded-md px-4 py-2 relative bg-slate-700 text-white font-sans leading-normal m-0 appearance-none transition-colors;
-}
-
-.btn-outline {
-  @apply flex items-center border border-solid border-slate-800 hover:bg-slate-50 text-slate-900 cursor-pointer rounded-md px-4 py-2 relative bg-transparent font-sans text-base leading-normal m-0 appearance-none transition-colors;
-}
-
-.showcase-content {
-  @apply text-slate-600;
-}
-
-.showcase-content h1,
-.showcase-content h2,
-.showcase-content h3,
-.showcase-content h4,
-.showcase-content h5 {
-  @apply text-slate-900;
+  @apply bg-foreground text-background;
 }
 
 @tailwind utilities;

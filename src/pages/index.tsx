@@ -13,6 +13,9 @@ import { useLocation } from '@docusaurus/router';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import StartBuilding from '../components/StartBuilding';
 import Container from '../components/ui/Container';
+import Button from '../components/ui/Button';
+import { Info } from 'lucide-react';
+import Alert from '../components/ui/Alert';
 
 type Tag = {
   label: keyof PageFrontMatter['tags'];
@@ -186,8 +189,8 @@ export default function Home(): JSX.Element {
       description='Cartesi Rollups offer a modular scaling solution, deployable as L2, L3, or sovereign rollups, while maintaining strong base layer security guarantees.'
     >
       <Hero />
-      <main className='pb-8 sm:pb-24' id='dapps'>
-        <div className=' bg-card text-card-foreground py-8'>
+      <main className='pb-12' id='dapps'>
+        <div className='bg-card text-card-foreground py-8'>
           <Container>
             <div className='flex md:items-center flex-col sm:flex-row justify-between gap-4'>
               {/*  */}
@@ -234,8 +237,15 @@ export default function Home(): JSX.Element {
             </div>
           </Container>
         </div>
-        <div className='pt-12 pb-24'>
+        <div className='py-8 sm:py-12 lg:py-16'>
           <Container>
+            {/*  */}
+            <Alert
+              text='The information listed in this directory is provided by the
+                owner of each associated project and is not verified by any
+                third party.'
+            />
+
             {/*  */}
             {filteredPageList.length ? (
               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
@@ -245,19 +255,19 @@ export default function Home(): JSX.Element {
               </div>
             ) : (
               <div className='flex flex-col gap-2 items-center justify-center py-24'>
-                <p className='text-gray-600 text-center m-0'>
+                <p className='text-muted-foreground text-center m-0'>
                   No results found
                 </p>
                 <p>
-                  <button
-                    className='bg-gray-700 border-0 rounded-md text-white text-base px-6 py-3 focus:outline-none hover:bg-gray-700 cursor-pointer'
+                  <Button
+                    size='lg'
                     onClick={() => {
                       clearSearch();
                       handleAllClick();
                     }}
                   >
                     Clear search
-                  </button>
+                  </Button>
                 </p>
               </div>
             )}
