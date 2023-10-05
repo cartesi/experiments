@@ -39,7 +39,7 @@ const Gallery = ({ images }: Props) => {
   }, []);
 
   return (
-    <div>
+    <div className='not-prose'>
       {showLightbox && (
         <div
           className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur p-2 cursor-zoom-out'
@@ -51,7 +51,7 @@ const Gallery = ({ images }: Props) => {
           </div>
         </div>
       )}
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
         {images.map((image, i) => (
           <div key={i}>
             <img
