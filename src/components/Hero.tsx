@@ -23,13 +23,13 @@ const Hero = () => {
           <h1 className='text-5xl inline-block mx-auto sm:text-6xl lg:text-7xl mb-6'>
             Rollup Lab
           </h1>
-          <p className='text-lg sm:text-xl lg:text-2xl font-light'>
+          <p className='text-lg sm:text-xl lg:text-2xl font-light mx-auto max-w-screen-lg'>
             Welcome to the Cartesi community’s repository of proof of concepts,
             hackathon projects, and experimental DApps developed with Cartesi
             Rollups. Get inspired to push the boundaries of Web3 tech together!
           </p>
         </div>
-        <div className='mt-4 grid grid-cols-1 max-w-md mx-auto sm:grid-cols-2 justify-center gap-4 text-center sm:flex-row sm:items-center'>
+        <div className='mt-4 sm:mt-8 grid grid-cols-1 max-w-md mx-auto sm:grid-cols-2 justify-center gap-4 text-center sm:flex-row sm:items-center'>
           <Button asChild variant='white' size={'lg'}>
             <Link
               to='https://docs.cartesi.io/cartesi-rollups/build-dapps/'

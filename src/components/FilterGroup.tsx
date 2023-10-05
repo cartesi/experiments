@@ -83,7 +83,7 @@ const FilterGroup = ({ tags, filterTag, selectedTags, handleClick }: Props) => {
             <div key={i} className='flex items-center whitespace-nowrap gap-2'>
               <input
                 type='checkbox'
-                className='appearance-none checked:bg-primary w-4 h-4 border border-solid border-border focus:ring-2 focus:ring-secondary rounded-sm focus:outline-none focus:text-primary hover:text-primary cursor-pointer'
+                className='appearance-none checked:bg-primary w-4 h-4 border border-solid border-input focus:ring-2 focus:ring-secondary rounded-sm focus:outline-none focus:text-primary hover:text-primary cursor-pointer'
                 id={`${tags.label}-${i}`}
                 onChange={() => handleClick(filterTag, option)}
                 checked={

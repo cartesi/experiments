@@ -17,7 +17,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useLocation } from '@docusaurus/router';
 import Container from '@site/src/components/ui/Container';
-// import StartBuilding from '@site/src/components/StartBuilding';
+import Button from '@site/src/components/ui/Button';
+import Alert from '@site/src/components/ui/Alert';
+import ShowcaseItem from '@site/src/components/ShowcaseItem';
 
 export type PageFrontMatter = {
   id: string;
@@ -61,6 +63,22 @@ export default function MDXContentWrapper(props) {
   const location = useLocation();
   const { siteConfig } = useDocusaurusContext();
 
+  const { pageList } = siteConfig.customFields as {
+    pageList: PageFrontMatter[];
+  };
+
+  const relatedPosts = React.useMemo(() => {
+    const related = frontMatter.related;
+    if (!related) return [];
+
+    const relatedPosts = pageList.filter(page => {
+      const { id } = page;
+      return frontMatter.related.includes(id);
+    });
+
+    return relatedPosts;
+  }, [frontMatter.related]);
+
   return (
     <>
       {/*  */}
@@ -82,7 +100,9 @@ export default function MDXContentWrapper(props) {
             <h1 className='text-5xl inline-block mx-auto sm:text-6xl lg:text-7xl mb-6'>
               {title}
             </h1>
-            <div className='text-lg lg:text-xl'>{description}</div>
+            <div className='text-lg sm:text-xl lg:text-2xl font-light mx-auto max-w-screen-lg'>
+              {description}
+            </div>
           </div>
           <div className='mt-8 flex flex-col justify-center gap-4 text-center sm:flex-row sm:items-center lg:mt-10'>
             <div className='flex flex-wrap gap-1 mt-auto'>
@@ -99,21 +119,9 @@ export default function MDXContentWrapper(props) {
       </div>
       {/*  */}
 
-      {/*  */}
-      {gallery && (
-        <div className='pb-4'>
-          <Container>
-            <div>
-              <Gallery images={[...(gallery || [])]} />
-            </div>
-          </Container>
-        </div>
-      )}
-      {/*  */}
-
-      <div className='bg-background py-12 lg:py-24'>
+      <div className='py-12 lg:py-24'>
         <Container>
-          <div className='grid grid-cols-1 md:grid-cols-12 gap-12'>
+          <div className='grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24'>
             <div className='md:col-span-4 flex flex-col gap-4 order-last md:order-first'>
               {/*  */}
               {links && (
@@ -126,6 +134,7 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
+                              key={i}
                               className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
                               <span className='flex items-center shrink-0'>
@@ -140,9 +149,10 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
+                              key={i}
                               className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
-                              <span className='flex items-center'>
+                              <span className='flex items-center shrink-0'>
                                 <AiFillGithub className='w-6 h-6 fill-current' />
                               </span>
                               <span className='truncate'>{url}</span>
@@ -154,9 +164,10 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
+                              key={i}
                               className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
-                              <span className='flex items-center'>
+                              <span className='flex items-center shrink-0'>
                                 <AiFillTwitterCircle className='w-6 h-6 fill-current' />
                               </span>
                               <span className='truncate'>{url}</span>
@@ -168,9 +179,10 @@ export default function MDXContentWrapper(props) {
                           return (
                             <a
                               href={url}
+                              key={i}
                               className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
                             >
-                              <span className='flex items-center'>
+                              <span className='flex items-center shrink-0'>
                                 <RiDiscordFill className='w-6 h-6 fill-current' />
                               </span>
                               <span className='truncate'>{url}</span>
@@ -181,14 +193,16 @@ export default function MDXContentWrapper(props) {
                   </div>
                   {links.demo && (
                     <div className='mt-6'>
-                      <a
-                        href={links.demo}
-                        rel='noreferrer'
-                        target='_blank'
-                        className='btn no-underline hover:no-underline py-3  hover:text-white transition-colors justify-center'
-                      >
-                        Give it a try
-                      </a>
+                      <Button asChild className='w-full'>
+                        <a
+                          href={links.demo}
+                          rel='noreferrer'
+                          target='_blank'
+                          className='btn no-underline hover:no-underline py-3  hover:text-white transition-colors justify-center'
+                        >
+                          Give it a try
+                        </a>
+                      </Button>
                     </div>
                   )}
                 </div>
@@ -202,7 +216,7 @@ export default function MDXContentWrapper(props) {
                     <div className='flex flex-col gap-2'>
                       {team.map((member, i) => {
                         return (
-                          <div className='flex items-center gap-4'>
+                          <div className='flex items-center gap-4' key={i}>
                             {member.image && (
                               <div className='flex-shrink-0'>
                                 <img
@@ -273,10 +287,34 @@ export default function MDXContentWrapper(props) {
               <SocialShare title={title} />
               {/*  */}
             </div>
-            <div className='md:col-span-8 showcase-content'>
+            <div className='md:col-span-8 prose'>
               <MDXContent {...props} />
+
+              {/*  */}
+              {gallery && (
+                <>
+                  <h2>Gallery</h2>
+                  <Gallery images={[...(gallery || [])]} />
+                </>
+              )}
+              <div className='mt-8 not-prose'>
+                <Alert text='Anyone is free to submit information about their project. Do your own research and use your best judgment when using or interacting with any of the projects listed in this directory. Being listed in this directory is not an endorsement from the Cartesi Foundation or any other related entity.' />
+              </div>
             </div>
           </div>
+
+          {relatedPosts && relatedPosts.length > 0 && (
+            <div className='py-section'>
+              <h2 className='lg:text-h2 mb-8 lg:mb-12'>
+                Explore similar projects
+              </h2>
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+                {relatedPosts.map(page => (
+                  <ShowcaseItem page={page} key={page.id} />
+                ))}
+              </div>
+            </div>
+          )}
         </Container>
       </div>
     </>
