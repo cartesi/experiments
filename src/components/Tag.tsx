@@ -37,7 +37,9 @@ const Tag = ({ tag, type, isLink }: Props) => {
       <TagContent tag={tag} type={type} isLink={isLink} />
     </Link>
   ) : (
-    <TagContent tag={tag} type={type} isLink={isLink} />
+    <span className='no-underline hover:no-underline group cursor-pointer leading-none text-foreground hover:text-foreground transition-colors'>
+      <TagContent tag={tag} type={type} isLink={isLink} />
+    </span>
   );
 };
 
