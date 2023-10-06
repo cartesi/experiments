@@ -110,14 +110,11 @@ const config = {
           'mc2gen',
           'MongoDB',
           'NextJS',
-          //"NFTPort", // Ghar on Chain
           'Node.js',
           'Nix',
           'Polygon',
-          //"Push", // Ghar on Chain
           'Python',
           'ReactJS',
-          //"ReactBootstrap", // Ghar on Chain
           'Rust',
           'Sci-kit learn',
           'Solidity',

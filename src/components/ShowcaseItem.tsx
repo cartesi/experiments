@@ -9,6 +9,8 @@ type Props = {
   page: PageFrontMatter;
 };
 
+const tagsLimit = 5;
+
 const ShowcaseItem = ({ page }: Props) => {
   const { title, description, tags, path, thumbnail } = page;
   const { siteConfig } = useDocusaurusContext();
@@ -43,9 +45,16 @@ const ShowcaseItem = ({ page }: Props) => {
           {/*tags.event && <Tag type="event" tag={tags.event} />*/}
           {/*tags.winner && <Tag type="winner" tag={tags.winner} />*/}
           {tags.technology &&
-            tags.technology.map((tag, i) => {
+            tags.technology.slice(0, tagsLimit).map((tag, i) => {
               return <Tag type='technology' tag={tag} key={i} isLink />;
             })}
+          {tags.technology && tags.technology.length > tagsLimit && (
+            <Tag
+              type='technology'
+              tag={'+' + (tags.technology.length - tagsLimit) + ' more'}
+              isLink
+            />
+          )}
         </div>
       </div>
     </div>
