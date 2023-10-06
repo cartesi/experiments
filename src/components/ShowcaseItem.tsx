@@ -52,7 +52,6 @@ const ShowcaseItem = ({ page }: Props) => {
             <Tag
               type='technology'
               tag={'+' + (tags.technology.length - tagsLimit) + ' more'}
-              isLink
             />
           )}
         </div>
