@@ -25,7 +25,7 @@ team:
 related:
   - dazzle
   - life
-  #- godot-onchain
+  - godot-onchain
 ---
 
 ## About Colosseum
