@@ -26,7 +26,7 @@ team:
     discord: 'Marcus Vinícius#0350'
 related:
   - biometrics-classifier
-  #- techai
+  - techai
   - chaingpt
 ---
 

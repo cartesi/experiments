@@ -34,7 +34,7 @@ team:
     linkedin: https://www.linkedin.com/in/c-shubh/
 related:
   - housy
-  #- techai
+  - techai
   - cartenix
 ---
 

@@ -33,7 +33,7 @@ team:
     linkedin: 'https://www.linkedin.com/in/kamil-zawadzki-400b8913a/'
     twitter: 'https://twitter.com/kamilWebchefsPL'
 related:
-  #- godot-onchain
+  - godot-onchain
   - bidsquad
   - life
 ---

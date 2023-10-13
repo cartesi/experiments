@@ -28,7 +28,7 @@ team:
     linkedin: 'https://www.linkedin.com/in/marcus-vini-souza/'
     discord: 'Marcus Vinícius#0350'
 related:
-  #- techai
+  - techai
   - chaingpt
   - biometrics-classifier
 ---

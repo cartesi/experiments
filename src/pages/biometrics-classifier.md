@@ -33,7 +33,7 @@ team:
     discord: 'osmanrodrigues'
 related:
   - chaingpt
-  #- techai
+  - techai
   - iris-classifier
 ---
 

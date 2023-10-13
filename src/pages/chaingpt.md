@@ -28,9 +28,9 @@ team:
     twitter: 'https://twitter.com/Deanna_Hood'
     discord: 'deanna (she/her)#3984'
 related:
-  #- techai
+  - techai
   - iris-classifier
-  #- deml
+  - deml
 ---
 
 ## About ChainGPT
