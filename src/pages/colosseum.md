@@ -7,13 +7,13 @@ logo: 'H0ysdGf.png'
 thumbnail: 'H0LuWFI.jpg'
 tags:
   projectStage: Hackathon Project
-  event: Hack Boston
-  winner: 1st Place
-  technology:
+  projectTypes:
+    - Games
+  languages:
     - Python
-    - ReactJS
     - Go
-    - Lua
+  stacks_and_libraries:
+    - Ikemen-GO
 links:
   github:
     - 'https://github.com/Ultrachess/BOSTON_HACKATHON'
@@ -22,6 +22,10 @@ team:
   - name: Christopher Pellegrini
   - name: Shravan Ramdurg
   - name: Sebastian Sepulveda
+related:
+  - dazzle
+  - life
+  #- godot-onchain
 ---
 
 ## About Colosseum

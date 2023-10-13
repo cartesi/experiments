@@ -16,13 +16,11 @@ gallery:
   - image: 'Housy_page-0009.jpg'
   - image: 'Housy_page-0010.jpg'
 tags:
-  event: Inteli Challenge
-  winner: 1st Place
   projectStage: Hackathon Project
-  technology:
-    - Next.js
-    - Ethers.js
-    - SCSS
+  projectTypes:
+    - Others
+  languages:
+    - Python
 links:
   github:
     - 'https://github.com/Alenkassemiro/Housy/tree/main'
@@ -38,6 +36,10 @@ team:
   - name: Victor Severiano de Carvalho
     discord: 'victor. #5119'
   - name: Alexandre Fonseca de Souza
+related:
+  - decode
+  - biometrics-classifier
+  - cartesian-battleship
 ---
 
 ## About Housy

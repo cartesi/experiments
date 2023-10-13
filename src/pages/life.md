@@ -7,15 +7,14 @@ thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 tags:
   projectStage: Hackathon Project
-  event: ETH San Francisco
-  winner: 2nd Place
-  technology:
+  projectTypes:
+    - Games
+    - Autonomous World
+  languages:
     - Python
-    - JavaScript
-    - Docker
-    - HTML
-    - HCL
-    - CSS
+  stacks_and_libraries:
+    - Worldcoin
+    - IPFS
 links:
   website:
     - 'https://ethglobal.com/showcase/life-81m99'
@@ -31,6 +30,10 @@ team:
   - name: Michael Kuvshynov
     twitter: 'http://twitter.com/im_mkx'
     discord: '!!mkx#6969'
+related:
+  - ballaum-worldcup-betting-dapp
+  - colosseum
+  - ultrachess
 ---
 
 ## About LIFE

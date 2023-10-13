@@ -5,8 +5,13 @@ logo: 'H0yrMxf.png'
 thumbnail: 'H0yrMxf.png'
 tags:
   projectStage: Proof of concept
-  technology:
-    - TypeScript
+  projectTypes:
+    - Games
+  languages:
+    - Typescript
+  stacks_and_libraries:
+    - wagmi.sh
+    - rainbowkit
 links:
   github:
     - 'https://github.com/tuler/ballaum'
@@ -16,6 +21,10 @@ team:
     linkedin: 'https://www.linkedin.com/in/danilotuler/'
     twitter: 'https://twitter.com/dtuler'
     discord: 'tuler#8915'
+related:
+  - cartesian-battleship
+  - ultrachess
+  - dazzle
 ---
 
 ## About Ballaum

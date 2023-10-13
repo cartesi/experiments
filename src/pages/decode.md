@@ -11,16 +11,13 @@ gallery:
   - image: '9117cf22-b71c-4fb7-814c-7d7d1c067b28.jpeg'
 tags:
   projectStage: Hackathon Project
-  event: ETH India
-  winner: 4th Place
-  technology:
-    - Solidity
-    - MongoDB
-    - DigitalOcean
-    - NextJS
+  projectTypes:
+    - Others
+  languages:
+    - JavaScript
+  stacks_and_libraries:
     - Covalent
-    - TailwindCSS
-    - ENPS
+    - Push
 links:
   website:
     - 'https://devfolio.co/submissions/decode-f05d'
@@ -35,6 +32,10 @@ team:
     linkedin: https://in.linkedin.com/in/hiteshlwni/
   - name: Shubh Chudasama
     linkedin: https://www.linkedin.com/in/c-shubh/
+related:
+  - housy
+  #- techai
+  - cartenix
 ---
 
 ## About DeCode

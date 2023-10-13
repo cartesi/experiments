@@ -10,12 +10,14 @@ gallery:
   - image: '2.png'
   - image: '3.png'
 tags:
-  event: ETHGlobal Lisbon
-  winner: 2nd Place
   projectStage: Hackathon Project
-  technology:
+  projectTypes:
+    - AI/ML
+  languages:
     - C++
-    - alpaca.cpp
+  stacks_and_libraries:
+    - Alpaca
+    - LLM
 links:
   website:
     - 'https://www.ethglobal.com/showcase/chaingpt-and-accountability-for-ai-agents-doquk'
@@ -25,6 +27,10 @@ team:
   - name: Deanna Hood
     twitter: 'https://twitter.com/Deanna_Hood'
     discord: 'deanna (she/her)#3984'
+related:
+  #- techai
+  - iris-classifier
+  #- deml
 ---
 
 ## About ChainGPT

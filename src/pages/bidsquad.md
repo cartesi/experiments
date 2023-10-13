@@ -17,14 +17,16 @@ gallery:
   - image: 'Presentation_page-0008.jpg'
   - image: 'Presentation_page-0009.jpg'
 tags:
-  event: Inteli Challenge
-  winner: 1st Place
   projectStage: Hackathon Project
-  technology:
-    - Next.js
-    - TypeScript
-    - TailwindCSS
-    - Ethers.js
+  projectTypes:
+    - DeFi
+    - AI/ML
+    - Autonomous World
+  languages:
+    - Python
+  stacks_and_libraries:
+    - Jupyter Notebook
+    - Sci-kit learn
 links:
   github:
     - 'https://github.com/Bidsquad-Inteli/bidsquad'
@@ -41,6 +43,10 @@ team:
     discord: 'pauleradixz'
   - name: Henrique Lemos
     discord: 'Lemos.#2278'
+related:
+  - bima-coin
+  - dca-monster
+  - nucleus
 ---
 
 ## About Bidsquad

@@ -7,14 +7,12 @@ import ShowcaseItem from '../components/ShowcaseItem';
 import Search from '../components/Search';
 import debounce from 'lodash.debounce';
 import FilterButtonCheckbox from '../components/FilterButtonCheckbox';
-
 import FilterGroup from '../components/FilterGroup';
 import { useLocation } from '@docusaurus/router';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import StartBuilding from '../components/StartBuilding';
 import Container from '../components/ui/Container';
 import Button from '../components/ui/Button';
-import { Info } from 'lucide-react';
 import Alert from '../components/ui/Alert';
 
 type Tag = {
@@ -42,14 +40,12 @@ export default function Home(): JSX.Element {
 
   const sortList = (list: PageFrontMatter[]) => {
     const sortIndexes = tagsAvailable.projectStage.options.reduce(
-      (acc, option: number, index) => {
+      (acc, option: string, index) => {
         acc[option] = index;
         return acc;
       },
       {}
     );
-
-    // console.log(sortIndexes);
 
     list.sort((a, b) => {
       const aIndex = sortIndexes[a.tags.projectStage];
@@ -175,10 +171,6 @@ export default function Home(): JSX.Element {
       let value =
         tagsArray[1] as PageFrontMatter['tags'][keyof PageFrontMatter['tags']];
 
-      if (!isNaN(Number(value))) {
-        value = Number(value);
-      }
-
       handleTagClick(tagsArray[0] as keyof TagsAvailable, value);
     }
   }, [location.search]);
@@ -208,22 +200,24 @@ export default function Home(): JSX.Element {
                   selectedTags={selectedTags.filter(tag => tag.projectStage)}
                 />
                 <FilterGroup
-                  tags={tagsAvailable.event}
-                  filterTag='event'
+                  tags={tagsAvailable.projectTypes}
+                  filterTag='projectTypes'
                   handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.event)}
+                  selectedTags={selectedTags.filter(tag => tag.projectTypes)}
                 />
                 <FilterGroup
-                  tags={tagsAvailable.winner}
-                  filterTag='winner'
+                  tags={tagsAvailable.languages}
+                  filterTag='languages'
                   handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.winner)}
+                  selectedTags={selectedTags.filter(tag => tag.languages)}
                 />
                 <FilterGroup
-                  tags={tagsAvailable.technology}
-                  filterTag='technology'
+                  tags={tagsAvailable.stacks_and_libraries}
+                  filterTag='stacks_and_libraries'
                   handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.technology)}
+                  selectedTags={selectedTags.filter(
+                    tag => tag.stacks_and_libraries
+                  )}
                 />
               </div>
               {/*  */}

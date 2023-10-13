@@ -7,11 +7,12 @@ logo: 'mrXYVJdt_400x400.jpg'
 thumbnail: 'H19C1xn.md.png'
 tags:
   projectStage: In progress - Pre-Alpha
-  technology:
-    - TypeScript
+  projectTypes:
+    - Games
+  languages:
     - Python
-    - CSS
-    - Docker
+  stacks_and_libraries:
+    - Stockfish Chess Engine
 links:
   website:
     - 'https://ultrachess.gitbook.io/product-docs/'
@@ -25,6 +26,10 @@ team:
   - name: Jesse Engerman
     linkedin: 'https://www.linkedin.com/in/jesse-engerman-04bb07158/'
     twitter: 'http://twitter.com/gwapchain'
+related:
+  - dazzle
+  - cartesian-battleship
+  - life
 ---
 
 ## About Ultrachess

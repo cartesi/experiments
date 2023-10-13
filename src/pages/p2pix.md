@@ -6,9 +6,11 @@ logo: 'H0DalV9.png'
 thumbnail: 'H0ybpUJ.png'
 tags:
   projectStage: Hackathon Project
-  event: ETH Sao Paulo
-  winner: 1st Place
-  technology:
+  projectTypes:
+    - DeFi
+  languages:
+    - Python
+  stacks_and_libraries:
     - Polygon
 links:
   website:
@@ -24,6 +26,10 @@ team:
   - name: hueso
   - name: vagner
   - name: nicksantos
+related:
+  - dca-monster
+  - nucleus
+  - bima-coin
 ---
 
 ## About p2pix

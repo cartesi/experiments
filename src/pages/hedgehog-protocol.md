@@ -11,11 +11,16 @@ gallery:
   - image: 'projects_ku1pt_images_Screenshot_2023-07-23_2.png'
   - image: 'projects_ku1pt_images_Screenshot_2023-07-23_3.png'
 tags:
-  event: ETHGlobal Paris
-  winner: 3rd Place
   projectStage: Hackathon Project
-  technology:
-    - ReactJS
+  projectTypes:
+    - DeFi
+  languages:
+    - Python
+  stacks_and_libraries:
+    - Wallet Connect
+    - Chainlink
+    - web3.storage
+    - Polygon
 links:
   website:
     - 'https://ethglobal.com/showcase/hedgehog-protocol-ku1pt'
@@ -30,6 +35,10 @@ team:
   - name: Lucas Martin Calderon
     discord: 'Lucas Martin Calderon#4176'
     twitter: 'https://twitter.com/lmc_security'
+related:
+  - nucleus
+  - cobe
+  - bidsquad
 ---
 
 ## What is this?

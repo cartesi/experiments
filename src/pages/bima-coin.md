@@ -9,16 +9,13 @@ gallery:
   - image: 'e1bca157-d7d7-46f5-b22a-c21d5d3115da.jpeg'
 tags:
   projectStage: Hackathon Project
-  event: ETH India
-  winner: 1st Place
-  technology:
-    - Solidity
+  projectTypes:
+    - DeFi
+  languages:
     - Python
-    - Ethers.js
-    - Node.js
-    - Hardhat
+  stacks_and_libraries:
     - Polygon
-    - StackOS
+    - Stack OS
 links:
   website:
     - 'https://devfolio.co/submissions/bima-coin-b728'
@@ -33,6 +30,10 @@ team:
   - name: Ritwik Mukherjee
     linkedin: 'https://www.linkedin.com/in/ritwik-mukherjee-70a47a185/'
     twitter: 'http://twitter.com/id_takahashi'
+related:
+  - p2pix
+  - hedgehog-protocol
+  - nucleus
 ---
 
 ## About Bima Coin

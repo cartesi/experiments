@@ -7,7 +7,11 @@ logo: 'H0yho92.png'
 thumbnail: 'H0yho92.png'
 tags:
   projectStage: Proof of concept
-  technology:
+  projectTypes:
+    - AI/ML
+  languages:
+    - Python
+  stacks_and_libraries:
     - mc2gen
     - Sci-kit learn
 links:
@@ -23,6 +27,10 @@ team:
   - name: Marcus Souza
     linkedin: 'https://www.linkedin.com/in/marcus-vini-souza/'
     discord: 'Marcus Vinícius#0350'
+related:
+  #- techai
+  - chaingpt
+  - biometrics-classifier
 ---
 
 ## About Titanic survivor

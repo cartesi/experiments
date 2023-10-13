@@ -7,8 +7,11 @@ logo: 'xnk08D3d_400x400.png'
 thumbnail: 'H0yY4F1.md.png'
 tags:
   projectStage: In progress - Pre-Alpha
-  technology:
+  projectTypes:
+    - Games
+  languages:
     - Rust
+  stacks_and_libraries:
     - Unity
 links:
   website:
@@ -23,6 +26,10 @@ team:
   - name: Teddy Lee
     linkedin: 'https://www.linkedin.com/in/teddy-lee-75b8641/'
     discord: 'Teddy#2329'
+related:
+  - cartesian-battleship
+  - ultrachess
+  - colosseum
 ---
 
 ## About Dazzle

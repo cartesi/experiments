@@ -11,11 +11,12 @@ gallery:
   - image: 'projects_7xxe6_images_Screenshot 2023-05-13 alle 22.37.09.png'
   - image: 'projects_7xxe6_images_Screenshot 2023-05-13 alle 22.38.03.png'
 tags:
-  event: ETHGlobal Lisbon
-  winner: 1st Place
   projectStage: Hackathon Project
-  technology:
+  projectTypes:
+    - Dev-Tool
+  languages:
     - Python
+  stacks_and_libraries:
     - Nix
 links:
   website:
@@ -29,6 +30,10 @@ team:
   - name: Andrea Ciceri
     twitter: 'https://twitter.com/hornedSphere99'
     discord: 'zrsk#4984'
+related:
+  - decode
+  - bravo
+  - housy
 ---
 
 ## What is this?

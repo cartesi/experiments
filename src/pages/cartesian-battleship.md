@@ -56,15 +56,11 @@ gallery:
       Rollups
 tags:
   projectStage: In progress - Pre-Alpha
-  technology:
+  projectTypes:
+    - Games
+  languages:
     - Python
-    - Node.js
-    - ReactJS
-    - TypeScript
-    - Ethers.js
-    - MetaMask
-    - TailwindCSS
-    - MongoDB
+    - Typescript
 links:
   github:
     - 'https://github.com/WeAreProductive/CartesianBattleships'
@@ -81,9 +77,9 @@ team:
   - name: George Georgiev
     linkedin: 'https://www.linkedin.com/in/jorogeorgiev/'
 related:
-  - bidsquad
-  - bima-coin
   - dazzle
+  - ultrachess
+  - ballaum-worldcup-betting-dapp
 ---
 
 ## About Cartesian Battleship
