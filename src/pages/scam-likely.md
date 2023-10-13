@@ -37,6 +37,6 @@ they are prompted to either flag the address or proceed.
 Used Cartesi's sample rollup GitHub repo to create and run an example and test
 our environment. Changes are mostly made to the Python file, examples are found
 at:
-[https://github.com/cartesi/rollups-examples)](https://github.com/cartesi/rollups-examples).
+[https://github.com/cartesi/rollups-examples](https://github.com/cartesi/rollups-examples).
 The example used was erc20.py. Used Docker (as listed in instructions). Locally
 and publicly tested code.
