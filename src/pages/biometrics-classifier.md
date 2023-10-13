@@ -8,9 +8,13 @@ logo: 'H0yho92.png'
 thumbnail: 'H0yho92.png'
 tags:
   projectStage: Proof of concept
-  technology:
-    - Python
+  projectTypes:
+    - AI/ML
+    - Social Identity
+  languages:
     - C++
+  stacks_and_libraries:
+    - OpenCV
 links:
   website:
     - 'https://locus.software/'
@@ -27,6 +31,10 @@ team:
   - name: Osman Rodrigues
     linkedin: 'https://www.linkedin.com/in/osman-rodrigues/'
     discord: 'osmanrodrigues'
+related:
+  - chaingpt
+  #- techai
+  - iris-classifier
 ---
 
 ## About Biometrics Classifier

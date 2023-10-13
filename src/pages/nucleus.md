@@ -26,11 +26,12 @@ gallery:
       Nucleus DeFi Lending Protocol - Lending Pools | Built with Cartesi Rollups
 tags:
   projectStage: Hackathon Project
-  event: ETH San Francisco
-  winner: 1st Place
-  technology:
+  projectTypes:
+    - DeFi
+  languages:
     - Python
-    - Linux
+  stacks_and_libraries:
+    - NumPy
 links:
   website:
     - 'https://ethglobal.com/showcase/nucleus-sztuz'
@@ -41,6 +42,10 @@ team:
   - name: Chuck Lam
     twitter: 'http://twitter.com/WagmiFinancial'
     discord: 'chuck#0779'
+related:
+  - cobe
+  - bima-coin
+  - p2pix
 ---
 
 ## About Nucleus

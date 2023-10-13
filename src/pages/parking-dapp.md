@@ -14,11 +14,13 @@ gallery:
       Webchefs Parking DApp - Parking zone details | Built with Cartesi Rollups
 tags:
   projectStage: Proof of concept
-  technology:
+  projectTypes:
+    - Autonomous World
+  languages:
     - Rust
-    - Vue
-    - TypeScript
+  stacks_and_libraries:
     - SQLite
+    - Vue
 links:
   website:
     - 'https://www.webchefs.tech/'
@@ -30,6 +32,10 @@ team:
   - name: Kamil Zawadzki
     linkedin: 'https://www.linkedin.com/in/kamil-zawadzki-400b8913a/'
     twitter: 'https://twitter.com/kamilWebchefsPL'
+related:
+  #- godot-onchain
+  - bidsquad
+  - life
 ---
 
 ## About Webchef’s Parking DApp

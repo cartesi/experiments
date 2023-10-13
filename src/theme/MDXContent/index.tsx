@@ -34,9 +34,9 @@ export type PageFrontMatter = {
   }[];
   tags: {
     projectStage?: string;
-    event?: string;
-    winner?: number;
-    technology?: string[];
+    projectTypes?: string[];
+    languages?: string[];
+    stacks_and_libraries?: string[];
   };
   links: {
     github?: string[];
@@ -105,14 +105,13 @@ export default function MDXContentWrapper(props) {
             </div>
           </div>
           <div className='mt-8 flex flex-col justify-center gap-4 text-center sm:flex-row sm:items-center lg:mt-10'>
-            <div className='flex flex-wrap gap-1 mt-auto'>
-              {Object.keys(tags)
-                .filter(key => key !== 'technology')
-                .map((key: keyof PageFrontMatter['tags']) => {
-                  if (tags[key]) {
-                    return <Tag type={key} tag={tags[key]} isLink key={key} />;
-                  }
-                })}
+            <div className='flex flex-wrap gap-2 mt-auto'>
+              {tags.projectStage && (
+                <Tag type='projectStage' tag={tags.projectStage} />
+              )}
+              {tags.projectTypes.map((tag, i) => {
+                return <Tag type='projectTypes' tag={tag} key={i} isLink />;
+              })}
             </div>
           </div>
         </Container>
@@ -271,13 +270,30 @@ export default function MDXContentWrapper(props) {
               )}
               {/*  */}
               {/*  */}
-              {tags.technology && (
+              {(tags.languages || tags.stacks_and_libraries) && (
                 <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl'>
-                  <h3 className='lg:text-2xl mb-6'>Technologies</h3>
+                  <h3 className='lg:text-2xl mb-6'>
+                    Languages, Libraries & Stacks
+                  </h3>
                   <div className='flex flex-wrap gap-1'>
-                    {tags.technology.map((tag, i) => {
-                      return <Tag type='technology' tag={tag} key={i} isLink />;
-                    })}
+                    {tags.languages &&
+                      tags.languages.map((tag, i) => {
+                        return (
+                          <Tag type='languages' tag={tag} key={i} isLink />
+                        );
+                      })}
+
+                    {tags.stacks_and_libraries &&
+                      tags.stacks_and_libraries.map((tag, i) => {
+                        return (
+                          <Tag
+                            type='stacks_and_libraries'
+                            tag={tag}
+                            key={i}
+                            isLink
+                          />
+                        );
+                      })}
                   </div>
                 </div>
               )}

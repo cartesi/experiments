@@ -10,7 +10,7 @@ type Props = {
   isLink?: boolean;
 };
 
-const TagContent = ({ tag, type, isLink }: Props) => {
+const TagContent = ({ tag, type }: Props) => {
   return (
     <span
       className={cn(
@@ -20,10 +20,7 @@ const TagContent = ({ tag, type, isLink }: Props) => {
           : 'cursor-default'
       )}
     >
-      {type === 'event' && tag}
-      {type === 'projectStage' && tag}
-      {type === 'winner' && `Winner ${tag}`}
-      {type === 'technology' && tag}
+      {tag}
     </span>
   );
 };
@@ -34,11 +31,11 @@ const Tag = ({ tag, type, isLink }: Props) => {
       to={`/?tag=${type}${TagPathSeperator.value}${tag}`}
       className='no-underline hover:no-underline group cursor-pointer leading-none text-foreground hover:text-foreground transition-colors'
     >
-      <TagContent tag={tag} type={type} isLink={isLink} />
+      <TagContent tag={tag} type={type} />
     </Link>
   ) : (
     <span className='no-underline hover:no-underline group cursor-pointer leading-none text-foreground hover:text-foreground transition-colors'>
-      <TagContent tag={tag} type={type} isLink={isLink} />
+      <TagContent tag={tag} type={type} />
     </span>
   );
 };

@@ -15,6 +15,11 @@ const ShowcaseItem = ({ page }: Props) => {
   const { title, description, tags, path, thumbnail } = page;
   const { siteConfig } = useDocusaurusContext();
 
+  const languages_libraries_stacks = Array();
+  if (tags.languages) languages_libraries_stacks.push(...tags.languages);
+  if (tags.stacks_and_libraries)
+    languages_libraries_stacks.push(...tags.stacks_and_libraries);
+
   return (
     <div className='flex flex-col gap-6 lg:gap-8 relative p-6 bg-card text-card-foreground rounded-3xl'>
       <Link className='absolute inset-0 z-10' to={path} />
@@ -42,18 +47,21 @@ const ShowcaseItem = ({ page }: Props) => {
         <h3 className='text-lg mb-1 sm:text-xl font-bold'>{title}</h3>
         <p className='text-sm mb-2 text-muted-foreground'>{description}</p>
         <div className='flex flex-wrap gap-1 mt-auto pt-2 relative z-20'>
-          {/*tags.event && <Tag type="event" tag={tags.event} />*/}
-          {/*tags.winner && <Tag type="winner" tag={tags.winner} />*/}
-          {tags.technology &&
-            tags.technology.slice(0, tagsLimit).map((tag, i) => {
-              return <Tag type='technology' tag={tag} key={i} isLink />;
+          {languages_libraries_stacks &&
+            languages_libraries_stacks.slice(0, tagsLimit).map((tag, i) => {
+              return <Tag type='languages' tag={tag} key={i} isLink />;
             })}
-          {tags.technology && tags.technology.length > tagsLimit && (
-            <Tag
-              type='technology'
-              tag={'+' + (tags.technology.length - tagsLimit) + ' more'}
-            />
-          )}
+          {languages_libraries_stacks &&
+            languages_libraries_stacks.length > tagsLimit && (
+              <Tag
+                type='languages'
+                tag={
+                  '+' +
+                  (languages_libraries_stacks.length - tagsLimit) +
+                  ' more'
+                }
+              />
+            )}
         </div>
       </div>
     </div>

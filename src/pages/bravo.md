@@ -9,12 +9,11 @@ gallery:
   - image: '2.png'
   - image: '3.png'
 tags:
-  event: ETHGlobal Paris
-  winner: 2nd Place
   projectStage: Hackathon Project
-  technology:
+  projectTypes:
+    - Dev-Tool
+  languages:
     - Python
-    - Solidity
 links:
   website:
     - 'https://ethglobal.com/showcase/bravo-q08eb'
@@ -27,6 +26,10 @@ team:
   - name: Andrea Ciceri
     discord: 'aciceri#0'
     twitter: 'https://twitter.com/hornedSphere99'
+related:
+  - cartenix
+  - housy
+  - decode
 ---
 
 ## About Bravo

@@ -12,13 +12,11 @@ gallery:
   - image: '5.png'
   - image: '6.png'
 tags:
-  event: ETHGlobal Paris
-  winner: 1st Place
   projectStage: Hackathon Project
-  technology:
+  projectTypes:
+    - DeFi
+  languages:
     - Python
-    - NextJS
-    - TailwindCSS
 links:
   website:
     - 'https://ethglobal.com/showcase/dca-monster-b8157'
@@ -29,6 +27,10 @@ team:
   - name: Salvador Pablo Maldonado Turci
     discord: 'mangolassi#0'
     twitter: 'https://twitter.com/pmturci'
+related:
+  - p2pix
+  - bidsquad
+  - bima-coin
 ---
 
 ## About DCA Monster

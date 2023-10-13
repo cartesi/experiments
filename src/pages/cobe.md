@@ -11,10 +11,10 @@ gallery:
   - image: '3.png'
   - image: '4.png'
 tags:
-  event: ETHGlobal Lisbon
-  winner: 2nd Place
   projectStage: Hackathon Project
-  technology:
+  projectTypes:
+    - DeFi
+  languages:
     - Python
 links:
   website:
@@ -25,6 +25,10 @@ team:
   - name: Orkun Mahir Kılıç
     twitter: 'https://twitter.com/0x_orkun'
     discord: 'Orkun#8389'
+related:
+  - dca-monster
+  - hedgehog-protocol
+  - p2pix
 ---
 
 ## About COBE
