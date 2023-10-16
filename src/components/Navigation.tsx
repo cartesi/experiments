@@ -39,8 +39,8 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
           isExternal: true,
         },
         {
-          label: 'Big Bounty',
-          link: 'https://immunefi.com/bounty/cartesi/?_gl=1*1iug9qt*_ga*MTAyODg1OTI1LjE2ODY5MDA3NjA.*_ga_HM92STPNFJ*MTY5NjQxNTE4Mi4zMy4xLjE2OTY0MTUxODIuNjAuMC4w',
+          label: 'Developer Advocacy Seed Grants',
+          link: 'https://cartesi-devad.notion.site/DevAd-Seed-Grants-508924fb3cbb4e67a6a1c03a7fc48292',
           isExternal: true,
         },
         {
@@ -51,9 +51,45 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
       ],
     },
     {
-      label: 'Governance',
-      path: 'https://cartesi.io/governance/',
-      isExternal: true,
+      label: 'Community',
+      isExternal: false,
+      Children: [
+        {
+          label: 'Twitter',
+          link: 'https://twitter.com/cartesiproject',
+          isExternal: true,
+        },
+        {
+          label: 'Discord',
+          link: 'https://discord.gg/pfXMwXDDfW',
+          isExternal: true,
+        },
+        {
+          label: 'Reddit',
+          link: 'https://www.reddit.com/r/cartesi/',
+          isExternal: true,
+        },
+        {
+          label: 'YouTube',
+          link: 'https://www.youtube.com/cartesiproject',
+          isExternal: true,
+        },
+        {
+          label: 'Telegram',
+          link: 'https://t.me/cartesiproject',
+          isExternal: true,
+        },
+        {
+          label: 'LinkedIn',
+          link: 'https://www.linkedin.com/company/cartesiproject',
+          isExternal: true,
+        },
+        {
+          label: 'Instagram',
+          link: 'https://www.instagram.com/cartesiproject/',
+          isExternal: true,
+        },
+      ],
     },
     {
       label: 'Cartesi',
