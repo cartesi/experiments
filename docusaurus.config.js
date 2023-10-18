@@ -180,7 +180,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
