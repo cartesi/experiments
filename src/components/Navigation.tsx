@@ -61,7 +61,7 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
         },
         {
           label: 'Discord',
-          link: 'https://discord.gg/pfXMwXDDfW',
+          link: 'https://discord.gg/eZ6HehDzYK',
           isExternal: true,
         },
         {
@@ -130,7 +130,7 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
                 <RiGithubFill className='w-5 h-5 fill-current text-background' />
               </Link>
               <Link
-                href='https://discord.gg/pfXMwXDDfW'
+                href='https://discord.gg/eZ6HehDzYK'
                 target='_blank'
                 rel='noreferrer'
                 className={'shrink-0 p-1 rounded-full bg-foreground'}
