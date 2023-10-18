@@ -9,7 +9,7 @@ const Footer = () => {
   const navItems = [
     {
       label: 'Discord',
-      path: 'https://discord.gg/pfXMwXDDfW',
+      path: 'https://discord.gg/eZ6HehDzYK',
       isExternal: false,
     },
     {

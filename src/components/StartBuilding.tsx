@@ -24,7 +24,7 @@ import Image5 from '@site/static/img/start-5.png';
 const StartBuilding = () => {
   const data = {
     badge: '5 Simple steps',
-    title: 'Start building with Cartesi rollups',
+    title: 'Start building with Cartesi Rollups',
     cta1: {
       label: 'Developer Docs',
       link: 'https://cartesi.io/#:~:text=with%20Cartesi%20Rollups-,DEVELOPER%20DOCS,-JOIN%20THE%20DISCORD',
