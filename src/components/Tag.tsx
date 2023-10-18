@@ -14,12 +14,6 @@ type TagColours = {
   styles: string;
 };
 
-type Tag = {
-  label: keyof PageFrontMatter['tags'];
-  options: PageFrontMatter['tags'][keyof PageFrontMatter['tags']][];
-  colours: TagColours[];
-};
-
 export const projectStageColours = [
   {
     option: 'Stable release',
@@ -50,7 +44,7 @@ export const projectStageColours = [
     option: 'Hackathon Project',
     styles: 'cursor-pointer bg-tag4 border-tag4 text-secondary-foreground',
   },
-];
+] as TagColours[];
 
 const TagContent = ({ tag, type }: Props) => {
   return (
