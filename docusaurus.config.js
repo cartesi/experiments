@@ -9,7 +9,7 @@ const config = {
   title: 'Rollup Lab - Projects Powered by Cartesi',
   tagline:
     "Application-specific rollups with a Linux runtime and Ethereum's security guarantees.",
-  url: 'https://showcase.cartesi.io',
+  url: 'https://rolluplab.io/',
   baseUrl: '/',
   trailingSlash: true,
   onBrokenLinks: 'throw',
