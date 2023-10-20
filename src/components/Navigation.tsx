@@ -100,7 +100,7 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
 
   const cta = {
     label: 'Submit Your Project',
-    link: 'https://github.com/cartesi/experiments/discussions/17',
+    link: 'https://form.typeform.com/to/wbyrgOlP',
     isExternal: true,
   };
 
