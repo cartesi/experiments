@@ -183,6 +183,7 @@ const config = {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      image: 'img/socialLogo2023.png',
     }),
 };
 
