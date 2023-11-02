@@ -9,21 +9,25 @@ tags:
     - AI/ML
   languages:
     - Python
+    - CSS
+    - TypeScript
   stacks_and_libraries:
     - KNN
+    - Ethers.js
+    - ReactJS
 links:
   website:
     - 'https://locus.software/'
   github:
-    - 'https://github.com/souzavinny/rollups-examples/tree/dev/knn'
-    - 'https://github.com/OsmanRodrigues/rollups-examples/tree/enhanc/frontend-notices-controller-refetch/frontend-knn'
+    - 'https://github.com/MarcusSouzaLocus/rollups-examples/tree/feat/update-knn-1.0/knn'
+    - 'https://github.com/MarcusSouzaLocus/rollups-examples/tree/feat/update-knn-1.0/frontend-knn'
   twitter:
     - 'https://twitter.com/LocusSoftware'
   demo: 'https://irisclassifier.surge.sh/'
 team:
   - name: Marcus Souza
     linkedin: 'https://www.linkedin.com/in/marcus-vini-souza/'
-    discord: 'Marcus Vinícius#0350'
+    discord: 'marcusvinicius90'
 related:
   - biometrics-classifier
   - techai
@@ -87,3 +91,8 @@ interacts with the Iris Classifier DApp, running locally and deployed on remote
 testnet networks. The UI is mainly implemented in TypeScript and uses the
 React.js library to build the user interface and the Ethers library to
 communicate with the rollups smart contracts.
+
+## Describe what could be next for your project?
+
+This project is a foundation to creating similar pure python machine learning
+dapps.
