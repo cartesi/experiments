@@ -14,6 +14,7 @@ import StartBuilding from '../components/StartBuilding';
 import Container from '../components/ui/Container';
 import Button from '../components/ui/Button';
 import Alert from '../components/ui/Alert';
+import Featured from '../components/Featured';
 
 type Tag = {
   label: keyof PageFrontMatter['tags'];
@@ -238,6 +239,20 @@ export default function Home(): JSX.Element {
               text='The information listed in this directory is provided by the
                 owner of each associated project and is not verified by any
                 third party.'
+            />
+
+            <Featured
+              title='Featured'
+              projects={[
+                'cartesian-battleship',
+                'ultrachess',
+                'iris-classifier',
+                'parking-dapp',
+                'titanic-survivor',
+                'cartenix',
+                'cartesign',
+                'colosseum',
+              ]}
             />
 
             {/*  */}

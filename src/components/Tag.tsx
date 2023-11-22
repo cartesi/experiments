@@ -2,11 +2,13 @@ import Link from '@docusaurus/Link';
 import React from 'react';
 import { TagPathSeperator } from '../pages';
 import { PageFrontMatter } from '../theme/MDXContent';
+import { cn } from '../lib/utils';
 
 type Props = {
   tag: PageFrontMatter['tags'][keyof PageFrontMatter['tags']];
   type: keyof PageFrontMatter['tags'];
   isLink?: boolean;
+  contentClass?: HTMLDivElement['className'];
 };
 
 type TagColours = {
@@ -46,32 +48,34 @@ export const projectStageColours = [
   },
 ] as TagColours[];
 
-const TagContent = ({ tag, type }: Props) => {
+const TagContent = ({ tag, type, contentClass }: Props) => {
   return (
     <span
-      className={`inline-flex text-center py-[.5em] px-[1em] border border-solid items-center rounded-full text-xs transition-colors uppercase tracking-wide font-heading
+      className={cn(
+        `inline-flex text-center py-[.5em] px-[1em] border border-solid items-center rounded-full text-xs transition-colors uppercase tracking-wide font-heading
         ${
           type === 'projectStage'
             ? projectStageColours.find(item => item.option === tag).styles
             : 'cursor-default bg-card text-card-foreground border-[rgba(0,0,0,.2)]'
-        }`}
+        } ${contentClass ?? ''}`
+      )}
     >
       {tag}
     </span>
   );
 };
 
-const Tag = ({ tag, type, isLink }: Props) => {
+const Tag = ({ tag, type, isLink, contentClass }: Props) => {
   return isLink ? (
     <Link
       to={`/?tag=${type}${TagPathSeperator.value}${tag}`}
       className='no-underline hover:no-underline group cursor-pointer leading-none text-foreground hover:text-foreground transition-colors'
     >
-      <TagContent tag={tag} type={type} />
+      <TagContent tag={tag} type={type} contentClass={contentClass} />
     </Link>
   ) : (
     <span className='no-underline hover:no-underline group cursor-pointer leading-none text-foreground hover:text-foreground transition-colors'>
-      <TagContent tag={tag} type={type} />
+      <TagContent tag={tag} type={type} contentClass={contentClass} />
     </span>
   );
 };
