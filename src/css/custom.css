@@ -111,6 +111,10 @@
   grid-auto-flow: column;
 }
 
+.swiper-button-disabled {
+  @apply opacity-20;
+}
+
 /* END FROM SITE */
 
 @tailwind components;
