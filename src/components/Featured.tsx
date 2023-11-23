@@ -10,14 +10,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import ShowcaseItemFeatured from './ShowcaseItemFeatured';
+import Button from './ui/Button';
+import Link from '@docusaurus/Link';
+import IconExternal from './ui/IconExternal';
 
-const Featured = ({
-  title,
-  projects,
-}: {
-  title: string;
-  projects: PageFrontMatter['id'][];
-}) => {
+const Featured = ({ projects }: { projects: PageFrontMatter['id'][] }) => {
   const { siteConfig } = useDocusaurusContext();
 
   const { pageList, tagsAvailable } = siteConfig.customFields as {
@@ -35,15 +32,26 @@ const Featured = ({
 
   return (
     <div className='bg-foreground rounded-3xl mb-12 text-background p-6 sm:p-12 pr-0 overflow-hidden'>
-      <div className='flex items-center justify-between gap-4 pb-6 sm:pb-10'>
-        <h2 className='text-h4 m-0'>{title}</h2>
-        <div className='flex items-center gap-2'>
-          <button className='swiper-prev hover:bg-white/5 rounded-xl block p-2 transition-opacity'>
-            <ChevronLeft size={24} />
-          </button>
-          <button className='swiper-next hover:bg-white/5 rounded-xl block p-2 transition-opacity'>
-            <ChevronRight size={24} />
-          </button>
+      <div className='flex flex-col lg:flex-row justify-between gap-4 sm:gap-6 pb-6 sm:pb-10'>
+        <div>
+          <h2 className='text-h4'>Cartesi Experiment Week</h2>
+          <p className='text-white/70'>
+            A week-long online hackathon hosted by the Cartesi Foundation for
+            grantees and the broader community with the aim to bring several
+            tangible dApp ideas, use cases, improvements, and tooling to life.
+          </p>
+        </div>
+        <div>
+          <Button asChild variant={'outline-invert'}>
+            <Link
+              href={`https://cartesi.io/blog/cartesi-experiment-week-recap/`}
+              target={'_blank'}
+              className='group inline-flex items-center whitespace-nowrap gap-2 px-6 pl-8'
+            >
+              Learn more
+              <IconExternal />
+            </Link>
+          </Button>
         </div>
       </div>
 
@@ -66,7 +74,7 @@ const Featured = ({
             slidesPerView: 2.5,
           },
           1024: {
-            slidesPerView: 3.5,
+            slidesPerView: 3,
           },
         }}
       >
@@ -76,6 +84,14 @@ const Featured = ({
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className='flex items-center gap-2 mt-4 justify-end'>
+        <button className='swiper-prev hover:bg-white/5 rounded-xl block p-2 transition-opacity'>
+          <ChevronLeft size={24} />
+        </button>
+        <button className='swiper-next hover:bg-white/5 rounded-xl block p-2 transition-opacity'>
+          <ChevronRight size={24} />
+        </button>
+      </div>
     </div>
   );
 };
