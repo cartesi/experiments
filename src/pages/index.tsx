@@ -242,16 +242,10 @@ export default function Home(): JSX.Element {
             />
 
             <Featured
-              title='Featured'
               projects={[
-                'cartesian-battleship',
-                'ultrachess',
-                'iris-classifier',
-                'parking-dapp',
-                'titanic-survivor',
-                'cartenix',
+                'decentralized-air-quality-classifier',
                 'cartesign',
-                'colosseum',
+                'bugless',
               ]}
             />
 
