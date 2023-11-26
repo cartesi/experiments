@@ -220,6 +220,12 @@ export default function Home(): JSX.Element {
                     tag => tag.stacks_and_libraries
                   )}
                 />
+                <FilterGroup
+                  tags={tagsAvailable.other_tags}
+                  filterTag='other_tags'
+                  handleClick={handleTagClick}
+                  selectedTags={selectedTags.filter(tag => tag.other_tags)}
+                />
               </div>
               {/*  */}
 
@@ -244,8 +250,10 @@ export default function Home(): JSX.Element {
             <Featured
               projects={[
                 'decentralized-air-quality-classifier',
-                'cartesign',
                 'bugless',
+                'cartesign',
+                'tribes',
+                'arena-mayhem',
               ]}
             />
 

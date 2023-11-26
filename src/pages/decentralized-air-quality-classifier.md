@@ -11,6 +11,8 @@ gallery:
   - image: '940a5e023db4-istockphoto_1132417385_612x612.jpg'
 tags:
   projectStage: Hackathon Project
+  other_tags:
+    - 'Cartesi Experiment Week'
   projectTypes:
     - AI/ML
     - Autonomous World
