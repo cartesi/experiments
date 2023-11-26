@@ -37,6 +37,7 @@ export type PageFrontMatter = {
     projectTypes?: string[];
     languages?: string[];
     stacks_and_libraries?: string[];
+    other_tags?: string[];
   };
   links: {
     github?: string[];
@@ -79,6 +80,8 @@ export default function MDXContentWrapper(props) {
     return relatedPosts;
   }, [frontMatter.related]);
 
+  console.log(tags);
+
   return (
     <>
       {/*  */}
@@ -109,9 +112,14 @@ export default function MDXContentWrapper(props) {
               {tags.projectStage && (
                 <Tag type='projectStage' tag={tags.projectStage} />
               )}
-              {tags.projectTypes.map((tag, i) => {
-                return <Tag type='projectTypes' tag={tag} key={i} isLink />;
-              })}
+              {tags.projectTypes &&
+                tags.projectTypes.map((tag, i) => {
+                  return <Tag type='projectTypes' tag={tag} key={i} isLink />;
+                })}
+              {tags.other_tags &&
+                tags.other_tags.map((tag, i) => {
+                  return <Tag type='other_tags' tag={tag} key={i} isLink />;
+                })}
             </div>
           </div>
         </Container>

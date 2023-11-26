@@ -11,6 +11,8 @@ gallery:
   - image: 'xbEZXUT.png'
 tags:
   projectStage: Hackathon Project
+  other_tags:
+    - 'Cartesi Experiment Week'
   projectTypes:
     - Dev-Tool
   languages:

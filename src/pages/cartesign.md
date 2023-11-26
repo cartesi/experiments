@@ -7,6 +7,8 @@ logo: '4784ab9e6871-CarteSign.png'
 thumbnail: '4784ab9e6871-CarteSign.png'
 tags:
   projectStage: Hackathon Project
+  other_tags:
+    - 'Cartesi Experiment Week'
   projectTypes:
     - Autonomous World
     - Social Identity
