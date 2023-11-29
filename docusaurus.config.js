@@ -96,6 +96,7 @@ const config = {
           'Python',
           'Rust',
           'Typescript',
+          'Bash',
         ].sort(),
       },
       stacks_and_libraries: {

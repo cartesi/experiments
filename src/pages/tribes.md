@@ -29,9 +29,13 @@ links:
     - 'https://github.com/felipefg/tribes'
 team:
   - name: Felipe Fink Grael
+    discord: '@felipefg'
   - name: Pedro Argento
+    discord: '@PedroArgento'
   - name: Henrique Marlon
+    discord: '@HenriqueMarlon'
   - name: Manu Morais
+    discord: '@manumorais1'
 related:
   - housy
   - techai
