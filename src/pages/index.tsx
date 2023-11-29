@@ -254,6 +254,8 @@ export default function Home(): JSX.Element {
                 'cartesign',
                 'tribes',
                 'arena-mayhem',
+                'interactive-rootfs',
+                'cartesi-werewolf',
               ]}
             />
 
