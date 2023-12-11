@@ -24,9 +24,14 @@ links:
   github:
     - 'https://github.com/jplgarcia/arenamayhem'
 team:
-  - discord: payalpatelmalhotra
-  - discord: riseandshaheen
-  - discord: renan061
+  - name: João Garcia
+    discord: garcia.cartesi
+  - name: Payal Patel
+    discord: payalpatelmalhotra
+  - name: Shaheen Ahmed
+    discord: riseandshaheen
+  - name: Renan Santos
+    discord: renan061
 related:
   - housy
   - techai
