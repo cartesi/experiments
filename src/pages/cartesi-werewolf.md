@@ -22,6 +22,8 @@ links:
   github:
     - 'https://github.com/stephenctw/cartesi-werewolf-example/tree/main'
 team:
+  - name: Zehui Zheng
+    discord: 'zehuizheng'
   - name: Stephen Chen
     discord: 'stephenctw'
   - name: Karmen Truong
