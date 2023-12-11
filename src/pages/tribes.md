@@ -28,6 +28,8 @@ links:
   github:
     - 'https://github.com/felipefg/tribes'
 team:
+  - name: Bruno Maia
+    discord: '@bmaia18'
   - name: Felipe Fink Grael
     discord: '@felipefg'
   - name: Pedro Argento
