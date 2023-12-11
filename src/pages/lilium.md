@@ -32,6 +32,8 @@ links:
   github:
     - 'https://github.com/Lilium-DApp'
 team:
+  - name: Henrique Marlon
+    linkedin: https://www.linkedin.com/in/henriquemarlon/
   - name: Alberto Da Rocha Miranda
     linkedin: https://www.linkedin.com/in/alberto-da-rocha-miranda-angrysine/
   - name: Emanuele Morais
