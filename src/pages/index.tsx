@@ -247,17 +247,19 @@ export default function Home(): JSX.Element {
                 third party.'
             />
 
-            <Featured
-              projects={[
-                'decentralized-air-quality-classifier',
-                'bugless',
-                'cartesign',
-                'tribes',
-                'arena-mayhem',
-                'interactive-rootfs',
-                'cartesi-werewolf',
-              ]}
-            />
+            {selectedTags.length === 0 && !searchTerm && (
+              <Featured
+                projects={[
+                  'decentralized-air-quality-classifier',
+                  'bugless',
+                  'cartesign',
+                  'tribes',
+                  'arena-mayhem',
+                  'interactive-rootfs',
+                  'cartesi-werewolf',
+                ]}
+              />
+            )}
 
             {/*  */}
             {filteredPageList.length ? (
