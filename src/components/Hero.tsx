@@ -32,7 +32,7 @@ const Hero = () => {
         <div className='mt-4 sm:mt-8 grid grid-cols-1 max-w-md mx-auto sm:grid-cols-2 justify-center gap-4 text-center sm:flex-row sm:items-center'>
           <Button asChild variant='white' size={'lg'}>
             <Link
-              href='https://form.typeform.com/to/wbyrgOlP'
+              href='https://forms.gle/C2gHiwVCvgKkJM1c9'
               target='_blank'
               rel='noopener noreferrer'
             >
