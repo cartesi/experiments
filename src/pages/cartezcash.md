@@ -51,7 +51,7 @@ fully functioning ZCash that allows privately sending wrapped Eth
 
 CarteZcash takes parts of the [Zebra](https://github.com/ZcashFoundation/zebra)
 Zcash client and uses them to build a mini version of the protocol called we
-call [TinyCash](./tiny-cash/). This is similar to how Optimism uses
+call. This is similar to how Optimism uses
 [minigeth](https://github.com/ethereum-optimism/minigeth) for the Ethereum state
 transition.
 
@@ -104,9 +104,8 @@ issue a voucher to release the corresponding number of coins on L1.
 
 ### Wallet Interface
 
-CarteZcash integrates with existing Zcash wallets via the
-[cartezcash-proxy](./cartezcash-proxy/) component. The proxy exposes a GRPC
-interface that matches the
+CarteZcash integrates with existing Zcash wallets via the cartezcash-proxy
+component. The proxy exposes a GRPC interface that matches the
 [lightwalletd](https://zcash.readthedocs.io/en/latest/rtd_pages/lightclient_support.html)
 specification. This allows any complaint wallet to read the blockchain state and
 request the require info to update the wallet balances.
