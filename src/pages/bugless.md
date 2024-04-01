@@ -1,17 +1,22 @@
 ---
 title: BugLess
 description: A trustless bug bounty platform for Linux applications
-lastUpdated: Nov 29, 2023
-thumbnail: 'e90a1e6d1895-bugless_beetle.png'
-logo: 'e90a1e6d1895-bugless_beetle.png'
+lastUpdated: Mar 28, 2024
+thumbnail: 'logo.png'
+logo: 'logo.png'
 gallery:
-  - image: '2nEXJFI.png'
-  - image: 'BZsQUxb.png'
-  - image: 'UYESbCK.png'
-  - image: 'X7jvFgO.png'
-  - image: 'xbEZXUT.png'
+  - image: 'screen1.png'
+  - image: 'screen2.png'
+  - image: 'screen3.png'
+  - image: 'screen4.png'
+  - image: 'screen5.png'
+  - image: 'screen6.png'
+  - image: 'screen7.png'
+  - image: 'screen8.png'
+  - image: 'screen9.png'
+  - image: 'screen10.png'
 tags:
-  projectStage: Hackathon Project
+  projectStage: In progress - Beta
   other_tags:
     - 'Cartesi Experiment Week'
   projectTypes:
@@ -28,11 +33,20 @@ tags:
 links:
   github:
     - 'https://github.com/crypto-bug-hunters/bug-less'
+
 team:
+  - name: Cláudio Silva
+    discord: claudio.silva
   - name: Eduardo Barthel
+    discord: edubart
+  - name: Enderson Maia
+    discord: enderson
   - name: Francisco de Moura
+    discord: f.moura
   - name: Gabriel Ligneul
+    discord: gabriel.ligneul
   - name: Guilherme Dantas
+    discord: guidanoli
 related:
   - housy
   - techai
