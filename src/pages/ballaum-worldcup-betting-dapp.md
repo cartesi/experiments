@@ -1,6 +1,7 @@
 ---
 title: Ballaum
 description: Betting system for prediction of the world cup matches
+lastUpdated: Oct 20, 2023
 logo: 'H0yrMxf.png'
 thumbnail: 'H0yrMxf.png'
 tags:

@@ -2,6 +2,7 @@
 title: Bravo 🍊🥕🍋
 description:
   Bravo (ACE) => Arbitrary Cartesi composability code Execution library
+lastUpdated: Oct 20, 2023
 logo: 'H0Da4Np.png'
 thumbnail: 'H0y6JCx.png'
 gallery:

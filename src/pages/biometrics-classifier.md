@@ -4,6 +4,7 @@ description:
   This DApp uses machine learning, computer vision, and feature extraction to
   perform a decentralized biometrics spoof detection on-chain. Beyond verifying
   who’s fingerprints were used, this program checks for spoofing.
+lastUpdated: Oct 20, 2023
 logo: 'H0yho92.png'
 thumbnail: 'H0yho92.png'
 tags:

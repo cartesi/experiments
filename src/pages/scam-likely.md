@@ -3,6 +3,7 @@ title: Scam Likely
 description:
   Allow a user to "block" an address by adding it/them to a file which lists
   flagged EVM addresses.
+lastUpdated: Oct 20, 2023
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 tags:

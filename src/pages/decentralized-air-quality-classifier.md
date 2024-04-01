@@ -5,6 +5,7 @@ description:
   solution for real-time AQI prediction. By integrating machine learning
   algorithms, Data Analysis techniques and a vast spectrum of environmental
   data, we aim to provide accurate and real-time AQI predictions.
+lastUpdated: Nov 29, 2023
 logo: 'H0yho92.png'
 thumbnail: 'H0yho92.png'
 gallery:

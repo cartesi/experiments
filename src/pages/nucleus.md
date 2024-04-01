@@ -1,6 +1,7 @@
 ---
 title: Nucleus
 description: DeFi lending protocol with real-time dynamic risk management
+lastUpdated: Oct 20, 2023
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

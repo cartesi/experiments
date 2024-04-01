@@ -2,6 +2,7 @@
 title: DCA.Monster
 description:
   A novel AMM leveraging ERC20 streams for granular, efficient on-chain DCA.
+lastUpdated: Oct 20, 2023
 logo: 'H0Da4Np.png'
 thumbnail: 'H0y6JCx.png'
 gallery:

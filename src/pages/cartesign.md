@@ -3,6 +3,7 @@ title: CarteSign
 description:
   CarteSign is a Handwritten Biometrics tool which can bring traditional
   security to the world of Digital signature based smart contracts.
+lastUpdated: Nov 29, 2023
 logo: '4784ab9e6871-CarteSign.png'
 thumbnail: '4784ab9e6871-CarteSign.png'
 tags:

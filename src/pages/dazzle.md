@@ -3,6 +3,7 @@ title: Dazzle
 description:
   A strategic, competitive online game that blends the aesthetics of puzzle game
   with RPG elements.
+lastUpdated: Oct 20, 2023
 logo: 'xnk08D3d_400x400.png'
 thumbnail: 'H0yY4F1.md.png'
 tags:

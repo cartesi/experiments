@@ -3,6 +3,7 @@ title: COBE
 description:
   An Order Book Exchange that allows inputs from Ethereum but makes the
   computation off-chain trustlessly via Cartesi Rollups.
+lastUpdated: Oct 20, 2023
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

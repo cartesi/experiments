@@ -2,6 +2,7 @@
 title: p2pix
 description:
   A trustless p2p solution for exchanging FIAT to ERC20 layer 2 tokens
+lastUpdated: Oct 20, 2023
 logo: 'H0DalV9.png'
 thumbnail: 'H0ybpUJ.png'
 tags:
