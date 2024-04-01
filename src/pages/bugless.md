@@ -1,6 +1,7 @@
 ---
 title: BugLess
 description: A trustless bug bounty platform for Linux applications
+lastUpdated: Nov 29, 2023
 thumbnail: 'e90a1e6d1895-bugless_beetle.png'
 logo: 'e90a1e6d1895-bugless_beetle.png'
 gallery:

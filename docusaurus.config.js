@@ -52,6 +52,7 @@ const config = {
             path: `/${fileName}`,
             title: data.title,
             description: data.description,
+            lastUpdated: data.lastUpdated,
             thumbnail: data.thumbnail,
             tags: data.tags,
           };

@@ -12,7 +12,7 @@ type Props = {
 const tagsLimit = 5;
 
 const ShowcaseItem = ({ page }: Props) => {
-  const { title, description, tags, path, thumbnail } = page;
+  const { title, description, lastUpdated, tags, path, thumbnail } = page;
   const { siteConfig } = useDocusaurusContext();
 
   const languages_libraries_stacks = Array();
@@ -21,7 +21,7 @@ const ShowcaseItem = ({ page }: Props) => {
     languages_libraries_stacks.push(...tags.stacks_and_libraries);
 
   return (
-    <div className='flex flex-col gap-6 lg:gap-8 relative p-6 bg-card text-card-foreground rounded-3xl'>
+    <div className='flex flex-col gap-6 lg:gap-8 relative p-6 pb-4 bg-card text-card-foreground rounded-3xl'>
       <Link className='absolute inset-0 z-10' to={path} />
       <div className='flex gap-4 items-center'>
         <div className='overflow-hidden w-24 relative flex-shrink-0 rounded-2xl'>
@@ -63,6 +63,11 @@ const ShowcaseItem = ({ page }: Props) => {
               />
             )}
         </div>
+        {lastUpdated && lastUpdated != '' && (
+          <div className='pt-4 text-xs text-muted-foreground italic'>
+            Last updated: {lastUpdated}
+          </div>
+        )}
       </div>
     </div>
   );

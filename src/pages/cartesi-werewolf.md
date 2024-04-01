@@ -4,6 +4,7 @@ description:
   We implemented a fully decentralized version of the werewolf game that runs on
   Cartesi Rollups, guaranteeing transparent game logic and a deterministic game
   result that anyone can validate by running a Cartesi node for it.
+lastUpdated: Dec 11, 2023
 thumbnail: '816c6a95bd8b-wolf.jpg'
 logo: 'logo.jpg'
 tags:

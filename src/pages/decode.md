@@ -1,6 +1,7 @@
 ---
 title: DeCode
 description: Decentralised Coding Platform
+lastUpdated: Oct 20, 2023
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

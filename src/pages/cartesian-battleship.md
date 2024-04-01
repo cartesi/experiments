@@ -1,6 +1,7 @@
 ---
 title: Cartesian Battleship
 description: Fully on-chain battleships game
+lastUpdated: Oct 20, 2023
 logo: 'H0D4hej.md.jpg'
 thumbnail: 'H0DUczB.md.jpg'
 gallery:

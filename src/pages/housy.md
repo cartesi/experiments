@@ -2,6 +2,7 @@
 title: Housy
 description:
   'Tokenize your future with Housy: where real estate and innovation converge.'
+lastUpdated: Oct 20, 2023
 logo: 'housy.png'
 thumbnail: 'housy.png'
 gallery:
