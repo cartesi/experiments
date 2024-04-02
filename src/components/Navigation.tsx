@@ -100,7 +100,7 @@ const Navigation = ({ isOpen, isDesktop }: Props) => {
 
   const cta = {
     label: 'Submit Your Project',
-    link: 'https://forms.gle/C2gHiwVCvgKkJM1c9',
+    link: 'https://forms.gle/bAySRe16nQTXnnnW6',
     isExternal: true,
   };
 
