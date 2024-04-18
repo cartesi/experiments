@@ -32,8 +32,11 @@ tags:
     - Node-canvas
     - wagmi.sh
 links:
+  website:
+    - 'https://drawingcanvas.io/'
   github:
     - 'https://github.com/weAreProductive/drawing-DApp/'
+  demo: 'https://drawingcanvas.io/'
 team:
   - name: Dimitar Angelkov
     linkedin: 'https://www.linkedin.com/in/angelkov/'
