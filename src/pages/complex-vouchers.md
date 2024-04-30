@@ -8,7 +8,7 @@ description:
   level of flexibility opens up the possibility of expanding the behavior of
   vouchers to support more complex interactions by targeting smart contracts
   that extend their functionalities.
-lastUpdated: Arp 10, 2024
+lastUpdated: Apr 10, 2024
 logo: 'logo.png'
 thumbnail: 'logo.png'
 gallery:
