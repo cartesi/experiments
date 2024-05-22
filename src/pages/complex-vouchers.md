@@ -28,7 +28,7 @@ team:
   - name: Felipe Viana Bizzo
     linkedin: 'https://www.linkedin.com/in/felipe-bizzo-81b709131/'
 related:
-  - bugless
+  - bugbuster
   - deml
   - bidsquad
 ---

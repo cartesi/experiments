@@ -251,7 +251,7 @@ export default function Home(): JSX.Element {
               <Featured
                 projects={[
                   'decentralized-air-quality-classifier',
-                  'bugless',
+                  'bugbuster',
                   'cartesign',
                   'tribes',
                   'arena-mayhem',
