@@ -34,13 +34,9 @@ const Featured = ({ projects }: { projects: PageFrontMatter['id'][] }) => {
     <div className='bg-foreground rounded-3xl mb-12 text-background p-6 sm:p-12 pr-0 overflow-hidden'>
       <div className='flex flex-col lg:flex-row justify-between gap-4 sm:gap-4 pb-6 sm:pb-10'>
         <div>
-          <h2 className='text-h4'>Cartesi Experiment Week</h2>
-          <p className='text-white/70 w-full lg:w-[80%]'>
-            A week-long online hackathon hosted by the Cartesi Foundation for
-            grantees and the broader community with the aim to bring several
-            tangible dApp ideas, use cases, improvements, and tooling to life.
-          </p>
+          <h2 className='text-h4'>Featured</h2>
         </div>
+        {/*
         <div>
           <Button asChild variant={'outline-invert'}>
             <Link
@@ -53,6 +49,7 @@ const Featured = ({ projects }: { projects: PageFrontMatter['id'][] }) => {
             </Link>
           </Button>
         </div>
+        */}
       </div>
 
       <Swiper

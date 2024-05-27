@@ -250,13 +250,13 @@ export default function Home(): JSX.Element {
             {selectedTags.length === 0 && !searchTerm && (
               <Featured
                 projects={[
-                  'decentralized-air-quality-classifier',
+                  'rives',
+                  'dca-monster',
                   'bugbuster',
-                  'cartesign',
-                  'tribes',
-                  'arena-mayhem',
-                  'interactive-rootfs',
-                  'cartesi-werewolf',
+                  'drawing-dapp',
+                  'bubblewars',
+                  'honeypot',
+                  'dazzle',
                 ]}
               />
             )}
