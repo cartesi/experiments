@@ -2,13 +2,7 @@
 title: DCA.Monster
 description:
   DCA.Monster is an Automated Market Maker (AMM) leveraging ERC20 streams for
-  granular, efficient on-chain Dollar Cost Averaging (DCA). The project utilizes
-  Cartesi rollups by leveraging its capability to handle thousands of streams,
-  enabling efficient off-chain computation of balances for users, the AMM, and
-  liquidity pools. This approach allows for seamless implementation of Dollar
-  Cost Averaging with infinite granularity, which would be impractical within
-  the constraints of an EVM smart contract due to the extensive computation
-  required.
+  granular, efficient on-chain Dollar Cost Averaging (DCA).
 lastUpdated: Apr 10, 2024
 logo: 'logo.png'
 thumbnail: 'logo.png'

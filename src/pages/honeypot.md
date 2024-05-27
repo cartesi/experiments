@@ -3,13 +3,7 @@ title: Honeypot
 description:
   Honeypot is a dApp designed to test the security of Cartesi Rollups, giving
   users and developers confidence in using Cartesi’s technology with real
-  assets. In cybersecurity, a honeypot typically serves as a decoy system to
-  attract and study cyberattacks. Similarly, Honeypot, the Cartesi dApp, is a
-  challenge where participants try to hack a system and claim funds with no
-  strings attached. It is not a bug bounty or a Capture the Flag (CTF) program;
-  there are no prescribed solutions or steps to follow. Hackers must figure out
-  how to directly withdraw funds to their accounts, thus challenging the
-  security of Cartesi Rollups V1.
+  assets.
 lastUpdated: May 22, 2024
 logo: 'logo.png'
 thumbnail: 'logo.png'

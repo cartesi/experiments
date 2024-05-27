@@ -3,10 +3,7 @@ title: Rives
 description:
   RIVES is an onchain fantasy console designed to offer a fun experience,
   unlocking creativity and better value capture mechanisms for everyone involved
-  in the game community. Next to that, a top priority of RIVES is creating an
-  economy that is fair to developers, gamers, and creators. On RIVES, anyone can
-  create and collect both cartridges and tapes. Cartridges are small RISC-V
-  programs, such as games, digital musical instruments or interactive art.
+  in the game community.
 lastUpdated: May 15, 2024
 logo: 'logo.png'
 thumbnail: 'logo.png'
