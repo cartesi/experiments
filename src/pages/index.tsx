@@ -251,12 +251,10 @@ export default function Home(): JSX.Element {
               <Featured
                 projects={[
                   'rives',
-                  'dca-monster',
                   'bugbuster',
-                  'drawing-dapp',
-                  'bubblewars',
                   'honeypot',
-                  'dazzle',
+                  'dca-monster',
+                  'drawing-dapp',
                 ]}
               />
             )}
