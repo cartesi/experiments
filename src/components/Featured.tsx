@@ -23,10 +23,10 @@ const Featured = ({ projects }: { projects: PageFrontMatter['id'][] }) => {
   };
 
   const featuredList = useMemo(() => {
-    const featuredProjects = pageList.filter(page =>
-      projects.includes(page.id)
+    const featuredProjects = Array();
+    projects.map(id =>
+      featuredProjects.push(pageList.find(page => page.id == id))
     );
-
     return featuredProjects;
   }, [projects, pageList]);
 
@@ -57,7 +57,6 @@ const Featured = ({ projects }: { projects: PageFrontMatter['id'][] }) => {
         spaceBetween={24}
         autoHeight={false}
         className='mySwiper'
-        // loop={true}
         navigation={{
           nextEl: '.swiper-next',
           prevEl: '.swiper-prev',
