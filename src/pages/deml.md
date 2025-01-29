@@ -71,9 +71,9 @@ from the marketplace. After that, the client loads the initial model and the
 trainer executable from IPFS (Filecoin), and runs the trainer executable on
 their local node with their local data. Once the job is completed, a new model
 will be written to IPFS. We use Cartesi to run a Python service for model
-training and validation, given {model_cid, data_cid} where cid is a unique IPFS
-file reference string. The Cartesi Machine will listen to the network, and upon
-the message (in the form of creating a blockchain transaction), the
+training and validation, given `{model_cid, data_cid}` where cid is a unique
+IPFS file reference string. The Cartesi Machine will listen to the network, and
+upon the message (in the form of creating a blockchain transaction), the
 corresponding reward is issued to the client’s wallet. We also tried Filecoin’s
 Lilypad for the distributed execution of the ML compute but were stuck at
 creating a smart contract part using Lilypad. But we think Lilypad would work
