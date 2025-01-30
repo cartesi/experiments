@@ -3,10 +3,6 @@
 /* FROM SITE */
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   :root {
     /* Radix UI */
     --background: 0 0% 100%;
@@ -69,7 +65,7 @@
     @apply border-border;
   }
   html {
-    @apply scroll-smooth subpixel-antialiased;
+    @apply subpixel-antialiased;
   }
   body {
     @apply bg-background text-foreground;
