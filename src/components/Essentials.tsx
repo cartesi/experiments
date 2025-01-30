@@ -128,7 +128,7 @@ const Essentials = () => {
                             <Link
                               to={page.path}
                               key={page.id}
-                              className='bg-background rounded-xl p-4 flex gap-4 border border-solid border-foreground/10 text-foreground no-underline hover:no-underline lg:items-center'
+                              className='bg-background rounded-xl p-4 flex gap-4 border border-solid border-foreground/10 text-foreground no-underline hover:no-underline lg:items-center hover:text-foreground'
                             >
                               {page.thumbnail && (
                                 <img
@@ -142,14 +142,14 @@ const Essentials = () => {
                               )}
 
                               <div>
-                                <div className='flex gap-2 items-center mb-1'>
+                                <div className='flex flex-col sm:flex-row gap-1 sm:gap-2 items-center mb-4 sm:mb-2'>
                                   <h3 className='text-lg m-0 sm:text-xl font-bold'>
                                     {page.title}
                                   </h3>
                                   <div className='shrink-0'>
                                     <Tag
                                       type='projectTypes'
-                                      tag={page.tags.projectTypes}
+                                      tag={page.tags.projectTypes[0]}
                                       contentClass='bg-transparent'
                                     />
                                   </div>
