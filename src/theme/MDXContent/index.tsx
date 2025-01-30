@@ -19,6 +19,7 @@ import Container from '@site/src/components/ui/Container';
 import Button from '@site/src/components/ui/Button';
 import Alert from '@site/src/components/ui/Alert';
 import ShowcaseItem from '@site/src/components/ShowcaseItem';
+import IconExternal from '@site/src/components/ui/IconExternal';
 
 export type PageFrontMatter = {
   id: string;
@@ -41,10 +42,11 @@ export type PageFrontMatter = {
   };
   links: {
     github?: string[];
-    website?: string[];
+    website?: string;
     twitter?: string[];
     discord?: string[];
     demo?: string;
+    other?: string[];
   };
   team?: {
     name: string;
@@ -132,88 +134,131 @@ export default function MDXContentWrapper(props) {
             <div className='md:col-span-4 flex flex-col gap-4 order-last md:order-first'>
               {/*  */}
               {links && (
-                <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl'>
-                  <h3 className='lg:text-2xl mb-6'>Links</h3>
-                  <div>
-                    <div className='flex flex-col gap-2'>
-                      {links.website &&
-                        links.website.map((url, i) => {
-                          return (
-                            <a
-                              href={url}
-                              key={i}
-                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
-                            >
-                              <span className='flex items-center shrink-0'>
-                                <BiLink className='w-6 h-6 fill-current' />
-                              </span>
-                              <span className='truncate'>{url}</span>
-                            </a>
-                          );
-                        })}
-                      {links.github &&
-                        links.github.map((url, i) => {
-                          return (
-                            <a
-                              href={url}
-                              key={i}
-                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
-                            >
-                              <span className='flex items-center shrink-0'>
-                                <AiFillGithub className='w-6 h-6 fill-current' />
-                              </span>
-                              <span className='truncate'>{url}</span>
-                            </a>
-                          );
-                        })}
-                      {links.twitter &&
-                        links.twitter.map((url, i) => {
-                          return (
-                            <a
-                              href={url}
-                              key={i}
-                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
-                            >
-                              <span className='flex items-center shrink-0'>
-                                <AiFillTwitterCircle className='w-6 h-6 fill-current' />
-                              </span>
-                              <span className='truncate'>{url}</span>
-                            </a>
-                          );
-                        })}
-                      {links.discord &&
-                        links.discord.map((url, i) => {
-                          return (
-                            <a
-                              href={url}
-                              key={i}
-                              className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
-                            >
-                              <span className='flex items-center shrink-0'>
-                                <RiDiscordFill className='w-6 h-6 fill-current' />
-                              </span>
-                              <span className='truncate'>{url}</span>
-                            </a>
-                          );
-                        })}
-                    </div>
-                  </div>
-                  {links.demo && (
-                    <div className='mt-6'>
+                <>
+                  {/* website   */}
+                  {links.website && (
+                    <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl'>
                       <Button asChild className='w-full'>
                         <a
-                          href={links.demo}
+                          href={links.website}
                           rel='noreferrer'
                           target='_blank'
                           className='btn no-underline hover:no-underline py-3  hover:text-white transition-colors justify-center'
                         >
-                          Give it a try
+                          Visit website
+                          <IconExternal />
                         </a>
                       </Button>
                     </div>
                   )}
-                </div>
+
+                  <div className='p-4 md:p-6 lg:p-8 bg-card text-card-foreground rounded-xl space-y-12'>
+                    {/* Github */}
+                    {links.github && (
+                      <div>
+                        <h3 className='lg:text-2xl mb-6'>
+                          Github {links.github.length > 1 ? 'Links' : 'Link'}
+                        </h3>
+                        <div className='flex flex-col gap-2'>
+                          {links.github.map((url, i) => {
+                            return (
+                              <a
+                                href={url}
+                                key={i}
+                                className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
+                              >
+                                <span className='flex items-center shrink-0'>
+                                  <AiFillGithub className='w-6 h-6 fill-current' />
+                                </span>
+                                <span className='truncate'>{url}</span>
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Connect */}
+                    {(links.twitter || links.discord) && (
+                      <div>
+                        <h3 className='lg:text-2xl mb-6'>Connect</h3>
+                        <div className='flex flex-col gap-2'>
+                          {links.twitter &&
+                            links.twitter.map((url, i) => {
+                              return (
+                                <a
+                                  href={url}
+                                  key={i}
+                                  className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
+                                >
+                                  <span className='flex items-center shrink-0'>
+                                    <AiFillTwitterCircle className='w-6 h-6 fill-current' />
+                                  </span>
+                                  <span className='truncate'>{url}</span>
+                                </a>
+                              );
+                            })}
+                          {links.discord &&
+                            links.discord.map((url, i) => {
+                              return (
+                                <a
+                                  href={url}
+                                  key={i}
+                                  className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
+                                >
+                                  <span className='flex items-center shrink-0'>
+                                    <RiDiscordFill className='w-6 h-6 fill-current' />
+                                  </span>
+                                  <span className='truncate'>{url}</span>
+                                </a>
+                              );
+                            })}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Other */}
+                    {links.other && (
+                      <div>
+                        <h3 className='lg:text-2xl mb-6'>Other Links</h3>
+                        <div className='flex flex-col gap-2'>
+                          {links.other.map((url, i) => {
+                            return (
+                              <a
+                                href={url}
+                                key={i}
+                                className='text-foreground hover:text-foreground no-underline hover:no-underline flex gap-2 items-center'
+                              >
+                                <span className='flex items-center shrink-0'>
+                                  <BiLink className='w-6 h-6 fill-current' />
+                                </span>
+                                <span className='truncate'>{url}</span>
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Demo */}
+                    {links.demo && (
+                      <div>
+                        <Button asChild className='w-full'>
+                          <a
+                            href={links.demo}
+                            rel='noreferrer'
+                            target='_blank'
+                            className='btn no-underline hover:no-underline py-3  hover:text-white transition-colors justify-center'
+                          >
+                            Give it a try
+                          </a>
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+                </>
               )}
+
               {/*  */}
               {/*  */}
               {team && (
