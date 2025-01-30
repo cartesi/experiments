@@ -14,6 +14,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { PageFrontMatter } from '../theme/MDXContent';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useMediaQuery } from 'usehooks-ts';
+import Tag from './Tag';
 
 const Essentials = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -141,7 +142,18 @@ const Essentials = () => {
                               )}
 
                               <div>
-                                <h3 className='mb-1 text-base'>{page.title}</h3>
+                                <div className='flex gap-2 items-center mb-1'>
+                                  <h3 className='m-0 text-base'>
+                                    {page.title}
+                                  </h3>
+                                  <div className='shrink-0'>
+                                    <Tag
+                                      type='projectTypes'
+                                      tag={page.tags.projectTypes}
+                                      contentClass='bg-transparent text-[10px]'
+                                    />
+                                  </div>
+                                </div>
                                 <p className='line-clamp-2 leading-tight text-sm text-foreground/60 mb-0'>
                                   {page.description}
                                 </p>
