@@ -51,11 +51,11 @@ const NavigationItem = ({
     >
       {item.path ? (
         <Link
-          href={item.path}
+          to={item.path}
           className='inline-flex h-full items-center py-4 hover:opacity-90 lg:p-4 text-foreground no-underline hover:no-underline hover:text-foreground'
         >
           {item.label}
-          {item.Children && item.Children.length > 0 ? (
+          {item.children && item.children.length > 0 ? (
             <motion.span
               animate={{
                 rotate: isOpen ? 180 : 0,
@@ -74,7 +74,7 @@ const NavigationItem = ({
       ) : (
         <span className='inline-flex h-full cursor-pointer items-center py-4 hover:opacity-90 lg:p-4'>
           {item.label}
-          {item.Children && (
+          {item.children && (
             <motion.span
               animate={{
                 rotate: isOpen ? 180 : 0,
@@ -91,18 +91,18 @@ const NavigationItem = ({
           )}
         </span>
       )}
-      {item.Children && item.Children.length > 0 ? (
+      {item.children && item.children.length > 0 ? (
         <motion.div
           className='relative z-40 flex w-full flex-col overflow-hidden text-foreground lg:absolute lg:top-full lg:w-max lg:rounded-lg lg:bg-background lg:shadow-2xl'
           initial='closed'
           animate={isOpen ? 'open' : 'closed'}
           variants={variants}
         >
-          {item.Children &&
-            item.Children.map((child, j) => {
+          {item.children &&
+            item.children.map((child, j) => {
               return (
                 <Link
-                  href={child.link}
+                  to={child.link}
                   className='flex items-center gap-2 rounded-xl text-foreground p-4 text-sm hover:no-underline hover:bg-secondary hover:text-secondary-foreground lg:rounded-none lg:px-6 lg:py-4'
                   key={j}
                   target={child.isExternal ? '_blank' : '_self'}

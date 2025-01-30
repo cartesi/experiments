@@ -1,6 +1,5 @@
 import React from 'react';
 import MDXContent from '@theme-original/MDXContent';
-import Link from '@docusaurus/Link';
 import Tag from '@site/src/components/Tag';
 import {
   AiFillTwitterCircle,
@@ -86,7 +85,7 @@ export default function MDXContentWrapper(props) {
   return (
     <>
       {/*  */}
-      <div className='flex flex-col justify-center pb-12 pt-headerDesktop bg-foreground text-background min-h-[60vh]'>
+      <div className='flex flex-col justify-center pb-12 pt-[calc(3rem+var(--current-header-height))] bg-foreground text-background min-h-[60vh]'>
         <Container>
           <div className='text-center'>
             {logo && (
