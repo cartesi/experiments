@@ -16,8 +16,7 @@ tags:
     - mc2gen
     - Sci-kit learn
 links:
-  website:
-    - 'https://locus.software/'
+  website: 'https://locus.software/'
   github:
     - 'https://github.com/souzavinny/rollups-examples/tree/dev/m2cgen'
     - 'https://github.com/OsmanRodrigues/rollups-examples/tree/enhanc/frontend-notices-controller-refetch/frontend-m2cgen'

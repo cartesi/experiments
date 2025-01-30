@@ -23,8 +23,7 @@ tags:
     - Docker
     - Linux
 links:
-  website:
-    - 'https://honeypot.cartesi.io/'
+  website: 'https://honeypot.cartesi.io/'
   github:
     - 'https://github.com/cartesi/honeypot/'
   discord:

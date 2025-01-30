@@ -16,8 +16,7 @@ tags:
   languages:
     - Python
 links:
-  website:
-    - 'https://ethglobal.com/showcase/bravo-q08eb'
+  website: 'https://ethglobal.com/showcase/bravo-q08eb'
   github:
     - 'https://github.com/slavni96/bravo/blob/main/bravo-example/contracts/Example.sol'
 team:

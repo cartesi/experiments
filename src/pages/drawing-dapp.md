@@ -32,8 +32,7 @@ tags:
     - Node-canvas
     - wagmi.sh
 links:
-  website:
-    - 'https://drawingcanvas.io/'
+  website: 'https://drawingcanvas.io/'
   github:
     - 'https://github.com/weAreProductive/drawing-DApp/'
   demo: 'https://drawingcanvas.io/'

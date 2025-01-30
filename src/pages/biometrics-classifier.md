@@ -17,8 +17,7 @@ tags:
   stacks_and_libraries:
     - OpenCV
 links:
-  website:
-    - 'https://locus.software/'
+  website: 'https://locus.software/'
   github:
     - 'https://github.com/souzavinny/rollups-examples/tree/dev/biometrics'
     - 'https://github.com/souzavinny/rollups-examples/tree/dev/frontend-biometrics'

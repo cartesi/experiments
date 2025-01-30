@@ -20,8 +20,7 @@ tags:
   stacks_and_libraries:
     - Nix
 links:
-  website:
-    - 'https://www.ethglobal.com/showcase/cartenix-7xxe6'
+  website: 'https://www.ethglobal.com/showcase/cartenix-7xxe6'
   github:
     - 'https://github.com/cartesi/rollups-examples/pull/21'
 team:

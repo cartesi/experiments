@@ -19,8 +19,7 @@ tags:
     - NFTPort
     - Push
 links:
-  website:
-    - 'https://devfolio.co/submissions/ghar-on-chain-a6ce'
+  website: 'https://devfolio.co/submissions/ghar-on-chain-a6ce'
   github:
     - 'https://github.com/jaggu21/ghar-on-chain'
     - 'https://github.com/jaggu21/ghar-on-chain-predictor'
@@ -36,19 +35,19 @@ team:
     twitter: 'http://twitter.com/__vigneshb__'
 ---
 
-# About Ghar On Chain
+## About Ghar On Chain
 
 Currently, the real estate sector is booming, and price variations are frequent.
 The public is not really aware of the price variations. Another issue that
 people face is finding ideal properties and ideal owners which is where our
 platforms come into the picture.
 
-# Technical Details
+## Technical Details
 
 Used to create ML model that can predict the prices of houses and suggest user
 with a house price. Deploying a ML model on blockchain was something new, but
 Cartesi made things easy for us.
 
-# Video
+## Video
 
 <iframe width="100%" height="440" src="https://www.youtube.com/embed/TAY8jGe1Woc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

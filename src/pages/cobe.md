@@ -18,8 +18,7 @@ tags:
   languages:
     - Python
 links:
-  website:
-    - 'https://www.ethglobal.com/showcase/cobe-cartesi-order-book-exchange-app-rollup-4e5s1'
+  website: 'https://www.ethglobal.com/showcase/cobe-cartesi-order-book-exchange-app-rollup-4e5s1'
   github:
     - 'https://github.com/orkunkilic/cartesi-exchange-dapp'
 team:

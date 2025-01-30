@@ -28,8 +28,7 @@ tags:
     - ReactJS
     - SQLite
 links:
-  website:
-    - 'https://dca.monster/'
+  website: 'https://dca.monster/'
   github:
     - 'https://github.com/dcamonster/cartesi-defi-modular-components'
     - 'https://github.com/md0x/dca.monster'

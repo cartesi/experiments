@@ -20,8 +20,7 @@ tags:
     - Alpaca
     - LLM
 links:
-  website:
-    - 'https://www.ethglobal.com/showcase/chaingpt-and-accountability-for-ai-agents-doquk'
+  website: 'https://www.ethglobal.com/showcase/chaingpt-and-accountability-for-ai-agents-doquk'
   github:
     - 'https://github.com/dhood/rollups-examples'
 team:
