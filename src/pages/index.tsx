@@ -15,6 +15,7 @@ import Container from '../components/ui/Container';
 import Button from '../components/ui/Button';
 import Alert from '../components/ui/Alert';
 import Featured from '../components/Featured';
+import Essentials from '../components/Essentials';
 
 type Tag = {
   label: keyof PageFrontMatter['tags'];
@@ -183,6 +184,7 @@ export default function Home(): JSX.Element {
     >
       <Hero />
       <main className='pb-12' id='dapps'>
+        <Essentials />
         <div className='bg-card text-card-foreground py-8'>
           <Container>
             <div className='flex md:items-center flex-col sm:flex-row justify-between gap-4'>
