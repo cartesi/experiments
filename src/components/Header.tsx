@@ -14,7 +14,7 @@ type Props = {
   infobar?: InfoBarType;
 };
 
-const Header = ({ infobar, isWhiteMobile = false }: Props) => {
+const Header = ({ infobar, isWhiteMobile = true }: Props) => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isTop, setIsTop] = useState(true);
@@ -87,7 +87,11 @@ const Header = ({ infobar, isWhiteMobile = false }: Props) => {
       <Container>
         <div className='flex flex-col lg:flex-row lg:items-center lg:rounded-xl lg:bg-background/80 lg:px-6 lg:py-2 lg:backdrop-blur'>
           <div className='z-10 inline-flex h-headerMobile flex-shrink-0 items-center lg:h-auto lg:w-[var(--header-side-column-width)]'>
-            <Logo isWhiteMobile={isOpen || !isTop ? false : isWhiteMobile} />
+            <Logo
+              isWhiteMobile={
+                isOpen || !isTop ? false : !isDesktop && isWhiteMobile
+              }
+            />
           </div>
           <Navigation isOpen={isOpen} isDesktop={isDesktop} />
           <NavigationHamburger
