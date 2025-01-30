@@ -57,9 +57,9 @@ const Essentials = () => {
   return (
     <Container>
       <div className='flex flex-col py-8 sm:py-12 lg:py-16 xl:py-20 no-prose'>
-        <h1 className='text-3xl inline-block mx-auto sm:text-4xl lg:text-5xl mb-6 sm:mb-12'>
+        <h2 className='text-3xl inline-block mx-auto sm:text-4xl lg:text-5xl mb-6 sm:mb-12'>
           Modularity Essentials
-        </h1>
+        </h2>
         <div className='bg-card text-card-foreground rounded-2xl p-8 lg:p-12 relative'>
           <Swiper
             slidesPerView={1}
