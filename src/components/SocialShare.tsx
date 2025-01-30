@@ -3,15 +3,8 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 import {
   EmailShareButton,
-  FacebookShareButton,
-  LinkedinShareButton,
   TelegramShareButton,
   TwitterShareButton,
-  FacebookIcon,
-  TwitterIcon,
-  LinkedinIcon,
-  TelegramIcon,
-  EmailIcon,
 } from 'react-share';
 
 type Props = {
