@@ -64,7 +64,7 @@ const Essentials = () => {
           <Swiper
             slidesPerView={1}
             spaceBetween={0}
-            autoHeight={true}
+            autoHeight={false}
             className='mySwiper'
             navigation={{
               nextEl: '.swiper-next',
