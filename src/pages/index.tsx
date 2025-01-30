@@ -185,71 +185,74 @@ export default function Home(): JSX.Element {
       <Hero />
       <main className='pb-12' id='dapps'>
         <Essentials />
-        <div className='bg-card text-card-foreground py-8'>
-          <Container>
-            <div className='flex md:items-center flex-col sm:flex-row justify-between gap-4'>
-              {/*  */}
-              <div className='flex gap-2 flex-col flex-wrap sm:flex-row'>
-                <FilterButtonCheckbox
-                  label='View All'
-                  onChange={handleAllClick}
-                  checked={!selectedTags.length}
-                />
-                {/* TODO: make these dynamic */}
-                <FilterGroup
-                  tags={tagsAvailable.projectStage}
-                  filterTag='projectStage'
-                  handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.projectStage)}
-                />
-                <FilterGroup
-                  tags={tagsAvailable.projectTypes}
-                  filterTag='projectTypes'
-                  handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.projectTypes)}
-                />
-                <FilterGroup
-                  tags={tagsAvailable.languages}
-                  filterTag='languages'
-                  handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.languages)}
-                />
-                <FilterGroup
-                  tags={tagsAvailable.stacks_and_libraries}
-                  filterTag='stacks_and_libraries'
-                  handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(
-                    tag => tag.stacks_and_libraries
-                  )}
-                />
-                <FilterGroup
-                  tags={tagsAvailable.other_tags}
-                  filterTag='other_tags'
-                  handleClick={handleTagClick}
-                  selectedTags={selectedTags.filter(tag => tag.other_tags)}
-                />
-              </div>
-              {/*  */}
 
-              {/*  */}
-              <Search
-                handleSearch={debouncedSearchResults}
-                clearSearch={clearSearch}
-                searchTerm={searchTerm}
-              />
-            </div>
-          </Container>
-        </div>
-        <div className='py-8 sm:py-12 lg:py-16'>
-          <Container>
-            {/*  */}
-            <Alert
-              text='The information listed in this directory is provided by the
+        <Container>
+          <Alert
+            text='The information listed in this directory is provided by the
                 owner of each associated project and is not verified by any
                 third party.'
-            />
+          />
 
-            {selectedTags.length === 0 && !searchTerm && (
+          <h2 className='text-3xl mt-8 lg:mt-24 sm:text-4xl lg:text-5xl mb-6 sm:mb-12 text-center'>
+            All Projects
+          </h2>
+
+          <div className='flex md:items-center flex-col sm:flex-row justify-between gap-4'>
+            {/*  */}
+            <div className='flex gap-2 flex-col flex-wrap sm:flex-row'>
+              <FilterButtonCheckbox
+                label='View All'
+                onChange={handleAllClick}
+                checked={!selectedTags.length}
+              />
+              {/* TODO: make these dynamic */}
+              <FilterGroup
+                tags={tagsAvailable.projectStage}
+                filterTag='projectStage'
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter(tag => tag.projectStage)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.projectTypes}
+                filterTag='projectTypes'
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter(tag => tag.projectTypes)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.languages}
+                filterTag='languages'
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter(tag => tag.languages)}
+              />
+              <FilterGroup
+                tags={tagsAvailable.stacks_and_libraries}
+                filterTag='stacks_and_libraries'
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter(
+                  tag => tag.stacks_and_libraries
+                )}
+              />
+              <FilterGroup
+                tags={tagsAvailable.other_tags}
+                filterTag='other_tags'
+                handleClick={handleTagClick}
+                selectedTags={selectedTags.filter(tag => tag.other_tags)}
+              />
+            </div>
+            {/*  */}
+
+            {/*  */}
+            <Search
+              handleSearch={debouncedSearchResults}
+              clearSearch={clearSearch}
+              searchTerm={searchTerm}
+            />
+          </div>
+        </Container>
+
+        <div className='py-8 sm:py-12 lg:py-16'>
+          <Container>
+            {/* {selectedTags.length === 0 && !searchTerm && (
               <Featured
                 projects={[
                   'rives',
@@ -259,7 +262,7 @@ export default function Home(): JSX.Element {
                   'drawing-dapp',
                 ]}
               />
-            )}
+            )} */}
 
             {/*  */}
             {filteredPageList.length ? (
