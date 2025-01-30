@@ -18,7 +18,7 @@ const NavigationItem = ({
     open: { height: 'auto', display: 'flex', opacity: 1, scale: 1 },
     closed: {
       height: 0,
-      opacity: 1,
+      opacity: 0,
       scale: 1,
       transitionEnd: { display: 'none' },
     },
