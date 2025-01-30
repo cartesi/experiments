@@ -174,4 +174,11 @@
   -ms-overflow-style: none;
 }
 
+.swiper-pagination {
+  --swiper-pagination-bullet-width: 0.75rem;
+  --swiper-pagination-bullet-size: 0.75rem;
+  --swiper-pagination-bullet-horizontal-gap: 0.5rem;
+  @apply !relative mt-6;
+}
+
 @tailwind utilities;
