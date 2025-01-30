@@ -9,7 +9,7 @@ export type NavLink = {
   label: string;
   isExternal: boolean;
   isDesktop?: boolean;
-  Children?: CTA[];
+  children?: CTA[];
 };
 
 export type InfoBarType = {

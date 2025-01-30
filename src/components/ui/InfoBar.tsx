@@ -12,7 +12,7 @@ const InfoBar = ({ data }: Props) => {
         to={data.url}
         target='_blank'
         rel='noopener noreferrer'
-        className='mb-0 flex w-full flex-col items-center justify-items-center bg-foreground p-3 text-background lg:mb-[1.5rem]'
+        className='mb-0 flex w-full flex-col items-center justify-items-center bg-foreground p-3 !text-background lg:mb-[1.5rem] !no-underline'
       >
         <div className='flex flex-row items-center gap-2'>
           {data.badge !== '' && (

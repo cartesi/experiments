@@ -1,10 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
+import { fetchSanityContent } from './sanity';
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: 'Rollup Lab - Projects Powered by Cartesi',
   tagline:
     "Application-specific rollups with a Linux runtime and Ethereum's security guarantees.",
@@ -160,7 +160,7 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: false,
         blog: false,
         pages: {
@@ -170,7 +170,7 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -194,20 +194,27 @@ const config = {
     },
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-      image: 'img/socialLogo2023.png',
-    }),
+  themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+    image: 'img/socialLogo2023.png',
+  },
 };
 
-module.exports = config;
+export default async function createConfigAsync() {
+  const sanityContent = await fetchSanityContent();
+  return {
+    ...config,
+    customFields: {
+      ...config.customFields,
+      sanity: sanityContent,
+    },
+  };
+}

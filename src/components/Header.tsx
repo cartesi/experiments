@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useCallback, useEffect, useState } from 'react';
 import { useScroll, motion } from 'framer-motion';
-import { useMediaQuery } from 'usehooks-ts';
+import { useMediaQuery, useResizeObserver } from 'usehooks-ts';
 import Container from '@site/src/components/ui/Container';
 import Logo from '@site/src/components/Logo';
 import Navigation from '@site/src/components/Navigation';
@@ -14,12 +14,18 @@ type Props = {
   infobar?: InfoBarType;
 };
 
-const Header = ({ infobar, isWhiteMobile = true }: Props) => {
+const Header = ({ infobar, isWhiteMobile = false }: Props) => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const isDesktop = useMediaQuery('(min-width: 1024px)');
+  const ref = useRef<HTMLDivElement>(null);
+
+  const { height = 0 } = useResizeObserver({
+    ref,
+    box: 'border-box',
+  });
 
   const update = useCallback(() => {
     const current = scrollY?.get();
@@ -46,6 +52,13 @@ const Header = ({ infobar, isWhiteMobile = true }: Props) => {
     }
   }, [isDesktop]);
 
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--current-header-height',
+      !hidden ? height + 'px' : '0px'
+    );
+  }, [hidden, height]);
+
   const variants = {
     initial: { opacity: 1, y: 0 },
     visible: { opacity: 1, y: 0 },
@@ -54,7 +67,7 @@ const Header = ({ infobar, isWhiteMobile = true }: Props) => {
 
   return (
     <motion.header
-      className={`fixed inset-x-0 top-0 z-30 flex min-h-headerMobile flex-shrink-0 ${
+      className={`fixed inset-x-0 top-0 z-30 flex min-h-headerMobile flex-shrink-0 header ${
         infobar?.enabled ? 'flex-col' : ''
       } items-center lg:min-h-headerDesktop`}
       variants={variants}
@@ -68,6 +81,7 @@ const Header = ({ infobar, isWhiteMobile = true }: Props) => {
             : 'rgba(255,255,255,0.95)',
         backdropFilter: (isTop && !isOpen) || isDesktop ? 'none' : 'blur(20px)',
       }}
+      ref={ref}
     >
       {infobar && infobar.enabled && <InfoBar data={infobar} />}
       <Container>
