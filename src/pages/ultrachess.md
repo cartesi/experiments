@@ -15,8 +15,7 @@ tags:
   stacks_and_libraries:
     - Stockfish Chess Engine
 links:
-  website:
-    - 'https://ultrachess.gitbook.io/product-docs/'
+  website: 'https://ultrachess.gitbook.io/product-docs/'
   github:
     - 'https://github.com/Ultrachess/app'
   discord:

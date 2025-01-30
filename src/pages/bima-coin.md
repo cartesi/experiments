@@ -18,8 +18,7 @@ tags:
     - Polygon
     - Stack OS
 links:
-  website:
-    - 'https://devfolio.co/submissions/bima-coin-b728'
+  website: 'https://devfolio.co/submissions/bima-coin-b728'
   github:
     - 'https://github.com/idRit/de-insure-polygon-factory'
     - 'https://github.com/UtkarshChandel/rollups-examples'

@@ -23,8 +23,7 @@ tags:
     - LLM
     - Graph
 links:
-  website:
-    - 'https://teachai-ethglobalny.vercel.app/'
+  website: 'https://teachai-ethglobalny.vercel.app/'
   github:
     - 'https://github.com/teachAI-ethglobal-nyc-2023/teachai'
   demo: 'https://teachai-ethglobalny.vercel.app/'

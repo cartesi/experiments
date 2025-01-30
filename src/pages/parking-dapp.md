@@ -23,12 +23,12 @@ tags:
     - SQLite
     - Vue
 links:
-  website:
-    - 'https://www.webchefs.tech/'
-    - 'https://parking-dapp-goerli.webchefs.tech/home'
+  website: 'https://www.webchefs.tech/'
   github:
     - 'https://github.com/wchfs/trip-poc-dapp'
   demo: 'https://parking-dapp-goerli.webchefs.tech/dapp'
+  other:
+    - 'https://parking-dapp-goerli.webchefs.tech/home'
 team:
   - name: Kamil Zawadzki
     linkedin: 'https://www.linkedin.com/in/kamil-zawadzki-400b8913a/'

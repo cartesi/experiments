@@ -20,8 +20,7 @@ tags:
     - Covalent
     - Push
 links:
-  website:
-    - 'https://devfolio.co/submissions/decode-f05d'
+  website: 'https://devfolio.co/submissions/decode-f05d'
   github:
     - 'https://github.com/0xVikasRushi/DeCode-ETHIndia'
 team:

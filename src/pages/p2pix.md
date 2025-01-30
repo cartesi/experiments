@@ -14,12 +14,12 @@ tags:
   stacks_and_libraries:
     - Polygon
 links:
-  website:
-    - 'https://taikai.network/ethbrasil/hackathons/ethereumsp22/projects/cl7w9hdqs65274301xcu283k1ml/idea'
-    - 'https://www.figma.com/file/oIaOVWGTvicMysidMKxQgb/p2pix?node-id=23%3A2'
-    - 'https://storage.googleapis.com/taikai-storage/others/a581b360-31d1-11ed-bf70-b547ae78af76p2pix%20[%20Ethereum%20SP%20hackathon%20]%2011_set.pptx'
+  website: 'https://taikai.network/ethbrasil/hackathons/ethereumsp22/projects/cl7w9hdqs65274301xcu283k1ml/idea'
   github:
     - 'https://github.com/doiim/p2pix'
+  other:
+    - 'https://www.figma.com/file/oIaOVWGTvicMysidMKxQgb/p2pix?node-id=23%3A2'
+    - 'https://storage.googleapis.com/taikai-storage/others/a581b360-31d1-11ed-bf70-b547ae78af76p2pix%20[%20Ethereum%20SP%20hackathon%20]%2011_set.pptx'
 team:
   - name: azsantosk
   - name: marcantonio

@@ -28,8 +28,7 @@ tags:
     - mc2gen
     - Sci-kit learn
 links:
-  website:
-    - 'https://locus.software/'
+  website: 'https://locus.software/'
   github:
     - 'https://github.com/MarcusSouzaLocus/rollups-examples/tree/feat/airqualitym2cgen/airquality'
     - 'https://github.com/MarcusSouzaLocus/rollups-examples/tree/feat/airqualitym2cgen/airquality/model/EDA'

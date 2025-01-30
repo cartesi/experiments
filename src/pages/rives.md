@@ -32,9 +32,7 @@ tags:
     - RIV
     - Cartesi
 links:
-  website:
-    - 'https://rives.io'
-    - 'https://docs.rives.io/'
+  website: 'https://rives.io'
   github:
     - 'https://github.com/rives-io'
   twitter:
@@ -42,6 +40,8 @@ links:
   discord:
     - 'https://discord.gg/FQnQqKWVn8'
   demo: https://rives.io
+  other:
+    - 'https://docs.rives.io/'
 team:
   - name: Carlo Fragni
     discord: 'carlofragni'

@@ -20,8 +20,7 @@ tags:
     - IPFS
     - web3.py
 links:
-  website:
-    - 'https://deml.xyz/'
+  website: 'https://deml.xyz/'
   github:
     - 'https://github.com/ethglobal23nyc/blockchain-federated-machine-learning'
   demo: 'https://deml.xyz/'

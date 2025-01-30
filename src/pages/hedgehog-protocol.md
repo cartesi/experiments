@@ -23,8 +23,7 @@ tags:
     - web3.storage
     - Polygon
 links:
-  website:
-    - 'https://ethglobal.com/showcase/hedgehog-protocol-ku1pt'
+  website: 'https://ethglobal.com/showcase/hedgehog-protocol-ku1pt'
   github:
     - 'https://github.com/LucasMartinCalderon/Hedgehog'
 team:

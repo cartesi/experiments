@@ -17,8 +17,7 @@ tags:
     - Worldcoin
     - IPFS
 links:
-  website:
-    - 'https://ethglobal.com/showcase/life-81m99'
+  website: 'https://ethglobal.com/showcase/life-81m99'
   github:
     - 'https://github.com/TheExpandingPolytope/life'
 team:

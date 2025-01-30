@@ -15,8 +15,7 @@ tags:
   stacks_and_libraries:
     - Unity
 links:
-  website:
-    - 'https://www.aetheras.io/'
+  website: 'https://www.aetheras.io/'
   twitter:
     - 'https://twitter.com/Dazzle_Aetheras'
   discord:

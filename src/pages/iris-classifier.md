@@ -17,8 +17,7 @@ tags:
     - Ethers.js
     - ReactJS
 links:
-  website:
-    - 'https://locus.software/'
+  website: 'https://locus.software/'
   github:
     - 'https://github.com/MarcusSouzaLocus/rollups-examples/tree/feat/update-knn-1.0/knn'
     - 'https://github.com/MarcusSouzaLocus/rollups-examples/tree/feat/update-knn-1.0/frontend-knn'

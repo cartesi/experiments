@@ -17,9 +17,10 @@ tags:
 links:
   website:
     - 'https://devfolio.co/submissions/automati-c5c0'
-    - 'https://www.canva.com/design/DAFTwCQmjgg/RyxWEGZeJA-iFCo3KnkCVw/view?utm_content=DAFTwCQmjgg&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent'
   github:
     - 'https://github.com/orgs/automati-network/repositories'
+  other:
+    - 'https://www.canva.com/design/DAFTwCQmjgg/RyxWEGZeJA-iFCo3KnkCVw/view?utm_content=DAFTwCQmjgg&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent'
 team:
   - name: Manank Patni
     linkedin: https://www.linkedin.com/in/manankpatni
@@ -38,7 +39,7 @@ team:
     twitter: https://twitter.com/the_lazy_indian
 ---
 
-# About Automati
+## About Automati
 
 The project uses Cartesi OS at its core, Cartesi OS is used to make the network
 of executors.
@@ -47,6 +48,6 @@ We are making a network of nodes using Cartesi OS that provides a wide array of
 services to facilitate DApp development, services include, Oracle, Smart
 Contract Automation, Gas Station, Webhooks, and Indexing.
 
-# Video
+## Video
 
 <iframe width="100%" height="440" src="https://www.youtube.com/embed/BLKMrFWRHy0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

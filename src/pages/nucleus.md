@@ -34,8 +34,7 @@ tags:
   stacks_and_libraries:
     - NumPy
 links:
-  website:
-    - 'https://ethglobal.com/showcase/nucleus-sztuz'
+  website: 'https://ethglobal.com/showcase/nucleus-sztuz'
   github:
     - 'https://github.com/xtremistan/nucleus'
     - 'https://github.com/xtremistan/nucleus/blob/master/nucleus/nucleus.py'
