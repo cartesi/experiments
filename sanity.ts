@@ -85,6 +85,26 @@ const queryFooter = `
   }
   `;
 
+const queryStartBuilding = `
+  *[_type == "homePage"][0] {
+    startBuilding->{
+      badge,
+      title,
+      buildingSteps[]{
+        title,
+        content,
+        number,
+        "imageUrl": image.asset->url,
+        cta->{
+          label,
+          link,
+          isExternal
+        }
+      },
+    }
+  }
+`;
+
 const getInfobar = async () => {
   const infobarResponse = await sanityClient.fetch(queryInfobar);
   if (infobarResponse.url.startsWith('/')) {
@@ -146,14 +166,35 @@ const getFooter = async () => {
   return footerResponse;
 };
 
+const getStartBuilding = async () => {
+  const startBuildingResponse = await sanityClient.fetch(queryStartBuilding);
+  const startBuilding = startBuildingResponse.startBuilding;
+
+  startBuilding.buildingSteps = startBuilding.buildingSteps.map(step => {
+    return {
+      ...step,
+      cta: {
+        ...step.cta,
+        link: step.cta.isExternal
+          ? step.cta.link
+          : `${PARENT_DOMAIN}${step.cta.link}`,
+      },
+    };
+  });
+
+  return startBuilding;
+};
+
 export const fetchSanityContent = async () => {
   const infobar = await getInfobar();
   const navigation = await getNavigation();
   const footer = await getFooter();
+  const startBuilding = await getStartBuilding();
 
   return {
     infobar,
     navigation,
     footer,
+    startBuilding,
   };
 };

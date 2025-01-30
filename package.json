@@ -20,6 +20,7 @@
     "@docusaurus/preset-classic": "^3.7.0",
     "@headlessui/react": "^1.7.7",
     "@mdx-js/react": "^3.0.0",
+    "@portabletext/react": "^3.2.0",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
