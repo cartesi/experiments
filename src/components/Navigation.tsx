@@ -5,7 +5,6 @@ import Container from './ui/Container';
 import { NavLink } from '../type/types';
 import Button from './ui/Button';
 import Link from '@docusaurus/Link';
-import useNavigation from '../hooks/sanity/useNavigation';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 type Props = {
