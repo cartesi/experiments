@@ -143,14 +143,14 @@ const Essentials = () => {
 
                               <div>
                                 <div className='flex gap-2 items-center mb-1'>
-                                  <h3 className='m-0 text-base'>
+                                  <h3 className='text-lg m-0 sm:text-xl font-bold'>
                                     {page.title}
                                   </h3>
                                   <div className='shrink-0'>
                                     <Tag
                                       type='projectTypes'
                                       tag={page.tags.projectTypes}
-                                      contentClass='bg-transparent text-[10px]'
+                                      contentClass='bg-transparent'
                                     />
                                   </div>
                                 </div>

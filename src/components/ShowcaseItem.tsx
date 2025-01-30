@@ -44,7 +44,14 @@ const ShowcaseItem = ({ page }: Props) => {
         </div>
       </div>
       <div className='flex flex-col grow'>
-        <h3 className='text-lg mb-1 sm:text-xl font-bold'>{title}</h3>
+        <div className='flex gap-2 items-center mb-1'>
+          <h3 className='text-lg m-0 sm:text-xl font-bold'>{title}</h3>
+          <Tag
+            type='projectTypes'
+            tag={tags.projectTypes}
+            contentClass='bg-transparent'
+          />
+        </div>
         <p className='text-sm mb-2 text-muted-foreground'>{description}</p>
         <div className='flex flex-wrap gap-1 mt-auto pt-2 relative z-20'>
           {languages_libraries_stacks &&
