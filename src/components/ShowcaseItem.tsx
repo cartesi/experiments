@@ -44,11 +44,11 @@ const ShowcaseItem = ({ page }: Props) => {
         </div>
       </div>
       <div className='flex flex-col grow'>
-        <div className='flex gap-2 items-center mb-1'>
+        <div className='flex flex-col sm:flex-row gap-1 sm:gap-2 items-center mb-4 sm:mb-2'>
           <h3 className='text-lg m-0 sm:text-xl font-bold'>{title}</h3>
           <Tag
             type='projectTypes'
-            tag={tags.projectTypes}
+            tag={tags.projectTypes[0]}
             contentClass='bg-transparent'
           />
         </div>
