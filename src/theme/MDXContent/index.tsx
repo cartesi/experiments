@@ -312,8 +312,6 @@ export default function MDXContentWrapper(props) {
               {/*  */}
             </div>
             <div className='md:col-span-8 prose'>
-              <MDXContent {...props} />
-
               {/*  */}
               {gallery && (
                 <>
@@ -321,6 +319,9 @@ export default function MDXContentWrapper(props) {
                   <Gallery images={[...(gallery || [])]} />
                 </>
               )}
+
+              <MDXContent {...props} />
+
               <div className='mt-8 not-prose'>
                 {lastUpdated && lastUpdated !== '' && (
                   <span className='mb-6 inline-block border-foreground-text pt-2 border-solid border-0 border-t text-xs muted-foreground italic'>
