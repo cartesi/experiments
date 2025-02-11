@@ -74,7 +74,7 @@ const ShowcaseItemFeatured = ({ page }: Props) => {
         </div>
         {lastUpdated && lastUpdated != '' && (
           <div className='pt-4 text-xs text-background/50 italic'>
-            Last updated: {lastUpdated}
+            Project founded on: {lastUpdated}
           </div>
         )}
       </div>
