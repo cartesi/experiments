@@ -94,7 +94,7 @@ const Essentials = () => {
                         <Button
                           asChild
                           variant='link'
-                          className='p-0 text-foreground underline'
+                          className='p-0 uppercase'
                         >
                           <Link to={item.cta.url}>{item.cta.label}</Link>
                         </Button>
