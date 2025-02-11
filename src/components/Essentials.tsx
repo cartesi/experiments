@@ -42,7 +42,7 @@ const Essentials = () => {
       image: '/img/essentials2.png',
       cta: {
         label: 'Learn more',
-        url: 'https://cartesi.io/blog/cartesi_espresso_integration/',
+        url: 'https://medium.com/@riseandshaheen/build-farcaster-frames-for-cartesi-rollups-a-simple-guide-f72ce6627522',
       },
       projects: ['cartesian-battleship'],
       notes: [
@@ -59,7 +59,7 @@ const Essentials = () => {
     <Container>
       <div className='flex flex-col py-8 sm:py-12 lg:py-16 xl:py-20 no-prose'>
         <h2 className='text-3xl inline-block mx-auto sm:text-4xl lg:text-5xl mb-6 sm:mb-12'>
-          Modularity Essentials
+          Partnerships
         </h2>
         <div className='bg-card text-card-foreground rounded-2xl p-8 lg:p-12 relative'>
           <Swiper
@@ -94,7 +94,7 @@ const Essentials = () => {
                         <Button
                           asChild
                           variant='link'
-                          className='p-0 text-foreground'
+                          className='p-0 text-foreground underline'
                         >
                           <Link to={item.cta.url}>{item.cta.label}</Link>
                         </Button>
