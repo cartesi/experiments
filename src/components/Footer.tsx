@@ -16,7 +16,7 @@ const Footer = () => {
   } = useDocusaurusContext();
 
   return (
-    <div className='flex-shrink-0 bg-foreground pb-8 pt-section text-sm text-background'>
+    <div className='flex-shrink-0 bg-foreground pb-8 pt-24 text-sm text-background'>
       <Container>
         <div className='flex flex-col gap-16'>
           <div className='flex flex-col gap-8 lg:flex-row lg:gap-32'>
