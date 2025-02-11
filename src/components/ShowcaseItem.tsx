@@ -72,7 +72,7 @@ const ShowcaseItem = ({ page }: Props) => {
         </div>
         {lastUpdated && lastUpdated != '' && (
           <div className='pt-4 text-xs text-muted-foreground italic'>
-            Last updated: {lastUpdated}
+            Project founded on: {lastUpdated}
           </div>
         )}
       </div>

@@ -370,7 +370,7 @@ export default function MDXContentWrapper(props) {
               <div className='mt-8 not-prose'>
                 {lastUpdated && lastUpdated !== '' && (
                   <span className='mb-6 inline-block border-foreground-text pt-2 border-solid border-0 border-t text-xs muted-foreground italic'>
-                    Last updated: {lastUpdated}
+                    Project founded on: {lastUpdated}
                   </span>
                 )}
                 <Alert text='Anyone is free to submit information about their project. Do your own research and use your best judgment when using or interacting with any of the projects listed in this directory. Being listed in this directory is not an endorsement from the Cartesi Foundation or any other related entity.' />
