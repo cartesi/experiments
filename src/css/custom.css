@@ -111,6 +111,10 @@
   @apply opacity-20;
 }
 
+.swiper-button-lock {
+  @apply !hidden;
+}
+
 /* END FROM SITE */
 
 @tailwind components;
