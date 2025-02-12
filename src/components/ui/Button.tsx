@@ -8,18 +8,21 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:text-secondary',
+        default:
+          'bg-primary text-primary-foreground hover:text-secondary hover:no-underline',
         destructive:
-          'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+          'bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:no-underline',
         outline: 'border border-foreground bg-transparent hover:text-secondary',
         'outline-invert':
-          'border border-background bg-transparent hover:text-secondary text-background',
+          'border border-background bg-transparent hover:text-secondary text-background hover:no-underline',
         secondary:
-          'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        tertiary: 'bg-tertiary text-tertiary-foreground hover:bg-tertiary/80',
+          'bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:no-underline',
+        tertiary:
+          'bg-tertiary text-tertiary-foreground hover:bg-tertiary/80 hover:no-underline',
         white:
-          'bg-background text-foreground hover:text-tertiary border border-primary',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
+          'bg-background text-foreground hover:text-tertiary border border-primary hover:no-underline',
+        ghost:
+          'hover:bg-accent hover:text-accent-foreground hover:no-underline',
         link: 'text-foreground text-base tracking-wide font-normal normal-case underline underline-offset-4 hover:decoration-tertiary hover:decoration-4',
         'link-invert':
           'text-background text-base tracking-wide font-normal normal-case underline underline-offset-4 hover:decoration-secondary hover:decoration-4',
