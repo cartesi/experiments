@@ -47,7 +47,7 @@ team:
 
 related:
   - bugbuster
-  - drawig-dapp
+  - drawing-dapp
   - dca-monster
 ---
 
