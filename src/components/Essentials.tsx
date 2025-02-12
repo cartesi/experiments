@@ -33,26 +33,26 @@ const Essentials = () => {
         label: 'Learn more',
         url: 'https://cartesi.io/blog/cartesi_espresso_integration/',
       },
-      projects: ['dca-monster', 'drawing-dapp', 'bugbuster'],
+      projects: ['dca-monster', 'drawing-dapp', 'comet'],
     },
-    {
-      id: 2,
-      title: 'Farcaster Frame for Cartesi dApps: A simple "meta-apps"',
-      text: `Frames are mini-app experiences in the Farcaster client feed. Frames allow devs to create transactions on-chain which could be used to send inputs to the Cartesi dApp backend and read outputs form the Cartesi node. Frames do no intend to create a full-fledged web app but rather expose a social feature of your dApp to Farcaster users.`,
-      image: '/img/essentials2.png',
-      cta: {
-        label: 'Learn more',
-        url: 'https://medium.com/@riseandshaheen/build-farcaster-frames-for-cartesi-rollups-a-simple-guide-f72ce6627522',
-      },
-      projects: ['cartesian-battleship'],
-      notes: [
-        {
-          id: 1,
-          text: 'You can build applications like NFT mining, simple voting, sign-ups and subscriptions, simple games, etc.',
-          image: '/img/essentials_note.png',
-        },
-      ],
-    },
+    // {
+    //   id: 2,
+    //   title: 'Farcaster Frame for Cartesi dApps: A simple "meta-apps"',
+    //   text: `Frames are mini-app experiences in the Farcaster client feed. Frames allow devs to create transactions on-chain which could be used to send inputs to the Cartesi dApp backend and read outputs form the Cartesi node. Frames do no intend to create a full-fledged web app but rather expose a social feature of your dApp to Farcaster users.`,
+    //   image: '/img/essentials2.png',
+    //   cta: {
+    //     label: 'Learn more',
+    //     url: 'https://medium.com/@riseandshaheen/build-farcaster-frames-for-cartesi-rollups-a-simple-guide-f72ce6627522',
+    //   },
+    //   projects: ['comet'],
+    //   notes: [
+    //     {
+    //       id: 1,
+    //       text: 'You can build applications like NFT mining, simple voting, sign-ups and subscriptions, simple games, etc.',
+    //       image: '/img/essentials_note.png',
+    //     },
+    //   ],
+    // },
   ];
 
   return (

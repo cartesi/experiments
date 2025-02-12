@@ -112,6 +112,7 @@ const config: Config = {
           'Covalent',
           'Graph',
           'Ethers.js',
+          'Espresso Sequencer',
           'Ikemen-GO',
           'IPFS',
           'Fabric.js',
