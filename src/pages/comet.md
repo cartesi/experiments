@@ -64,14 +64,6 @@ revenue-sharing algorithm transparently. It integrates the Espresso sequencer
 for data availability of inputs(like creating jams) and lets collectors mint
 jams in the form of ERC1155 tokens on the base layer.
 
-## Architecture
-
-Comet follows the Espresso Integration architecture with distinction in general
-app functions and asset deposits as mentioned above in the current state of live
-deployment.
-
-![Architecture](/projects/comet/diagram.png)
-
 ## Current State
 
 A partially functional prototype is running live with a backend running on
@@ -86,3 +78,11 @@ basic functions:
 - Deposit ether as in-app currency
 
 It does NOT support Withdrawal of assets
+
+## Architecture
+
+Comet follows the Espresso Integration architecture with distinction in general
+app functions and asset deposits as mentioned above in the current state of live
+deployment.
+
+![Architecture](/projects/comet/diagram.png)
