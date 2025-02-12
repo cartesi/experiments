@@ -9,7 +9,7 @@ logo: 'logo.webp'
 gallery:
   - image: 'screen1.png'
   - image: 'screen2.png'
-  - image: 'screen3.png'
+  - image: 'screen3.jpeg'
   - image: 'screen4.png'
 tags:
   projectStage: In progress - Beta
