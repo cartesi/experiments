@@ -182,7 +182,7 @@ const Essentials = () => {
                           </div>
                         ))}
                     </div>
-                    <div className='text-center mt-8'>
+                    {/* <div className='text-center mt-8'>
                       <Button asChild size={'lg'}>
                         <Link
                           to='https://docs.cartesi.io/cartesi-rollups/build-dapps/'
@@ -193,7 +193,7 @@ const Essentials = () => {
                         </Link>
                       </Button>
                     </div>
-                  </div>
+                  </div> */}
                 </SwiperSlide>
               );
             })}
