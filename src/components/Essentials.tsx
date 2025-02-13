@@ -192,8 +192,8 @@ const Essentials = () => {
                           Start Building
                         </Link>
                       </Button>
-                    </div>
-                  </div> */}
+                    </div>*/}
+                  </div>
                 </SwiperSlide>
               );
             })}
