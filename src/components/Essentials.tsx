@@ -182,6 +182,7 @@ const Essentials = () => {
                           </div>
                         ))}
                     </div>
+                    {/* Removed until we figure out how to utilize it */}
                     {/* <div className='text-center mt-8'>
                       <Button asChild size={'lg'}>
                         <Link
