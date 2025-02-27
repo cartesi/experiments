@@ -12,7 +12,11 @@ const Logo = ({
   ...rest
 }: Props & React.SVGProps<SVGSVGElement>) => {
   return (
-    <Link href='/' className='text-inherit no-underline hover:text-inherit'>
+    <Link
+      href='https://cartesi.io/'
+      className='text-inherit no-underline hover:text-inherit'
+      target='_self'
+    >
       <svg
         width='127'
         height='32'

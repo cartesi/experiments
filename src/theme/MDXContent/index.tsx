@@ -20,6 +20,7 @@ import Button from '@site/src/components/ui/Button';
 import Alert from '@site/src/components/ui/Alert';
 import ShowcaseItem from '@site/src/components/ShowcaseItem';
 import IconExternal from '@site/src/components/ui/IconExternal';
+import Link from '@docusaurus/Link';
 
 export type PageFrontMatter = {
   id: string;
@@ -86,7 +87,6 @@ export default function MDXContentWrapper(props) {
 
   return (
     <>
-      {/*  */}
       <div className='flex flex-col justify-center pb-12 pt-[calc(3rem+var(--current-header-height))] bg-foreground text-background min-h-[60vh]'>
         <Container>
           <div className='text-center'>
@@ -126,9 +126,21 @@ export default function MDXContentWrapper(props) {
           </div>
         </Container>
       </div>
-      {/*  */}
 
-      <div className='py-12 lg:py-24'>
+      <div className='flex flex-col bg-card items-center'>
+        <div className='container xl:max-w-screen-xl py-4'>
+          <Link href='https://cartesi.io/' target='_self'>
+            Cartesi
+          </Link>{' '}
+          /{' '}
+          <Link href='/' target='_self'>
+            Rolluplab
+          </Link>{' '}
+          / {title}
+        </div>
+      </div>
+
+      <div className='py-12 lg:py-18'>
         <Container>
           <div className='grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24'>
             <div className='md:col-span-4 flex flex-col gap-4 order-last md:order-first'>
