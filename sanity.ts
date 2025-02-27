@@ -47,6 +47,10 @@ const queryNavigation = `
 
 const queryFooter = `
     {
+    "newsletter": *[_type == "newsletter"][0] {
+      description,
+      buttonLabel
+    },
     "copyright": *[_type == "footer"][0].copyright,
     "navItems": *[_type == "footerNav"][0]{
       "navPanel1": navPanel1[]->{

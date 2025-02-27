@@ -3,6 +3,7 @@ import Logo from './Logo';
 import Container from './ui/Container';
 import FooterNavigation from './FooterNavigation';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Newsletter from './Newsletter';
 
 const Footer = () => {
   const d = new Date();
@@ -22,7 +23,12 @@ const Footer = () => {
           <div className='flex flex-col gap-8 lg:flex-row lg:gap-32'>
             <div className='flex grow flex-col gap-8'>
               <Logo isWhiteMobile />
-              {/* TODO: <JoinNewsletter /> */}
+              <Newsletter
+                content={{
+                  buttonLabel: footer.newsletter.buttonLabel,
+                  description: footer.newsletter.description,
+                }}
+              />
             </div>
             <FooterNavigation navItems={footer.navItems} />
           </div>

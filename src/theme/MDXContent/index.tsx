@@ -83,8 +83,6 @@ export default function MDXContentWrapper(props) {
     return relatedPosts;
   }, [frontMatter.related]);
 
-  console.log(tags);
-
   return (
     <>
       <div className='flex flex-col justify-center pb-12 pt-[calc(3rem+var(--current-header-height))] bg-foreground text-background min-h-[60vh]'>
