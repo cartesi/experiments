@@ -26,8 +26,8 @@ const Essentials = () => {
   const data = [
     {
       id: 1,
-      title: 'Powering the future of composable',
-      text: `Cartesi apps now leverage Espresso for fast confirmations, low-cost DA, and decentralized sequencing. Comet, DCA Monster, and Drawing Canvas are actively working to bring their dApps to mainnet. These dApps are already available for testing, so try them out and share your feedback with the team!`,
+      title: 'Powering the Future of Scalability and Composability',
+      text: `Cartesi dApps can now tap into Espresso DA, combining Cartesi’s high-performance rollups and Linux execution environment with Espresso’s fast pre-confirmations and robust data availability. This integration enhances user experience with near-instant, consensus-backed confirmations, optimizes developer costs through efficient data availability, and strengthens interoperability — all while ensuring scalable, Ethereum-compatible computation.`,
       image: '/img/essentials1.png',
       cta: {
         label: 'Learn more',
@@ -35,24 +35,24 @@ const Essentials = () => {
       },
       projects: ['dca-monster', 'drawing-dapp', 'comet'],
     },
-    // {
-    //   id: 2,
-    //   title: 'Farcaster Frame for Cartesi dApps: A simple "meta-apps"',
-    //   text: `Frames are mini-app experiences in the Farcaster client feed. Frames allow devs to create transactions on-chain which could be used to send inputs to the Cartesi dApp backend and read outputs form the Cartesi node. Frames do no intend to create a full-fledged web app but rather expose a social feature of your dApp to Farcaster users.`,
-    //   image: '/img/essentials2.png',
-    //   cta: {
-    //     label: 'Learn more',
-    //     url: 'https://medium.com/@riseandshaheen/build-farcaster-frames-for-cartesi-rollups-a-simple-guide-f72ce6627522',
-    //   },
-    //   projects: ['comet'],
-    //   notes: [
-    //     {
-    //       id: 1,
-    //       text: 'You can build applications like NFT mining, simple voting, sign-ups and subscriptions, simple games, etc.',
-    //       image: '/img/essentials_note.png',
-    //     },
-    //   ],
-    // },
+    {
+      id: 2,
+      title: 'Bringing a Secure, Scalable, Real-World Computer to Life',
+      text: `Cartesi dApps can now leverage the Cartesi Coprocessor, enabling smart contracts to offload complex computations off-chain while securing the process through EigenLayer’s cryptoeconomic validation framework. By combining a Linux-compatible RISC-V deterministic virtual machine and leveraging restaked value, this integration ensures trustworthy and verifiable off-chain computing, extending Ethereum’s security to new dApps and unlocking future possibilities.`,
+      image: '/img/essentials2.png',
+      cta: {
+        label: 'Learn more',
+        url: 'https://cartesi.io/blog/experiment-week-3-recap/',
+      },
+      projects: ['cartesi-lido-oracle', 'thinkchain', 'scribbl'],
+      // notes: [
+      //   {
+      //     id: 1,
+      //     text: 'You can build applications like NFT minting, simple voting, sign-ups and subscriptions, simple games, etc.',
+      //     image: '/img/essentials_note.png',
+      //   },
+      // ],
+    },
   ];
 
   return (
