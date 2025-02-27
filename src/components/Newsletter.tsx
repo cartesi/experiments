@@ -35,7 +35,7 @@ const Newsletter = ({ content }: NewsletterProps) => {
       if (response)
         return {
           result: 'success',
-          msg: 'Successfully subscribed. Thank you!',
+          msg: 'Thank you for subscribing!',
         };
     } catch (error) {
       console.error(error.message);
