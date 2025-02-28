@@ -3,6 +3,7 @@
 import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
 import { fetchSanityContent } from './sanity';
+import 'dotenv/config';
 
 const config: Config = {
   title: 'Rollup Lab - Projects Powered by Cartesi',
@@ -29,6 +30,8 @@ const config: Config = {
   ],
 
   customFields: {
+    supabase_url: process.env.SUPABASE_URL,
+    supabase_key: process.env.SUPABASE_KEY,
     projectsImagesPath: '/projects',
     pageList: (function () {
       const fs = require('fs');

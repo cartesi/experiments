@@ -9,9 +9,7 @@ import {
 import { BiLink } from 'react-icons/bi';
 import { RiDiscordFill } from 'react-icons/ri';
 import Gallery from '@site/src/components/Gallery';
-
 import SocialShare from '@site/src/components/SocialShare';
-
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useLocation } from '@docusaurus/router';
@@ -21,6 +19,7 @@ import Alert from '@site/src/components/ui/Alert';
 import ShowcaseItem from '@site/src/components/ShowcaseItem';
 import IconExternal from '@site/src/components/ui/IconExternal';
 import Link from '@docusaurus/Link';
+import Likes from '@site/src/components/Likes';
 
 export type PageFrontMatter = {
   id: string;
@@ -59,13 +58,13 @@ export type PageFrontMatter = {
 };
 
 export default function MDXContentWrapper(props) {
+  const { siteConfig } = useDocusaurusContext();
   const { type } = props.children;
   const { frontMatter } = type;
   const { title, description, lastUpdated, logo, tags, gallery, links, team } =
     frontMatter as PageFrontMatter;
 
   const location = useLocation();
-  const { siteConfig } = useDocusaurusContext();
 
   const { pageList } = siteConfig.customFields as {
     pageList: PageFrontMatter[];
@@ -100,9 +99,14 @@ export default function MDXContentWrapper(props) {
                 />
               </p>
             )}
-            <h1 className='text-5xl inline-block mx-auto sm:text-6xl lg:text-7xl mb-6'>
-              {title}
-            </h1>
+            <div className='mx-auto mb-6'>
+              <h1 className='text-5xl inline-block sm:text-6xl lg:text-7xl align-middle m-0'>
+                {title}
+              </h1>
+              <span className='inline-block align-middle m-6'>
+                <Likes path={location.pathname} active={true} />
+              </span>
+            </div>
             <div className='text-lg sm:text-xl lg:text-2xl font-light mx-auto max-w-screen-lg'>
               {description}
             </div>
