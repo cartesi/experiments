@@ -1,7 +1,7 @@
 ---
 title: Parking DApp
 description: Public parking DApp using ETH transaction
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 logo: 'H0yEnyX.png'
 thumbnail: 'H0yEnyX.png'
 gallery:

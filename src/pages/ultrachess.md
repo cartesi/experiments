@@ -3,7 +3,7 @@ title: Ultrachess
 description:
   'Fully on-chain chess DApp. Wager real money and play against other chess
   pros. Or deploy your own chess bots to compete in AI chess battles'
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 logo: 'mrXYVJdt_400x400.jpg'
 thumbnail: 'H19C1xn.md.png'
 tags:

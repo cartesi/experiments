@@ -3,7 +3,8 @@ title: ThinkChain
 description:
   On-chain service that enables smart contracts to perform verifiable large
   language model (LLM) inference.
-lastUpdated: Feb 18, 2025
+foundedOn: 2025-02-18
+featured: true
 thumbnail: 'logo.jpeg'
 logo: 'logo.jpeg'
 gallery:

@@ -5,7 +5,7 @@ description:
   bond between creators and their followers, no community spirit, and
   distribution of value is virtually non-existent. Tribes empower creators and
   enable deeper community connections
-lastUpdated: Nov 29, 2023
+foundedOn: 2023-11-29
 thumbnail: '11110756c9dc-1.jpg'
 logo: 'logo.jpg'
 tags:

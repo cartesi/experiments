@@ -16,6 +16,7 @@ import Button from '../components/ui/Button';
 import Alert from '../components/ui/Alert';
 import Featured from '../components/Featured';
 import Essentials from '../components/Essentials';
+import moment from 'moment';
 
 type Tag = {
   label: keyof PageFrontMatter['tags'];
@@ -41,6 +42,22 @@ export default function Home(): JSX.Element {
   };
 
   const sortList = (list: PageFrontMatter[]) => {
+    // Sort by Date
+    list.sort((a, b) => {
+      const aDate = moment(a.foundedOn).unix();
+      const bDate = moment(b.foundedOn).unix();
+      return bDate - aDate;
+    });
+
+    // Sort by Featured
+    list.sort((a, b) => {
+      const aFeatured = a.featured ? 1 : 0;
+      const bFeatured = b.featured ? 1 : 0;
+      return bFeatured - aFeatured;
+    });
+
+    // Sort by Project Stage
+    /*
     const sortIndexes = tagsAvailable.projectStage.options.reduce(
       (acc, option: string, index) => {
         acc[option] = index;
@@ -55,6 +72,7 @@ export default function Home(): JSX.Element {
 
       return aIndex - bIndex;
     });
+    */
 
     return list;
   };
@@ -64,7 +82,6 @@ export default function Home(): JSX.Element {
     if (searchTerm) {
       const filteredPageList = pageList.filter(page => {
         const { title } = page;
-        // console.log(title);
         return title.toLowerCase().includes(searchTerm.toLowerCase());
       });
 
@@ -81,9 +98,6 @@ export default function Home(): JSX.Element {
     //     return selectedTags.every((tag) => {
     //       const [key] = Object.keys(tag) as (keyof PageFrontMatter["tags"])[];
     //       const value = tag[key];
-
-    //       // console.log(tags[key]);
-    //       // console.log(value);
     //       if (Array.isArray(tags[key])) {
     //         // @ts-ignore
     //         return tags[key].includes(value);
@@ -128,8 +142,6 @@ export default function Home(): JSX.Element {
         newSelectedTags.splice(index, 1);
       }
 
-      // console.log(newSelectedTags);
-
       return newSelectedTags;
     });
   };
@@ -142,7 +154,6 @@ export default function Home(): JSX.Element {
   };
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // console.log(e.target.value);
     setSearchTerm(e.target.value);
   };
 
@@ -166,7 +177,6 @@ export default function Home(): JSX.Element {
     if (!ExecutionEnvironment.canUseDOM) return;
     const searchParams = new URLSearchParams(location.search);
     const tags = searchParams.get('tag');
-    // console.log(tags);
 
     if (tags) {
       const tagsArray = tags.split(TagPathSeperator.value);

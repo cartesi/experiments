@@ -4,7 +4,7 @@ description:
   Bubblewars is a fully on-chain MMO where $ETH is mass and momentum is
   conserved. Users grow their Bubbles on an infinite canvas by absorbing $ETH
   from their opponents.
-lastUpdated: Apr 12, 2024
+foundedOn: 2024-04-12
 thumbnail: 'logo.jpg'
 logo: 'logo.jpg'
 tags:

@@ -4,7 +4,7 @@ description:
   Arena Mayhem is an exciting fighting game that let users craft their own
   gladiators and join many epic battles by inviting their friends. It's an
   auto-battler with betting and strategy involved!
-lastUpdated: Dec 11, 2023
+foundedOn: 2023-12-11
 thumbnail: 'a2c864869023-The_Team.png'
 logo: 'a2c864869023-The_Team.png'
 tags:

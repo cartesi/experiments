@@ -4,7 +4,7 @@ description:
   Cartesi Soccer Manager lets players build NFT teams, send lineups to the
   blockchain, and earn XP after each match. The Co-Processor calculates results
   and updates NFT levels almost instantly.
-lastUpdated: Feb 18, 2025
+foundedOn: 2025-02-18
 thumbnail: 'logo.jpeg'
 logo: 'logo.jpeg'
 gallery:

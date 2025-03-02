@@ -5,6 +5,7 @@ import Tag from './Tag';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Likes from '@site/src/components/Likes';
+import moment from 'moment';
 
 type Props = {
   page: PageFrontMatter;
@@ -13,7 +14,8 @@ type Props = {
 const tagsLimit = 5;
 
 const ShowcaseItem = ({ page }: Props) => {
-  const { title, description, lastUpdated, tags, path, thumbnail } = page;
+  const { title, description, foundedOn, featured, tags, path, thumbnail } =
+    page;
   const { siteConfig } = useDocusaurusContext();
 
   const languages_libraries_stacks = Array();
@@ -50,9 +52,16 @@ const ShowcaseItem = ({ page }: Props) => {
             contentClass='bg-transparent'
           />
         </div>
-        <div className='pt-2 pb-4'>
+        <div className='flex flex-row pt-2 pb-4 gap-2'>
           {tags.projectStage && (
             <Tag type='projectStage' tag={tags.projectStage} />
+          )}
+          {featured && (
+            <Tag
+              type='featured'
+              tag='Featured'
+              contentClass='bg-tertiary text-white border-tertiary'
+            />
           )}
         </div>
         <p className='text-sm mb-2 text-muted-foreground'>{description}</p>
@@ -73,9 +82,9 @@ const ShowcaseItem = ({ page }: Props) => {
               />
             )}
         </div>
-        {lastUpdated && lastUpdated != '' && (
+        {foundedOn && foundedOn != '' && (
           <div className='pt-4 text-xs text-muted-foreground italic'>
-            Project founded on: {lastUpdated}
+            Project founded on: {moment(foundedOn).format('MMM D, YYYY')}
           </div>
         )}
       </div>

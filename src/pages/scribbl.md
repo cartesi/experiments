@@ -6,7 +6,8 @@ description:
   scenes to make the results fully verifiable on-chain. The idea demonstrates
   how a fun app can leverage unbiased, decentralised and verifiable AI inference
   in online drawing contests.
-lastUpdated: Feb 19, 2025
+foundedOn: 2025-02-19
+featured: true
 thumbnail: 'logo.jpg'
 logo: 'logo.jpg'
 gallery:

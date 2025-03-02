@@ -3,7 +3,7 @@ title: COMET
 description:
   Comet is co-writing social platform where contributors earn with shared pieces
   of poetry, stories, rhymes and any form of text-based art.
-lastUpdated: Jun 30, 2024
+foundedOn: 2024-06-30
 thumbnail: 'logo.webp'
 logo: 'logo.webp'
 gallery:

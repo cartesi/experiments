@@ -3,7 +3,7 @@ title: ChainGPT
 description:
   'Decentralised & verifiable chat AI, backed by the blockchain: a port of
   Alpaca LLM model leveraging the Cartesi app-specific rollups'
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

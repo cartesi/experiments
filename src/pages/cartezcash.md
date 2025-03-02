@@ -3,7 +3,7 @@ title: CarteZcash
 description:
   CarteZcash takes Zcash and turns it into a Cartesi RollApp. Created for the
   2024 Cartesi Hackathon.
-lastUpdated: Mar 24, 2024
+foundedOn: 2024-03-24
 logo: 'logo.png'
 thumbnail: 'logo.png'
 gallery:

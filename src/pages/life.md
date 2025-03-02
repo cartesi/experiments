@@ -3,7 +3,7 @@ title: LIFE
 description:
   Massively-multiplayer-on-chain Conway's game of life where user's fight for
   dominance of a 1000X1000 grid.
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 tags:

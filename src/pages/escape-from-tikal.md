@@ -6,7 +6,7 @@ description:
   championship have transparency and verifiability on the fact that the player
   that cooperated with them didn't collude with another team to perform poorly
   and that every player has access to the same capable AI, ensuring fairness.
-lastUpdated: Feb 18, 2025
+foundedOn: 2025-02-18
 thumbnail: 'logo.jpeg'
 logo: 'logo.jpeg'
 gallery:

@@ -3,7 +3,8 @@ title: Cartesi Lido Oracle
 description:
   A coprocessor that enhances the Lido protocol by replacing trusted parties
   with provable computation. Built for Cartesi+Eigenlayer Experiment Week 2025
-lastUpdated: Feb 18, 2025
+foundedOn: 2025-02-18
+featured: true
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

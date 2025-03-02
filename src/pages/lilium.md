@@ -3,7 +3,7 @@ title: Lilium
 description:
   Lilium DApp is a pioneering project dedicated to environmental conservation
   through the generation and trading of verified carbon credits.
-lastUpdated: Dec 11, 2023
+foundedOn: 2023-12-11
 thumbnail: 'c7dc89116c82-Untitled_design.png'
 logo: 'c7dc89116c82-Untitled_design.png'
 tags:

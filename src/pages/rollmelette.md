@@ -5,7 +5,7 @@ description:
   objective of Rollmelette is to facilitate the development of the back-end of
   Cartesi applications. It offers an abstraction on top of the Rollups API,
   manages assets from portals, and has unit-testing functions.
-lastUpdated: Jan 14, 2024
+foundedOn: 2024-01-14
 logo: 'logo.png'
 thumbnail: 'logo.png'
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Drawing DApp
 description: Drawing canvas with option to mint images as NFTs
-lastUpdated: Apr 10, 2024
+foundedOn: 2024-04-10
 logo: 'logo.png'
 thumbnail: 'logo.png'
 gallery:

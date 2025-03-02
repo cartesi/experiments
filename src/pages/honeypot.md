@@ -4,7 +4,7 @@ description:
   Honeypot is a dApp designed to test the security of Cartesi Rollups, giving
   users and developers confidence in using Cartesi’s technology with real
   assets.
-lastUpdated: May 22, 2024
+foundedOn: 2024-05-22
 logo: 'logo.png'
 thumbnail: 'logo.png'
 gallery:

@@ -6,7 +6,7 @@ description:
   algorithm into Cartesi's technology stack. Leveraging Drand and Cartesi
   Rollups, the framework ensures the generation of truly random numbers in a
   trustless manner.
-lastUpdated: Mar 26, 2024
+foundedOn: 2024-03-26
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

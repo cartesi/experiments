@@ -3,7 +3,7 @@ title: Godot Onchain
 description:
   'Proof of Concept: running games built with Godot Engine on Cartesi for
   verifiable high scores.'
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

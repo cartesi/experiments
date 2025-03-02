@@ -1,7 +1,7 @@
 ---
 title: Bima Coin
 description: Bima for the people, Bima by the people
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 logo: 'H0LloBa.webp'
 thumbnail: 'H0y4xgS.png'
 gallery:

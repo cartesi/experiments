@@ -4,7 +4,7 @@ description:
   RIVES is an onchain fantasy console designed to offer a fun experience,
   unlocking creativity and better value capture mechanisms for everyone involved
   in the game community.
-lastUpdated: May 15, 2024
+foundedOn: 2024-05-15
 logo: 'logo.png'
 thumbnail: 'logo.png'
 gallery:

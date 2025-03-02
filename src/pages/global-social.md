@@ -4,7 +4,7 @@ description:
   "Global Social is a decentralized social protocol that leverages Cartesi's
   powerful computational capabilities to make social data transparent
   andresistant to censorship."
-lastUpdated: Nov 22, 2024
+foundedOn: 2024-11-22
 thumbnail: 'logo.png'
 logo: 'logo.png'
 tags:

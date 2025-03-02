@@ -3,7 +3,7 @@ title: Cartenix
 description:
   Proof of concept allowing you to run Nix builds inside the Cartesi Virtual
   Machine leveraging the Nix reproducible build system
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

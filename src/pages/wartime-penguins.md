@@ -4,7 +4,7 @@ description:
   This project uses Cartesi Coprocessor to make high quality generative artwork
   and publishes the result as NFT on a Wartime Penguins theme. Because Penguins
   are done being just soft and cuddly.
-lastUpdated: Feb 20, 2025
+foundedOn: 2025-02-20
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:
