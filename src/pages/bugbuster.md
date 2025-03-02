@@ -1,7 +1,7 @@
 ---
 title: Bug Buster
 description: A trustless bug bounty platform for Linux applications
-lastUpdated: Sep 3, 2024
+foundedOn: 2024-09-03
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

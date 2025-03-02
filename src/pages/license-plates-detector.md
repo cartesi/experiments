@@ -7,7 +7,7 @@ description:
   company specializing in blockchain and AI development, the project is part of
   Cartesi's grants program and focuses on revolutionizing real-time traffic
   violation detection through decentralized application (dApp) implementation.
-lastUpdated: Mar 27, 2024
+foundedOn: 2024-03-27
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

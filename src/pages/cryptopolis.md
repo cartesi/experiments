@@ -7,7 +7,7 @@ description:
   designer Will Write. In 2008, the engine C code was ported to C++ and released
   as free software under the GPL-3.0-or-later license, renamed to Micropolis for
   trademark reasons.
-lastUpdated: Mar 9, 2024
+foundedOn: 2024-03-09
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

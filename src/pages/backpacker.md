@@ -13,7 +13,7 @@ description:
   creating a win-win environment where travelers are rewarded for their insights
   while helping build a more intelligent and personalised travel planning
   experience.
-lastUpdated: Nov 27, 2024
+foundedOn: 2024-11-27
 thumbnail: 'logo.jpg'
 logo: 'logo.jpg'
 tags:

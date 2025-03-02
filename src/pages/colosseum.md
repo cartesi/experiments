@@ -3,7 +3,7 @@ title: Colosseum
 description:
   Fully on-chain fighting game that pits bots against each other and allows
   viewers to place bets.
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 logo: 'H0ysdGf.png'
 thumbnail: 'H0LuWFI.jpg'
 tags:

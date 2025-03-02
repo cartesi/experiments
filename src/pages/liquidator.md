@@ -4,7 +4,7 @@ description:
   We want help Developers and DApps onboard people easier by having the needed
   payment systems, to allow their DApps to request payment from users and
   off-ramping to fiat.
-lastUpdated: Nov 29, 2023
+foundedOn: 2023-11-29
 thumbnail: 'liquidator.png'
 logo: 'logo.png'
 tags:

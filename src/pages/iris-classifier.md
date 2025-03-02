@@ -1,7 +1,7 @@
 ---
 title: Iris Classifier
 description: On-Chain KNN Flower Prediction
-lastUpdated: Nov 2, 2023
+foundedOn: 2023-11-02
 logo: 'H0yho92.png'
 thumbnail: 'H0yho92.png'
 tags:

@@ -20,13 +20,15 @@ import ShowcaseItem from '@site/src/components/ShowcaseItem';
 import IconExternal from '@site/src/components/ui/IconExternal';
 import Link from '@docusaurus/Link';
 import Likes from '@site/src/components/Likes';
+import moment from 'moment';
 
 export type PageFrontMatter = {
   id: string;
   path: string;
   title: string;
   description: string;
-  lastUpdated?: string;
+  foundedOn?: string;
+  featured?: boolean;
   logo?: string;
   thumbnail: string;
   gallery?: {
@@ -61,8 +63,17 @@ export default function MDXContentWrapper(props) {
   const { siteConfig } = useDocusaurusContext();
   const { type } = props.children;
   const { frontMatter } = type;
-  const { title, description, lastUpdated, logo, tags, gallery, links, team } =
-    frontMatter as PageFrontMatter;
+  const {
+    title,
+    description,
+    foundedOn,
+    featured,
+    logo,
+    tags,
+    gallery,
+    links,
+    team,
+  } = frontMatter as PageFrontMatter;
 
   const location = useLocation();
 
@@ -112,9 +123,16 @@ export default function MDXContentWrapper(props) {
             </div>
           </div>
           <div className='mt-8 flex flex-col justify-center gap-4 text-center sm:flex-row sm:items-center lg:mt-10'>
-            <div className='flex flex-wrap gap-2 mt-auto'>
+            <div className='flex flex-wrap gap-3 mt-auto'>
               {tags.projectStage && (
                 <Tag type='projectStage' tag={tags.projectStage} />
+              )}
+              {featured && (
+                <Tag
+                  type='featured'
+                  tag='Featured'
+                  contentClass='bg-tertiary text-white border-tertiary'
+                />
               )}
               {tags.projectTypes &&
                 tags.projectTypes.map((tag, i) => {
@@ -382,9 +400,10 @@ export default function MDXContentWrapper(props) {
               <MDXContent {...props} />
 
               <div className='mt-8 not-prose'>
-                {lastUpdated && lastUpdated !== '' && (
+                {foundedOn && foundedOn !== '' && (
                   <span className='mb-6 inline-block border-foreground-text pt-2 border-solid border-0 border-t text-xs muted-foreground italic'>
-                    Project founded on: {lastUpdated}
+                    Project founded on:{' '}
+                    {moment(foundedOn).format('MMM D, YYYY')}
                   </span>
                 )}
                 <Alert text='Anyone is free to submit information about their project. Do your own research and use your best judgment when using or interacting with any of the projects listed in this directory. Being listed in this directory is not an endorsement from the Cartesi Foundation or any other related entity.' />

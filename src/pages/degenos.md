@@ -7,7 +7,7 @@ description:
   enabling users to interact with various decentralized services through a
   seamless interface. Users can utilize the decentralized platform to swiftly
   perform degen web3 stuff.
-lastUpdated: Nov 26, 2024
+foundedOn: 2024-11-26
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

@@ -7,7 +7,7 @@ description:
   typical games, success in a Nebula Duel isn't just about a character's
   strength and specifications but also relies heavily on the user's choice of
   strategy.
-lastUpdated: Mar 3, 2024
+foundedOn: 2024-03-03
 thumbnail: 'logo.png'
 logo: 'logo.png'
 gallery:

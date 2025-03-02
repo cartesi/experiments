@@ -5,7 +5,7 @@ description:
   fostering a community-driven marketplace. It emphasizes transparency and
   scalability in DApp development, using Cartesi's Linux VM for
   blockchain-verified AI models
-lastUpdated: Dec 11, 2023
+foundedOn: 2023-12-11
 thumbnail: 'protocol-gpt.png'
 logo: 'logo.png'
 tags:

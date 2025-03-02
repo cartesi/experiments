@@ -4,7 +4,7 @@ description:
   Interactive rootfs is a tooling focused project to improve iteration times of
   DApp development and filesystem construction by providing an incremental way
   of adding files and packages to the system.
-lastUpdated: Nov 29, 2023
+foundedOn: 2023-11-29
 thumbnail: 'interactive-rootfs.png'
 logo: 'interactive-rootfs.png'
 tags:

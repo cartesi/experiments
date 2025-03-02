@@ -6,7 +6,7 @@ import { cn } from '../lib/utils';
 
 type Props = {
   tag: PageFrontMatter['tags'][keyof PageFrontMatter['tags']];
-  type: keyof PageFrontMatter['tags'];
+  type: keyof PageFrontMatter['tags'] | string;
   isLink?: boolean;
   contentClass?: HTMLDivElement['className'];
 };

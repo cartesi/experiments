@@ -4,7 +4,7 @@ description:
   A Football-like Game where the players in the field are actual bots. Human
   players can code them, buy them to create a club, or maybe they want to hold
   shares of the clubs, or even manage the teams. A whole world of football!
-lastUpdated: Nov 26, 2024
+foundedOn: 2024-11-26
 thumbnail: 'logo.jpeg'
 logo: 'logo.jpeg'
 gallery:

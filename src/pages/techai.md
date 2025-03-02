@@ -3,7 +3,7 @@ title: Teach AI
 description:
   The application helps to curate high-quality datasets by providing a framework
   to incentivize RLHF, with the LLM being fully verifiable and hosted on-chain.
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 thumbnail: 'H0y6JCx.png'
 logo: 'H0Da4Np.png'
 gallery:

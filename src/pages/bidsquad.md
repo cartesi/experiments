@@ -4,7 +4,7 @@ description:
   BidSquad is a groundbreaking carbon credit auction platform that leverages the
   power of blockchain technology and AI to conduct reverse auctions for carbon
   credit certification.
-lastUpdated: Oct 20, 2023
+foundedOn: 2023-10-20
 logo: 'bidsquad.png'
 thumbnail: 'bidsquad.png'
 gallery:

@@ -12,7 +12,7 @@ type Props = {
 const tagsLimit = 5;
 
 const ShowcaseItemFeatured = ({ page }: Props) => {
-  const { title, description, lastUpdated, tags, path, thumbnail } = page;
+  const { title, description, foundedOn, tags, path, thumbnail } = page;
   const { siteConfig } = useDocusaurusContext();
 
   const languages_libraries_stacks = Array();
@@ -72,9 +72,9 @@ const ShowcaseItemFeatured = ({ page }: Props) => {
               />
             )}
         </div>
-        {lastUpdated && lastUpdated != '' && (
+        {foundedOn && foundedOn != '' && (
           <div className='pt-4 text-xs text-background/50 italic'>
-            Project founded on: {lastUpdated}
+            Project founded on: {foundedOn}
           </div>
         )}
       </div>

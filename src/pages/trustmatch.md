@@ -7,7 +7,7 @@ description:
   So, if done in a centralized manner, the matches can be easily biased, and
   that's why we propose this project, a matchmaking system using Cartesi
   Coprocessor.
-lastUpdated: Feb 18, 2025
+foundedOn: 2025-02-18
 thumbnail: 'logo.jpg'
 logo: 'logo.jpg'
 tags:

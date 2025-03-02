@@ -3,7 +3,7 @@ title: OpenQuest
 description:
   OpenQuest is a platform that helps projects track, engage, and grow their
   communities through fun and interactive Quests.
-lastUpdated: Feb 18, 2025
+foundedOn: 2025-02-18
 thumbnail: 'logo.jpg'
 logo: 'logo.jpg'
 gallery:
