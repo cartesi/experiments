@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useDatabase } from '../hooks/useDatabase';
-
 import IconHeart from '@site/src/components/ui/IconHeart';
 
 type LikesProps = {

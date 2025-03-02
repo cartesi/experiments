@@ -6,6 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Likes from '@site/src/components/Likes';
 import moment from 'moment';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 type Props = {
   page: PageFrontMatter;
@@ -16,6 +17,7 @@ const tagsLimit = 5;
 const ShowcaseItem = ({ page }: Props) => {
   const { title, description, foundedOn, featured, tags, path, thumbnail } =
     page;
+  const isBrowser = useIsBrowser();
   const { siteConfig } = useDocusaurusContext();
 
   const languages_libraries_stacks = Array();
@@ -40,7 +42,7 @@ const ShowcaseItem = ({ page }: Props) => {
           )}
         </div>
         <div className='flex flex-row grow justify-end'>
-          <Likes path={path} />
+          {isBrowser && <Likes path={path} active={false} />}
         </div>
       </div>
       <div className='flex flex-col grow'>
