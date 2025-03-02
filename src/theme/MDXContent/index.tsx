@@ -21,6 +21,7 @@ import IconExternal from '@site/src/components/ui/IconExternal';
 import Link from '@docusaurus/Link';
 import Likes from '@site/src/components/Likes';
 import moment from 'moment';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 export type PageFrontMatter = {
   id: string;
@@ -60,6 +61,7 @@ export type PageFrontMatter = {
 };
 
 export default function MDXContentWrapper(props) {
+  const isBrowser = useIsBrowser();
   const { siteConfig } = useDocusaurusContext();
   const { type } = props.children;
   const { frontMatter } = type;
@@ -115,7 +117,7 @@ export default function MDXContentWrapper(props) {
                 {title}
               </h1>
               <span className='inline-block align-middle m-6'>
-                <Likes path={location.pathname} active={true} />
+                {isBrowser && <Likes path={location.pathname} active={true} />}
               </span>
             </div>
             <div className='text-lg sm:text-xl lg:text-2xl font-light mx-auto max-w-screen-lg'>
