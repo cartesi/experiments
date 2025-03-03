@@ -1,6 +1,6 @@
-import React from "react";
-import { cn } from "../../lib/utils";
-import { motion } from "framer-motion";
+import React from 'react';
+import { cn } from '../../lib/utils';
+import { motion } from 'framer-motion';
 
 type Props = {
   isOpen?: boolean;
@@ -22,31 +22,31 @@ const NavigationHamburger = ({
       {...rest}
     >
       <motion.span
-        className="flex flex-col items-center justify-center gap-2"
+        className='flex flex-col items-center justify-center gap-2'
         animate={{ rotate: isOpen ? 180 : 0 }}
       >
         <motion.span
-          style={{ transformOrigin: "calc(50% + 7px)" }}
-          animate={{ rotate: isOpen ? "-45deg" : 0 }}
+          style={{ transformOrigin: 'calc(50% + 7px)' }}
+          animate={{ rotate: isOpen ? '-45deg' : 0 }}
         >
           <span
             className={cn(
-              "block h-[2px] w-6 flex-shrink-0 transition-colors",
-              isWhiteMobile ? "bg-background" : "bg-foreground"
+              'block h-[2px] w-6 flex-shrink-0 transition-colors',
+              isWhiteMobile ? 'bg-background' : 'bg-foreground'
             )}
-            aria-hidden="true"
+            aria-hidden='true'
           />
         </motion.span>
         <motion.span
-          style={{ transformOrigin: "calc(50% + 7px)" }}
-          animate={{ rotate: isOpen ? "45deg" : 0 }}
+          style={{ transformOrigin: 'calc(50% + 7px)' }}
+          animate={{ rotate: isOpen ? '45deg' : 0 }}
         >
           <span
             className={cn(
-              "block h-[2px] w-6 flex-shrink-0 transition-colors",
-              isWhiteMobile ? "bg-background" : "bg-foreground"
+              'block h-[2px] w-6 flex-shrink-0 transition-colors',
+              isWhiteMobile ? 'bg-background' : 'bg-foreground'
             )}
-            aria-hidden="true"
+            aria-hidden='true'
           />
         </motion.span>
       </motion.span>

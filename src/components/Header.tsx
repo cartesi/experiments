@@ -1,30 +1,28 @@
 import React, { useRef } from 'react';
+import Logo from '@site/src/components/Logo';
 import { useCallback, useEffect, useState } from 'react';
 import { useScroll, motion } from 'framer-motion';
-import { useMediaQuery, useResizeObserver } from 'usehooks-ts';
 import Container from '@site/src/components/ui/Container';
-import Logo from '@site/src/components/Logo';
 import Navigation from '@site/src/components/Navigation';
 import NavigationHamburger from '@site/src/components/ui/NavigationHamburger';
 import { InfoBarType } from '../type/types';
 import InfoBar from './ui/InfoBar';
+import { useMediaQuery, useResizeObserver, useWindowSize } from 'usehooks-ts';
 
 type Props = {
   isWhiteMobile?: boolean;
   infobar?: InfoBarType;
+  setHeaderHeight?: any;
 };
 
-const Header = ({ infobar, isWhiteMobile = true }: Props) => {
+const Header = ({ isWhiteMobile, infobar, setHeaderHeight }: Props) => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  const isDesktop = useMediaQuery('(min-width: 1024px)');
-  const ref = useRef<HTMLDivElement>(null);
-
-  const { height = 0 } = useResizeObserver({
-    ref,
-    box: 'border-box',
+  const [isClicked, setIsClicked] = useState(false);
+  const isDesktop = useMediaQuery('(min-width: 1024px)', {
+    initializeWithValue: false,
   });
 
   const update = useCallback(() => {
@@ -52,6 +50,30 @@ const Header = ({ infobar, isWhiteMobile = true }: Props) => {
     }
   }, [isDesktop]);
 
+  const variants = {
+    initial: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: '-100%' },
+  };
+
+  const ref = useRef<HTMLDivElement>(null);
+  const { height = 0 } = useResizeObserver({
+    ref,
+    box: 'border-box',
+  });
+
+  const currentWindow = useWindowSize({
+    initializeWithValue: false,
+  });
+
+  useEffect(() => {
+    if (!isClicked) setHeaderHeight(height);
+  }, [height, isClicked]);
+
+  useEffect(() => {
+    setHeaderHeight(height);
+  }, [currentWindow.height, currentWindow.width]);
+
   useEffect(() => {
     document.documentElement.style.setProperty(
       '--current-header-height',
@@ -59,15 +81,9 @@ const Header = ({ infobar, isWhiteMobile = true }: Props) => {
     );
   }, [hidden, height]);
 
-  const variants = {
-    initial: { opacity: 1, y: 0 },
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: '-100%' },
-  };
-
   return (
     <motion.header
-      className={`fixed inset-x-0 top-0 z-30 flex min-h-headerMobile flex-shrink-0 header ${
+      className={`fixed inset-x-0 top-0 z-30 flex min-h-headerMobile flex-shrink-0 ${
         infobar?.enabled ? 'flex-col' : ''
       } items-center lg:min-h-headerDesktop`}
       variants={variants}
@@ -85,20 +101,19 @@ const Header = ({ infobar, isWhiteMobile = true }: Props) => {
     >
       {infobar && infobar.enabled && <InfoBar data={infobar} />}
       <Container>
-        <div className='flex flex-col lg:flex-row lg:items-center lg:rounded-xl lg:bg-background/80 lg:px-6 lg:py-2 lg:backdrop-blur'>
+        <div className='flex flex-col lg:flex-row lg:items-center lg:rounded-xl lg:bg-background/80 lg:px-6 lg:py-2 lg:backdrop-blur relative'>
           <div className='z-10 inline-flex h-headerMobile flex-shrink-0 items-center lg:h-auto lg:w-[var(--header-side-column-width)]'>
-            <Logo
-              isWhiteMobile={
-                isOpen || !isTop ? false : !isDesktop && isWhiteMobile
-              }
-            />
+            <Logo isWhiteMobile={isOpen || !isTop ? false : isWhiteMobile} />
           </div>
           <Navigation isOpen={isOpen} isDesktop={isDesktop} />
           <NavigationHamburger
             isWhiteMobile={isOpen || !isTop ? false : isWhiteMobile}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              setIsClicked(true);
+              setIsOpen(!isOpen);
+            }}
             isOpen={isOpen}
-            top={infobar?.enabled ? 4 : 0}
+            top={0}
           />
         </div>
       </Container>
