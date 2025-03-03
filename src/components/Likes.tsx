@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDatabase } from '../hooks/useDatabase';
 import IconHeart from '@site/src/components/ui/IconHeart';
+import Loading from './ui/Loading';
 
 type LikesProps = {
   path: string;
@@ -10,7 +11,7 @@ type LikesProps = {
 const Likes = ({ path, active = false }: LikesProps) => {
   const id = path.replaceAll('/', '');
   const { fetchProject, upsertProject } = useDatabase();
-  const [likes, setLikes] = useState<number>(0);
+  const [likes, setLikes] = useState<number>(-1);
   var localData = JSON.parse(localStorage.getItem('cartesiRolluplabLikes'));
   if (localData == null) localData = [];
   const [liked, setLiked] = useState<boolean>(localData.includes(id));
@@ -51,7 +52,8 @@ const Likes = ({ path, active = false }: LikesProps) => {
             variant={liked ? 'filled' : 'outline'}
             style='fill-secondary w-6'
           />
-          <span className='text-white text-sm'>{likes}</span>
+          {likes >= 0 && <span className='text-white text-sm'>{likes}</span>}
+          {likes == -1 && <Loading type='dots' />}
         </span>
       </button>
     );
@@ -62,7 +64,8 @@ const Likes = ({ path, active = false }: LikesProps) => {
           variant={liked ? 'filled' : 'outline'}
           style='fill-tertiary w-6'
         />
-        <span className='text-primary text-sm'>{likes}</span>
+        {likes >= 0 && <span className='text-primary text-sm'>{likes}</span>}
+        {likes == -1 && <Loading type='dots' />}
       </span>
     );
 };
