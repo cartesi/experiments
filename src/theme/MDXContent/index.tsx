@@ -394,7 +394,7 @@ export default function MDXContentWrapper(props) {
               {/*  */}
               {gallery && (
                 <>
-                  <h2>Gallery</h2>
+                  <h2 className='lg:mb-8 mb-6'>Gallery</h2>
                   <Gallery images={[...(gallery || [])]} />
                 </>
               )}
