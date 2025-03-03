@@ -50,7 +50,7 @@ const Gallery = ({ images, thumbWidth = '15rem' }: Props) => {
   }, []);
 
   return (
-    <div className='not-prose'>
+    <div className='not-prose pt-2'>
       <div
         className='fixed inset-0 z-50 p-2 bg-black bg-opacity-70 backdrop-blur'
         style={{ zIndex: '100000', display: showLightbox ? 'block' : 'none' }}
