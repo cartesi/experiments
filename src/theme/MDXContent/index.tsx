@@ -393,10 +393,10 @@ export default function MDXContentWrapper(props) {
             <div className='md:col-span-8 prose'>
               {/*  */}
               {gallery && (
-                <>
-                  <h2 className='lg:mb-8 mb-6'>Gallery</h2>
+                <div className='flex flex-col'>
+                  <h2 className='lg:mb-8 mb-6 mt-0'>Gallery</h2>
                   <Gallery images={[...(gallery || [])]} />
-                </>
+                </div>
               )}
 
               <MDXContent {...props} />
