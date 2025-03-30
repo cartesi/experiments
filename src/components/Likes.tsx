@@ -20,6 +20,7 @@ const Likes = ({ path, active = false }: LikesProps) => {
     (async () => {
       const result = await fetchProject(id);
       if (result) setLikes(result.likes);
+      else setLikes(0);
     })();
   }, []);
 
