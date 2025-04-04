@@ -54,7 +54,7 @@ const ShowcaseItem = ({ page }: Props) => {
             contentClass='bg-transparent'
           />
         </div>
-        <div className='flex flex-row pt-2 pb-4 gap-2'>
+        <div className='flex flex-row flex-wrap pt-2 pb-4 gap-2'>
           {tags.projectStage && (
             <Tag type='projectStage' tag={tags.projectStage} />
           )}
@@ -65,6 +65,7 @@ const ShowcaseItem = ({ page }: Props) => {
               contentClass='bg-tertiary text-white border-tertiary'
             />
           )}
+          {tags.other_tags && <Tag type='other_tags' tag={tags.other_tags} />}
         </div>
         <p className='text-sm mb-2 text-muted-foreground'>{description}</p>
         <div className='flex flex-wrap gap-1 mt-auto pt-2 relative z-20'>
