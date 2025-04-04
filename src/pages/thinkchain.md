@@ -15,6 +15,8 @@ tags:
   projectStage: Hackathon Project
   projectTypes:
     - AI/ML
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - Python
     - TypeScript

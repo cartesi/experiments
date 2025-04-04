@@ -14,6 +14,8 @@ tags:
   projectStage: Proof of concept
   projectTypes:
     - Games
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - Python
     - Solidity

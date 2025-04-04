@@ -21,6 +21,8 @@ tags:
   projectStage: In progress - Beta
   projectTypes:
     - Games
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - CSS
     - HTML

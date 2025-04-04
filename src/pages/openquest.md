@@ -12,6 +12,8 @@ tags:
   projectStage: In progress - Alpha
   projectTypes:
     - Other
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - Rust
     - TypeScript

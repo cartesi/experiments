@@ -16,6 +16,8 @@ tags:
   projectStage: Release Candidate
   projectTypes:
     - Art
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - JavaScript
     - TypeScript

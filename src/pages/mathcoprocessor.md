@@ -13,6 +13,8 @@ tags:
   projectStage: In progress - Alpha
   projectTypes:
     - Dev-Tool
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - Python
     - Solidity

@@ -13,6 +13,8 @@ tags:
   projectStage: Hackathon Project
   projectTypes:
     - DeFi
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - Rust
     - Solidity

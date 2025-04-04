@@ -14,6 +14,8 @@ tags:
   projectStage: Hackathon Project
   projectTypes:
     - Art
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - JavaScript
     - Go

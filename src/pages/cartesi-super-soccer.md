@@ -13,6 +13,8 @@ tags:
   projectStage: Hackathon Project
   projectTypes:
     - Games
+  other_tags:
+    - 'Cartesi Experiment Week'
   languages:
     - JavaScript
     - TypeScript
