@@ -129,7 +129,7 @@ const getNavigation = async () => {
       link: navLink.isExternal
         ? navLink.link
         : `${PARENT_DOMAIN}${navLink.link}`,
-      children: navLink.children.map(child => {
+      children: (navLink.children ?? []).map(child => {
         return {
           ...child,
           link: child.isExternal ? child.link : `${PARENT_DOMAIN}${child.link}`,

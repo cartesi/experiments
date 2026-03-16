@@ -9,6 +9,7 @@ type LikesProps = {
 };
 
 const Likes = ({ path, active = false }: LikesProps) => {
+  /*
   const id = path.replaceAll('/', '');
   const { fetchProject, upsertProject } = useDatabase();
   const [likes, setLikes] = useState<number>(-1);
@@ -69,6 +70,7 @@ const Likes = ({ path, active = false }: LikesProps) => {
         {likes == -1 && <Loading type='dots' />}
       </span>
     );
+    */
 };
 
 export default Likes;
